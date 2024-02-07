@@ -1,0 +1,31 @@
+﻿<%- include('header.html') -%>
+<form id="textForm">
+    <label for="textInput">Class Location:</label>
+    <input list="locations" id="textInput" name="textInput" required>
+    <datalist id="locations">
+        <option value="Disque Hall 108">
+        <option value="Randell Hall 120">
+        <option value="Lebow Engineering Center 134">
+        <option value="Korman Center 111">
+    </datalist>
+    <br>
+    <button type="button" onclick="writeToFile()">Submit</button>
+</form>
+
+    <script>
+        function writeToFile() {
+            console.log("")
+            // Get the input text
+            var inputText = document.getElementById('textInput').value;
+
+            // Create a Blob with the text content
+            var blob = new Blob([inputText], { type: 'text/plain' });
+
+            // Create a link element and trigger a download
+            var link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'output.txt';
+            link.click();
+        }
+    </script>
+<%- include('footer.html') -%>

@@ -51,7 +51,11 @@ app.get('/test/', function(req, res){
   });
 });
 
-
+app.get('/input/', function (req, res) {
+    res.render('input', {
+        title: "Input Form"
+    });
+});
 
 /* istanbul ignore next */
 if (!module.parent) {
