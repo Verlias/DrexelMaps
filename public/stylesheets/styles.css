@@ -1,0 +1,126 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+body{
+    margin:0px;
+}
+
+* {
+    font-family: system-ui;
+}
+
+/* Map Page CSS Styling */
+.Map-Content-Container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:200px;
+}
+
+
+.Map-Headline {
+    text-align: center;
+ 
+}
+
+.Map-Container {
+    border:2px solid black;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    height: 1000px;
+}
+
+.Home-Header {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(260deg,#e239f8,#925bea, #61d8de);
+    padding: 20px;
+    position:fixed;
+    width:100%;
+    top:0
+}
+
+.Home-NavBar {
+    margin-left: auto;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.Home-NavBar > ul > li{
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    list-style-type: none;  
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Home-NavBar > ul > li > a{
+    color:white;
+    font-size:20px;
+}
+
+.Home-NavBar > ul > li > a:link{
+    text-decoration: none;
+}
+
+.Home-NavBar > ul > li > a:hover{
+    color:yellow;
+    font-weight:bold;
+}
+
+/*About Page CSS Styling */
+
+.About-Header{
+    border: 2px solid black;
+    display: flex;
+    margin: 0;
+    text-align:center
+
+}
+
+.About-NavBar{
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    
+}
+
+
+
+.About-NavBar > ul > li{
+    list-style-type: none;
+    color:black;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    padding-right:50px;
+}
+
+.About-Container-Content{
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    border:2px solid black
+    
+}
+
+.About-Image-Container{
+    border: 2px solid black;
+    margin:auto;
+}
+
+.About-Container{
+    border: 2px solid black;
+    margin:auto;
+}

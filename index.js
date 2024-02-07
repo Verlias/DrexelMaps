@@ -57,6 +57,14 @@ app.get('/input/', function (req, res) {
     });
 });
 
+app.get('/map/', function (req, res) {
+  res.render('index', {
+      title: "Map"
+  });
+});
+
+
+
 /* istanbul ignore next */
 if (!module.parent) {
   app.listen(3000);
