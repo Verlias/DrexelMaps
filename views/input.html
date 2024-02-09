@@ -1,18 +1,22 @@
 ﻿<%- include('header.html') -%>
 <form id="textForm">
     <label for="destination">Class Location:</label>
-    <input list="locations" id="destination" name="destination" required>
-    <datalist id="locations">
-        <option value="Disque Hall 108">
-        <option value="Randell Hall 120">
-        <option value="Lebow Engineering Center 134">
-        <option value="Korman Center 111">
-    </datalist>
+    <input id="destination" name="destination" required>
+    <button class="autofill" type="button" onclick="fillinput(this)">Disque Hall 108</button>
+    <button class="autofill" type="button" onclick="fillinput(this)">Randell Hall 120</button>
+    <button class="autofill" type="button" onclick="fillinput(this)">Lebow Engineering Center 134</button>
+    <button class="autofill" type="button" onclick="fillinput(this)">Korman Center 111</button>
     <p id="msg"></p>
-    <button type="button" onclick="submitinput()">Submit</button>
+    <button class="submit" type="button" onclick="submitinput()">Submit</button>
 </form>
 
     <script>
+        function fillinput(button) {
+            var inputbox = document.getElementById('destination');
+            var autofillValue = button.innerText;
+            inputbox.value = autofillValue;
+        }
+
         function submitinput() {
             // Get the input text
             var inputText = document.getElementById('destination').value;

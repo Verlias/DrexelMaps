@@ -16,13 +16,13 @@ label {
 input {
     width: 100%;
     padding: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-button {
+.submit {
     background-color: #FFC200;
     color: #003882;
     padding: 10px 20px;
@@ -32,7 +32,21 @@ button {
     cursor: pointer;
 }
 
-    button:hover {
-        background-color: #003882;
-        color: #FFC200;
-    }
+.submit:hover {
+    background-color: #003882;
+    color: #FFC200;
+}
+
+.autofill {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    text-align: left;
+}
+
+.autofill:hover {
+    background-color: #FFC200;
+    color: #003882;
+}
+
