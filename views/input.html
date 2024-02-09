@@ -1,31 +1,39 @@
 ﻿<%- include('header.html') -%>
 <form id="textForm">
-    <label for="textInput">Class Location:</label>
-    <input list="locations" id="textInput" name="textInput" required>
+    <label for="destination">Class Location:</label>
+    <input list="locations" id="destination" name="destination" required>
     <datalist id="locations">
         <option value="Disque Hall 108">
         <option value="Randell Hall 120">
         <option value="Lebow Engineering Center 134">
         <option value="Korman Center 111">
     </datalist>
-    <br>
-    <button type="button" onclick="writeToFile()">Submit</button>
+    <p id="msg"></p>
+    <button type="button" onclick="submitinput()">Submit</button>
 </form>
 
     <script>
-        function writeToFile() {
-            console.log("")
+        function submitinput() {
             // Get the input text
-            var inputText = document.getElementById('textInput').value;
+            var inputText = document.getElementById('destination').value;
 
-            // Create a Blob with the text content
-            var blob = new Blob([inputText], { type: 'text/plain' });
+            const valid = Boolean(validateinput(inputText));
 
-            // Create a link element and trigger a download
-            var link = document.createElement('a');
-            link.href = window.URL.createObjectURL(blob);
-            link.download = 'output.txt';
-            link.click();
+            if (valid) {
+                console.log("Send the input to the backend!")
+            }
+        }
+
+        function validateinput(input) {
+            // Validation will check if the class is in the database
+            if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(input)) {
+                document.getElementById("msg").innerHTML = "Input Recieved!"
+                return true
+            }
+            else {
+                document.getElementById("msg").innerHTML = "Please Input a Valid Location"
+                return false
+            }
         }
     </script>
 <%- include('footer.html') -%>
