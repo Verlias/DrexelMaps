@@ -1,0 +1,20 @@
+<%- include('header.html') -%>
+<form id="textForm" action="" method="POST">
+    <label for="destination">Class Location:</label>
+    <input id="destination" name="destination" required type="text" >
+    <button class="autofill" type="button" onclick="fillinput(this)">Disque Hall 108</button>
+    <button class="autofill" type="button" onclick="fillinput(this)">Randell Hall 120</button>
+    <button class="autofill" type="button" onclick="fillinput(this)">Lebow Engineering Center 134</button>
+    <button class="autofill" type="button" onclick="fillinput(this)">Korman Center 111</button>
+    <p><%= err %></p>
+    <input type="submit" class="submit" value="Submit Form">
+</form>
+
+    <script>
+        function fillinput(button) {
+            var inputbox = document.getElementById('destination');
+            var autofillValue = button.innerText;
+            inputbox.value = autofillValue;
+        }
+    </script>
+<%- include('footer.html') -%>

@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+const bodyparser = require('body-parser')
 
 var app = module.exports = express();
 
@@ -15,6 +16,9 @@ var app = module.exports = express();
 // case `ejs.__express`.
 
 app.engine('.html', require('ejs').__express);
+
+app.use(bodyparser.urlencoded({ extended: true }))
+app.use(bodyparser.json())
 
 // Optional since express defaults to CWD/views
 
@@ -56,6 +60,28 @@ app.get('/input/', function (req, res) {
         title: "Input Form"
     });
 });
+
+app.get('/input2/', function (req, res) {
+  res.render('input2', {
+      title: "Input Form",
+      err: ""
+  });
+});
+
+app.post('/input2/', (req, res) => {
+  console.log("Using Body-parser: ", req.body.destination)
+  if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(req.body.destination)) {
+    res.redirect('/map')
+  }
+  else {
+    res.render('input2', {
+      title: "Input Form",
+      err: "Please Input a Valid Location"
+    });
+  }
+})
+
+
 
 app.get('/map/', function (req, res) {
   res.render('index', {
