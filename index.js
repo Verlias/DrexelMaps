@@ -48,20 +48,20 @@ app.get('/', function(req, res){
   });
 });
 
-app.get('/test/', function(req, res){
-  res.render('test',{
+app.get('/test', function(req, res){
+  res.render('test', {
     title: "EJS example",
     header: "Some users"
   });
 });
 
-app.get('/input/', function (req, res) {
+app.get('/input', function (req, res) {
     res.render('input', {
         title: "Input Form"
     });
 });
 
-app.get('/input2/', function (req, res) {
+app.get('/input2', function (req, res) {
   res.render('input2', {
       title: "Input Form",
       err: ""
@@ -81,11 +81,15 @@ app.post('/input2/', (req, res) => {
   }
 })
 
-
-
-app.get('/map/', function (req, res) {
+app.get('/map', function (req, res) {
   res.render('index', {
       title: "Map"
+  });
+});
+
+app.get('/about', function (req, res) {
+  res.render('about', {
+      title: "About"
   });
 });
 

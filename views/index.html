@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/styles.css" />
-    <script src="/scripts/locationscript.js"></script>
-    <title>Web Page</title>
-</head>
-<header class="Home-Header">
-    <nav class="Home-NavBar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-    <p class="Drexel-Title">Drexel University</p>
-</header>
-<body>
+<%- include('header.html') -%>
     <main class="Home-Main">
         <div class="Map-Content-Container">
             <p id="long">Longitude</p>
@@ -25,5 +7,4 @@
             <div class="Map-Container">API</div>
         </div>
     </main>
-</body>
-</html>
+<%- include('footer.html') -%>
