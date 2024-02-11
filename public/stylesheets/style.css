@@ -1,132 +1,59 @@
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
-  }
-}
-
-body{
-  margin:0px;
-}
-
-* {
-  font-family: system-ui;
-}
-
-/* Map Page CSS Styling */
-.Map-Content-Container{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top:200px;
+@font-face {
+  font-family: "Miller-Text";
+  src: url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.eot");
+  src: url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.svg#Miller-Text")format("svg");
 }
 
 
-.Map-Headline {
-  text-align: center;
-
-}
-
-.Map-Container {
-  border:2px solid black;
-  margin: auto;
-  text-align: center;
-  width: 80%;
-  height: 1000px;
-}
-
-.Home-Header {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #07294D;
-  padding: 10px;
-  position:fixed;
-  width:100%;
-  top:0
-}
-
-.Home-NavBar {
-  margin-right: auto;
-  padding-right: 30px;
-  display: flex;
-  align-items: center;
-}
-
-.Drexel-Title{
-  font: 25px "Miller-Text";
-  color: #FFC600;
-  margin-left: auto;
-  padding-right: 30px;
-  display: flex;
-  align-items: center;
-}
-
-
-.Home-NavBar > ul > li{
-  list-style-type: none;  
-  display: inline;
-  margin: 10px;
-  padding: 10px;
-}
-
-.Home-NavBar > ul > li > a{
-  color: #FFC600;
-  font-size:20px;
-}
-
-.Home-NavBar > ul > li > a:link{
-  text-decoration: none;
-}
-
-.Home-NavBar > ul > li > a:hover{
-  color:yellow;
-  background-color: #006699;
-  font-weight:bold;
-}
-
-/*About Page CSS Styling */
-
-.About-Header{
-  border: 2px solid black;
-  display: flex;
+body {
   margin: 0;
-  text-align:center
-
+  font: 14px   "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 }
-
-.About-NavBar{
-  margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items:center;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #07294D;
+  overflow: hidden;
   
 }
 
-
-
-.About-NavBar > ul > li{
-  list-style-type: none;
-  color:black;
-  margin: 0px;
-  padding: 0px;
-  display: inline;
-  padding-right:50px;
-}
-
-.About-Container-Content{
-  margin: auto;
-  margin-top: 100px;
-  display: flex;
-  flex-direction: row;
-  border:2px solid black
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #FFC600;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
   
 }
 
-.About-Image-Container{
-  border: 2px solid black;
-  margin:auto;
+.topnav p {
+  font: 25px "Miller-Text";
+  float: right;
+  color: #FFC600;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 5px;
+  padding-right: 25px;
+  
 }
 
-.About-Container{
-  border: 2px solid black;
-  margin:auto;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #006699;
+  color: white;
+}
+
+h1 {
+  padding: 16px;
+}
+img{
+  width: 80%;
+  height: 80%;
+  padding: 10%;
 }
