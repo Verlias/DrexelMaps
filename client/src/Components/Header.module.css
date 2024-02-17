@@ -36,10 +36,10 @@
     float: left;
     color: #FFC600;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px;
     list-style: none;
     font-size: 17px;
-    
+    vertical-align: middle;
   }
 
   .NavText{
@@ -60,7 +60,7 @@
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-    margin: 5px;
-    padding-top: 5px;
+    margin: 2.5px;
     padding-right: 15px;
+    vertical-align: middle;
   }
