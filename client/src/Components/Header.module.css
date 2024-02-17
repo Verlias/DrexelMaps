@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Miller-Text";
+    src: url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.eot");
+    src: url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8c7e7936ee30a0664b57de8a3455b0bc.svg#Miller-Text")format("svg");
+  }
+  
+  
+  body {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  }
+  
+  h1 {
+    padding: 16px;
+  }
+  
+  img{
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+  }
+  
+  /* Add a black background color to the top navigation */
+  .HeaderNav {
+    background-color: #07294D;
+    overflow: hidden; 
+  }
+ 
+  /* Style the links inside navigation bar */
+  .NavLink {
+    float: left;
+    color: #FFC600;
+    text-align: center;
+    padding: 14px 16px;
+    list-style: none;
+    font-size: 17px;
+    
+  }
+
+  .NavText{
+    color: #FFC600; 
+  }
+  
+  /* Change the color of links on hover */
+  .NavLink:hover {
+    background-color: #006699;
+    color: white;
+  }
+  
+  /* Style the Drexel logo inside navigation bar*/
+  .DrexelTitle {
+    font: 25px "Miller-Text";
+    float: right;
+    color: #FFC600;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 5px;
+    padding-top: 5px;
+    padding-right: 15px;
+  }
