@@ -56,19 +56,13 @@ app.get('/test', function(req, res){
 });
 
 app.get('/input', function (req, res) {
-    res.render('input', {
-        title: "Input Form"
-    });
-});
-
-app.get('/input2', function (req, res) {
   res.render('input2', {
       title: "Input Form",
       err: ""
   });
 });
 
-app.post('/input2/', (req, res) => {
+app.post('/input/', (req, res) => {
   console.log("Using Body-parser: ", req.body.destination)
   if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(req.body.destination)) {
     res.redirect('/map')
@@ -82,7 +76,7 @@ app.post('/input2/', (req, res) => {
 })
 
 app.get('/map', function (req, res) {
-  res.render('index', {
+  res.render('map', {
       title: "Map"
   });
 });

@@ -29,6 +29,8 @@ img{
 .topnav {
   background-color: #07294D;
   overflow: hidden; 
+  position: fixed;
+  width: 100%;
 }
 
 /* Style the links inside navigation bar */
@@ -59,4 +61,11 @@ img{
   margin: 5px;
   padding-top: 5px;
   padding-right: 15px;
+}
+
+/* For map canvas */
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
