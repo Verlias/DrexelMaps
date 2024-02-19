@@ -62,6 +62,15 @@ app.get('/input', function (req, res) {
   });
 });
 
+app.get('/floor', function (req, res) {
+  res.render('floor', {
+      title: "floor",
+      err: ""
+  });
+});
+
+
+
 app.post('/input/', (req, res) => {
   console.log("Using Body-parser: ", req.body.destination)
   if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(req.body.destination)) {
