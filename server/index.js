@@ -69,7 +69,12 @@ app.get('/floor', function (req, res) {
   });
 });
 
-
+app.get('/map-test', function (req, res) {
+  res.render('map-test', {
+      title: "test",
+      err: "",
+  });
+});
 
 app.post('/input/', (req, res) => {
   console.log("Using Body-parser: ", req.body.destination)
