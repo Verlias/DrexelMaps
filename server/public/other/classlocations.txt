@@ -1,3 +1,68 @@
-Korman Center, 1460, 1755
-Disque Hall, 1540, 1790
-Lebow Hall, 1520, 1720
+|Main Building 1982, 2392
+|Randell Hall 2047, 2403
+|Curtis Hall 2112s, 2413
+|Alumni Engineering Labs 2141, 2413
+Stratton Hall
+Korman Center, 1720, 2268
+Bossone Research Enterprise Center (School of Biomedical Engineering, Science and Health Systems)
+James Creese Student Center
+Disque Hall, 1869, 2332
+Lebow Hall, 1835, 2205
+3675 Market Street, 1040, 1957
+Health Science Building
+Ross Commons 1456, 1326
+
+1506, 1324
+1679, 1310
+1474, 1400
+1681, 1385
+1495, 1475
+1466, 1523
+1364, 1596
+1593, 1598
+1717, 1611
+1821, 1556
+1451, 1652
+1583, 1652
+1708, 1725
+1779, 1669
+1830, 1669
+622, 1774
+1080, 1824
+1311, 1830
+1625, 1876
+1884, 1853
+495, 1863
+1046, 1949
+1307, 1987
+1441, 1995
+1673, 2070
+1725, 1951
+1865, 2066
+1394, 2154
+1463, 2158
+1541, 2170
+1735, 2180
+1967, 2225
+2049, 2252
+2147, 2244
+2151, 2313
+1549, 2315
+1641, 2321
+1831, 2397
+1637, 2443
+1623, 2486
+1692, 2523
+1794, 2505
+1857, 2494
+
+
+Residence Halls:
+Bentley Hall (Pennoni Honors College)
+Caneris Hall
+Kelly Hall
+Millennium Hall
+North Hall
+Race Street Residences
+Towers Hall
+Van Rensselear Hall
