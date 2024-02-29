@@ -4,7 +4,7 @@ class Node {
         this.name = name;               // String (e.g. "Korman Center 111")
         this.position = position;       // Tuple of floats (x,y)
         this.connections = connections; // Array of Node objects
-        this.heuristic = 999999;          // Used to track order in the queue
+        this.heuristic = 999999;        // Used to track order in the queue
         this.previous = null;           // Node object (previous connection in A*)
     }
     get x() {
@@ -58,10 +58,20 @@ class Node {
         ctx.closePath()
     }
 
+    drawRoute(ctx, offsetX, offsetY, scale) {
+        this.drawPath(ctx, offsetX, offsetY, scale);
+        this.drawEnd(ctx, offsetX, offsetY, scale);
+    }
+
     drawPath(ctx, offsetX, offsetY, scale) {
         if (this.previous != null) {
+            // Continue working backwards through the nodes
             this.drawTo(ctx, offsetX, offsetY, scale, this.previous, "blue");
             this.previous.drawPath(ctx, offsetX, offsetY, scale);
+        }
+        else {
+            // Reached the start of the path
+            this.drawStart(ctx, offsetX, offsetY, scale);
         }
     }
 
@@ -71,6 +81,15 @@ class Node {
 
     setConnections(nodes) {
         this.connections = nodes;
+    }
+
+    calculateRoute() {
+        if (this.previous != null) {
+            return (this.calculateDistance(this.previous) + this.previous.calculateRoute())
+        }
+        else {
+            return 0
+        }
     }
 
     drawConnections(ctx, offsetX, offsetY, scale) {
@@ -106,7 +125,7 @@ class PriorityQueue {
                 if (item != this.top.previous && !this.explored.includes(item)) {
                     let dToNode = this.top.calculateDistance(item);
                     let dToEnd = item.calculateDistance(this.end);
-                    if (item.heuristic > (dToNode + dToEnd)) {
+                    if (item.heuristic > (item.calculateRoute() + dToNode + dToEnd)) {
                         item.setPrevious(this.top);
                         item.setHeuristic(dToNode + dToEnd);
                     }
@@ -116,6 +135,7 @@ class PriorityQueue {
             this.explored.push(this.top);
             this.queue.shift();
             this.sortQueue();
+            this.printQueue();
             this.astar();
         }
     }
@@ -237,11 +257,7 @@ function draw() {
         nodes[i].drawConnections(ctx, offsetX, offsetY, scale);
     }
 
-    r.drawPath(ctx, offsetX, offsetY, scale); // Draw the path starting from the ending node
-
-    //r.drawPath(ctx, offsetX, offsetY, scale);
-    //a.drawStart(ctx, offsetX, offsetY, scale);
-    //r.drawEnd(ctx, offsetX, offsetY, scale);
+    r.drawRoute(ctx, offsetX, offsetY, scale); // Draw the path starting from the ending node
 }
 
 // Handle arrow keys for panning
