@@ -7,6 +7,8 @@ class Node {
         this.heuristic = 999999;        // Used to track order in the queue
         this.previous = null;           // Node object (previous connection in A*)
     }
+
+    // Getters
     get x() {
         return this.position[0];
     }
@@ -15,6 +17,28 @@ class Node {
         return this.position[1];
     }
 
+    getShifted(offsetX, offsetY, scale) {
+        // Accounts for offset and scale of the map image
+        let newX = Math.floor((this.x * scale + offsetX));
+        let newY = Math.floor((this.y * scale + offsetY));
+        return [newX, newY]
+    }
+
+    calculateDistance(node) {
+        return Math.sqrt((node.x - this.x) ** 2 + (node.y - this.y) ** 2)
+    }
+
+    calculateRoute() {
+        // Calculates the route through all previous connections
+        if (this.previous != null) {
+            return (this.calculateDistance(this.previous) + this.previous.calculateRoute())
+        }
+        else {
+            return 0
+        }
+    }
+
+    // Setters
     setPrevious(node) {
         this.previous = node;
     }
@@ -23,12 +47,11 @@ class Node {
         this.heuristic = value;
     }
 
-    getShifted(offsetX, offsetY, scale) {
-        let newX = Math.floor((this.x * scale + offsetX));
-        let newY = Math.floor((this.y * scale + offsetY));
-        return [newX, newY]
+    setConnections(nodes) {
+        this.connections = nodes;
     }
 
+    // Drawing functions
     drawCircle(ctx, offsetX, offsetY, scale, color) {
         const newPos = this.getShifted(offsetX, offsetY, scale)
         ctx.beginPath();
@@ -59,11 +82,13 @@ class Node {
     }
 
     drawRoute(ctx, offsetX, offsetY, scale) {
+        // Draws the entire route
         this.drawPath(ctx, offsetX, offsetY, scale);
         this.drawEnd(ctx, offsetX, offsetY, scale);
     }
 
     drawPath(ctx, offsetX, offsetY, scale) {
+        // Draws the route and the starting location
         if (this.previous != null) {
             // Continue working backwards through the nodes
             this.drawTo(ctx, offsetX, offsetY, scale, this.previous, "blue");
@@ -75,24 +100,8 @@ class Node {
         }
     }
 
-    calculateDistance(node) {
-        return Math.sqrt((node.x - this.x)**2 + (node.y - this.y)**2)
-    }
-
-    setConnections(nodes) {
-        this.connections = nodes;
-    }
-
-    calculateRoute() {
-        if (this.previous != null) {
-            return (this.calculateDistance(this.previous) + this.previous.calculateRoute())
-        }
-        else {
-            return 0
-        }
-    }
-
     drawConnections(ctx, offsetX, offsetY, scale) {
+        // Test function to show how all of the nodes are connected
         for (let i = 0; i < this.connections.length; i++) {
             this.drawTo(ctx, offsetX, offsetY, scale, this.connections[i], "black")
         }
@@ -106,10 +115,6 @@ class PriorityQueue {
         this.queue = [start];   // Array of nodes
         this.explored = [];     // Already explored nodes
     }
-
-    //astar() {
-
-    //}
 
     get top() {
         return this.queue[0]
@@ -149,6 +154,7 @@ class PriorityQueue {
     }
 
     sortQueue() {
+        // Sorted with lower heuristic values at the top
         this.queue.sort((a, b) => a.heuristic - b.heuristic); // Updates the queue
     }
 
@@ -309,7 +315,6 @@ document.addEventListener('keydown', e => {
     }
     draw();
 });
-
 
 // Initial draw
 mapImage.onload = draw;
