@@ -58,7 +58,7 @@ app.get('/test', function(req, res){
 });
 
 app.get('/input', function (req, res) {
-  res.render('input2', {
+  res.render('input', {
       title: "Input Form",
       err: ""
   });
@@ -85,7 +85,7 @@ app.post('/input/', (req, res) => {
       res.redirect('/map');
   }
   else {
-    res.render('input2', {
+    res.render('input', {
       title: "Input Form",
       err: "Please Input a Valid Location"
     });

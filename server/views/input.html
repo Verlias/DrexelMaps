@@ -1,12 +1,12 @@
 ﻿<%- include('header.html') -%>
-<form id="textForm">
+<form id="textForm" action="/input" method="POST">
     <label for="destination">Class Location:</label>
     <input id="destination" name="destination" required>
     <button class="autofill" type="button" onclick="fillinput(this)">Disque Hall 108</button>
     <button class="autofill" type="button" onclick="fillinput(this)">Randell Hall 120</button>
     <button class="autofill" type="button" onclick="fillinput(this)">Lebow Engineering Center 134</button>
     <button class="autofill" type="button" onclick="fillinput(this)">Korman Center 111</button>
-    <p id="msg"></p>
+    <p><%= err %></p>
     <button class="submit" type="button" onclick="submitinput()">Submit</button>
 </form>
 
@@ -31,11 +31,9 @@
         function validateinput(input) {
             // Validation will check if the class is in the database
             if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(input)) {
-                document.getElementById("msg").innerHTML = "Input Recieved!"
                 return true
             }
             else {
-                document.getElementById("msg").innerHTML = "Please Input a Valid Location"
                 return false
             }
         }
