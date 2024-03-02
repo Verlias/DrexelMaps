@@ -1,41 +1,24 @@
 ﻿<%- include('header.html') -%>
-<form id="textForm" action="/input" method="POST">
-    <label for="destination">Class Location:</label>
-    <input id="destination" name="destination" required>
-    <button class="autofill" type="button" onclick="fillinput(this)">Disque Hall 108</button>
-    <button class="autofill" type="button" onclick="fillinput(this)">Randell Hall 120</button>
-    <button class="autofill" type="button" onclick="fillinput(this)">Lebow Engineering Center 134</button>
-    <button class="autofill" type="button" onclick="fillinput(this)">Korman Center 111</button>
-    <p><%= err %></p>
-    <button class="submit" type="button" onclick="submitinput()">Submit</button>
-</form>
+<div class="FormContainer">
+        <form id="textForm" action="" method="POST">
+            <label for="startdestination">Starting Class Location:</label>
+            <input id="startdestination" name="startdestination" required>
+            <button class="autofill" type="button" onclick="fillinput1(this)">Disque Hall 108</button>
+            <button class="autofill" type="button" onclick="fillinput1(this)">Randell Hall 120</button>
+            <button class="autofill" type="button" onclick="fillinput1(this)">Lebow Engineering Center 134</button>
+            <button class="autofill" type="button" onclick="fillinput1(this)">Korman Center 111</button>
+            <p><%= err %></p>
+            
+            <label for="enddestination">Ending Class Location:</label>
+            <input id="enddestination" name="enddestination" required>
+            <button class="autofill" type="button" onclick="fillinput2(this)">Disque Hall 108</button>
+            <button class="autofill" type="button" onclick="fillinput2(this)">Randell Hall 120</button>
+            <button class="autofill" type="button" onclick="fillinput2(this)">Lebow Engineering Center 134</button>
+            <button class="autofill" type="button" onclick="fillinput2(this)">Korman Center 111</button>
+            <p><%= err %></p>
+            <button class="submit" type="submit">Submit</button>
+        </form>
+</div>
 
-    <script>
-        function fillinput(button) {
-            var inputbox = document.getElementById('destination');
-            var autofillValue = button.innerText;
-            inputbox.value = autofillValue;
-        }
-
-        function submitinput() {
-            // Get the input text
-            var inputText = document.getElementById('destination').value;
-
-            const valid = Boolean(validateinput(inputText));
-
-            if (valid) {
-                console.log("Send the input to the backend!")
-            }
-        }
-
-        function validateinput(input) {
-            // Validation will check if the class is in the database
-            if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(input)) {
-                return true
-            }
-            else {
-                return false
-            }
-        }
-    </script>
+    <script src="/scripts/mapscript.js"></script>
 <%- include('footer.html') -%>

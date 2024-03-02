@@ -79,9 +79,14 @@ app.get('/map-test', function (req, res) {
 });
 
 app.post('/input/', (req, res) => {
-  console.log("Using Body-parser: ", req.body.destination);
-  test = req.body.destination;
-  if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111", "a"].includes(req.body.destination)) {
+  console.log("Using starting Body-parser: ", req.body.startdestination);
+  console.log("Using ending Body-parser: ", req.body.enddestination);
+  startdestination = req.body.startdestination;
+  enddestination = req.body.startdestination;
+  if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(startdestination)
+   && 
+  ["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(enddestination)) 
+  {
       res.redirect('/map');
   }
   else {
@@ -93,19 +98,14 @@ app.post('/input/', (req, res) => {
 })
 
 app.get('/map', function (req, res) {
-    //const destination = req.query.destination;
     console.log(test)
     res.render('map', {
       title: "Map",
-      d: test
+      ds: startdestination,
+      de: enddestination,
   });
 });
 
-app.get('/map2', function (req, res) {
-    res.render('map2', {
-        title: "Map2"
-    });
-});
 
 app.get('/about', function (req, res) {
   res.render('about', {

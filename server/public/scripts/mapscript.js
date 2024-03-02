@@ -245,12 +245,76 @@ n.setConnections([i, m]);
 
 r.setConnections([k]);
 
-stack = new PriorityQueue(b, r);
-stack.astar();
+function fillinput1(button) {
+    var inputbox = document.getElementById('startdestination');
+    var autofillValue = button.innerText;
+    inputbox.value = autofillValue;
+}
 
-var destinationDiv = document.getElementById("destination");
-var textContent = destinationDiv.textContent;
-console.log(textContent)
+function fillinput2(button) {
+    var inputbox = document.getElementById('enddestination');
+    var autofillValue = button.innerText;
+    inputbox.value = autofillValue;
+}
+
+function getDestinationNodeStart(input) {
+    // Map lowercase input to the corresponding node
+    switch (input) {
+        case 'Disque Hall 108':
+            return a;
+        case 'Randell Hall 120':
+            return b;
+        case 'Lebow Engineering Center 134':
+            return c;
+        case 'Korman Center 111':
+            return d;
+        // Add more cases for other nodes if needed
+        default:
+            return; // Return null for unknown input
+    }
+}
+
+function getDestinationNodeEnd(input) {
+    // Map lowercase input to the corresponding node
+    switch (input) {
+        case 'Disque Hall 108':
+            return a;
+        case 'Randell Hall 120':
+            return b;
+        case 'Lebow Engineering Center 134':
+            return c;
+        case 'Korman Center 111':
+            return d;
+        // Add more cases for other nodes if needed
+        default:
+            return; // Return null for unknown input
+    }
+}
+
+function validateinput(input) {
+    // Validation will check if the class is in the database
+    if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111",].includes(input)) {
+        document.getElementById("msg").innerHTML = "Input Recieved!"
+        return true
+    }
+    else {
+        document.getElementById("msg").innerHTML = "Please Input a Valid Location"
+        return false
+    }
+}
+
+
+
+
+
+var destinationstart = document.getElementById("destinationstart");
+var DestStart = destinationstart.textContent;
+var destinationend = document.getElementById("destinationend");
+var DestEnd = destinationend.textContent;
+const destinationNodeStart = getDestinationNodeStart(DestStart);
+const destinationNodeEnd = getDestinationNodeEnd(DestEnd);
+stack = new PriorityQueue(destinationNodeStart, r);
+stack.astar();
 
 // Draw map image
 function draw() {

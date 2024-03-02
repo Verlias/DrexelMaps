@@ -1,4 +1,11 @@
-﻿form {
+﻿.FormContainer{
+    display:flex;
+    flex-direction: row;
+    border:2px solid black;
+    padding:100px;
+
+}
+form {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
