@@ -40,6 +40,8 @@ var users = [
   { name: 'jane', email: 'jane@learnboost.com' }
 ];
 
+var test = "a"
+
 app.get('/', function(req, res){
   res.render('users', {
     users: users,
@@ -77,9 +79,10 @@ app.get('/map-test', function (req, res) {
 });
 
 app.post('/input/', (req, res) => {
-  console.log("Using Body-parser: ", req.body.destination)
-  if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(req.body.destination)) {
-    res.redirect('/map')
+  console.log("Using Body-parser: ", req.body.destination);
+  test = req.body.destination;
+  if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111", "a"].includes(req.body.destination)) {
+      res.redirect('/map');
   }
   else {
     res.render('input2', {
@@ -90,9 +93,18 @@ app.post('/input/', (req, res) => {
 })
 
 app.get('/map', function (req, res) {
-  res.render('map', {
-      title: "Map"
+    //const destination = req.query.destination;
+    console.log(test)
+    res.render('map', {
+      title: "Map",
+      d: test
   });
+});
+
+app.get('/map2', function (req, res) {
+    res.render('map2', {
+        title: "Map2"
+    });
 });
 
 app.get('/about', function (req, res) {

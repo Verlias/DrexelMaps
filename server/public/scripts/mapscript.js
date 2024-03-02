@@ -102,8 +102,8 @@ class Node {
 
     drawConnections(ctx, offsetX, offsetY, scale) {
         // Test function to show how all of the nodes are connected
-        for (let i = 0; i < this.connections.length; i++) {
-            this.drawTo(ctx, offsetX, offsetY, scale, this.connections[i], "black")
+        for (var item of this.connections) {
+            this.drawTo(ctx, offsetX, offsetY, scale, item, "black")
         }
     }
 }
@@ -122,10 +122,7 @@ class PriorityQueue {
 
     astar() {
         // Umm idk how to explain this atm
-        if (this.top == this.end) {
-            console.log("Yay!");
-        }
-        else {
+        if (this.top != this.end) {
             for (var item of this.top.connections) {
                 if (item != this.top.previous && !this.explored.includes(item)) {
                     let dToNode = this.top.calculateDistance(item);
@@ -140,7 +137,6 @@ class PriorityQueue {
             this.explored.push(this.top);
             this.queue.shift();
             this.sortQueue();
-            this.printQueue();
             this.astar();
         }
     }
@@ -251,6 +247,10 @@ r.setConnections([k]);
 
 stack = new PriorityQueue(b, r);
 stack.astar();
+
+var destinationDiv = document.getElementById("destination");
+var textContent = destinationDiv.textContent;
+console.log(textContent)
 
 // Draw map image
 function draw() {
