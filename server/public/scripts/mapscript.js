@@ -180,7 +180,44 @@ let offsetY = -500;
 let scale = .5;
 
 // List of Test Nodes
-a = new Node("A", [1506, 1324], [])
+// FIXME: Data assigned and altered inside the fetch block
+// cannot be accessed outside of the fetch block
+
+/*
+let nodes2 = [];
+fetch("other/building_locations.json")
+    .then(response => {
+        if (!response.ok) throw new Error("Could not fetch resource.")
+        return response.json()
+    })
+    .then(values => {
+        values.forEach(value => nodes2.push(new Node(value.name, value.position, value.connections)))
+        return nodes2
+    })
+    .then(nodes2 => {
+        nodes2[0].setConnections([nodes2[1], nodes2[2], nodes2[3]]);
+        nodes2[1].setConnections([nodes2[0], nodes2[2], nodes2[3]]);
+        nodes2[2].setConnections([nodes2[0], nodes2[1], nodes2[3], nodes2[4]]);
+        nodes2[3].setConnections([nodes2[0], nodes2[1], nodes2[2], nodes2[9]]);
+        nodes2[4].setConnections([nodes2[5], nodes2[2], nodes2[9]]);
+        nodes2[5].setConnections([nodes2[4], nodes2[6], nodes2[7]])
+        nodes2[6].setConnections([nodes2[5], nodes2[10]])
+        nodes2[7].setConnections([nodes2[5], nodes2[8], nodes2[10], nodes2[11]])
+        nodes2[8].setConnections([nodes2[7], nodes2[9], nodes2[12], nodes2[13]])
+        nodes2[9].setConnections([nodes2[3], nodes2[4]])
+        nodes2[10].setConnections([nodes2[6], nodes2[7], nodes2[12], nodes2[14]])
+        nodes2[11].setConnections([nodes2[7], nodes2[10], nodes2[12]])
+        nodes2[12].setConnections([nodes2[8], nodes2[11], nodes2[13]])
+        nodes2[13].setConnections([nodes2[8], nodes2[12]])
+        nodes2[14].setConnections([nodes2[10]])
+        console.log(nodes2)
+    })
+    .catch(error => console.error(error))
+
+console.log(nodes2)
+*/
+
+a = new Node("A", [1506, 1324], []);
 b = new Node("B", [1679, 1310], []);
 c = new Node("C", [1474, 1400], []);
 d = new Node("D", [1681, 1385], []);
@@ -242,7 +279,6 @@ k.setConnections([g, h, l, r]);
 l.setConnections([h, k, m]);
 m.setConnections([i, l, n]);
 n.setConnections([i, m]);
-
 r.setConnections([k]);
 
 function fillinput1(button) {
