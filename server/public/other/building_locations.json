@@ -1,0 +1,255 @@
+[{
+    "name": "Main Building",
+    "position": [1982, 2392],
+    "connections": []
+},
+{
+    "name": "Randell Hall",
+    "position": [2047, 2403],
+    "connections": []
+},
+{
+    "name": "Curtis Hall",
+    "position": [2112, 2413],
+    "connections": []
+},
+{
+    "name": "Alumni Engineering Labs",
+    "position": [2141, 2413],
+    "connections": []
+},
+{
+    "name": "Korman Center",
+    "position": [1720, 2268],
+    "connections": []
+},
+{
+    "name": "Bossone Research Enterprise Center",
+    "position": [2049, 2252],
+    "connections": []
+},
+{
+    "name": "Disque Hall",
+    "position": [1869, 2332],
+    "connections": []
+},
+{
+    "name": "LeBow Hall (College of Business)",
+    "position": [1835, 2205],
+    "connections": []
+},
+{
+    "name": "3675 Market Street (College of Computing and Informatics Building)",
+    "position": [495, 1863],
+    "connections": []
+},
+{
+    "name": "Health Science Building",
+    "position": [622, 1774],
+    "connections": []
+},
+{
+    "name": "Ross Commons",
+    "position": [1456, 1326],
+    "connections": []
+},
+{
+    "name": "Van Rensselaer Hall",
+    "position": [1506, 1324],
+    "connections": []
+},
+{
+    "name": "Psychology, Sociology, and Anthropology Building",
+    "position": [1679, 1310],
+    "connections": []
+},
+{
+    "name": "Millennium Hall",
+    "position": [1474, 1400],
+    "connections": []
+},
+{
+    "name": "Language and Communication Center",
+    "position": [1681, 1385],
+    "connections": []
+},
+{
+    "name": "Kelly Hall",
+    "position": [1495, 1475],
+    "connections": []
+},
+{
+    "name": "Northside Dining Terrace",
+    "position": [1466, 1523],
+    "connections": []
+},
+{
+    "name": "Raymond G. Perelman Center for Jewish Life",
+    "position": [1364, 1596],
+    "connections": []
+},
+{
+    "name": "Race Street Residences",
+    "position": [1593, 1598],
+    "connections": []
+},
+{
+    "name": "North Hall",
+    "position": [1821, 1556],
+    "connections": []
+},
+{
+    "name": "Towers Hall",
+    "position": [1451, 1652],
+    "connections": []
+},
+{
+    "name": "Bentley Hall and Pennoni Honors College",
+    "position": [1583, 1652],
+    "connections": []
+},
+{
+    "name": "Academic Building, Design Art Annex, Drexel Police Station, 3210 Cherry Street",
+    "position": [1708, 1725],
+    "connections": []
+},
+{
+    "name": "Lindy Center for Civic Engagement",
+    "position": [1779, 1669],
+    "connections": []
+},
+{
+    "name": "Steinbright Career Development Center",
+    "position": [1830, 1669],
+    "connections": []
+},
+{
+    "name": "Pearlstein Gallery",
+    "position": [1080, 1824],
+    "connections": []
+},
+{
+    "name": "Urban Eatery",
+    "position": [1311, 1830],
+    "connections": []
+},
+{
+    "name": "Rush Building",
+    "position": [1625, 1876],
+    "connections": []
+},
+{
+    "name": "Caneris Hall",
+    "position": [1884, 1853],
+    "connections": []
+},
+{
+    "name": "Antoinette Westphal College of Media Arts & Design",
+    "position": [1040, 1957],
+    "connections": []
+},
+{
+    "name": "School of Education, Drexel Student Health Center",
+    "position": [1307, 1987],
+    "connections": []
+},
+{
+    "name": "Recreation Center and Daskalakis Athletic Center",
+    "position": [1441, 1995],
+    "connections": []
+},
+{
+    "name": "Nesbitt Hall",
+    "position": [1673, 2070],
+    "connections": []
+},
+{
+    "name": "Arlen Specter US Squash Center",
+    "position": [1725, 1951],
+    "connections": []
+},
+{
+    "name": "Gateway Garden",
+    "position": [1865, 2066],
+    "connections": []
+},
+{
+    "name": "University Crossings Student Apartments",
+    "position": [1882, 2022],
+    "connections": []
+},
+{
+    "name": "General Services Building",
+    "positions": [1394, 2154],
+    "connections": []
+},
+{
+    "name": "Kline Law Building",
+    "position": [1463, 2158],
+    "connections": []
+},
+{
+    "name": "W.W. Hagerty Library",
+    "position": [1541, 2170],
+    "connections": []
+},
+{
+    "name": "Pearlstein Business Learning Center",
+    "position": [1735, 2180],
+    "connections": []
+},
+{
+    "name": "Paul Peck Alumni Center",
+    "position": [1967, 2225],
+    "connections": []
+},
+{
+    "name": "LeBow Engineering Center College of Engineering",
+    "position": [2147, 2244],
+    "connections": []
+},
+{
+    "name": "Center for Automation Technology",
+    "position": [2151, 2313],
+    "connections": []
+},
+{
+    "name": "The Study Hotel Building",
+    "position": [1549, 2315],
+    "connections": []
+},
+{
+    "name": "Papadakis Integrated Sciences Building",
+    "position": [1641, 2321],
+    "connections": []
+},
+{
+    "name": "Stratton Hall",
+    "position": [1831, 2397],
+    "connections": []
+},
+{
+    "name": "Chestnut Square (facing Papadakis)",
+    "position": [1637, 2443],
+    "connections": []
+},
+{
+    "name": "MacAlister Hall College of Arts and Sciences",
+    "position": [1623, 2486],
+    "connections": []
+},
+{
+    "name": "Mandell Theater",
+    "position": [1692, 2523],
+    "connections": []
+},
+{
+    "name": "James Creese Student Center",
+    "position": [1794, 2505],
+    "connections": []
+},
+{
+    "name": "Chestnut Square (facing Stratton)",
+    "position": [1794, 2505],
+    "connections": []
+}]
