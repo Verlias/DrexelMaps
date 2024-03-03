@@ -58,19 +58,13 @@
 
 
 
-<input type="button" value="highlight Academi Building" onclick="highlight()" />
-<input type="button" value="unhighlight Academi Building" onclick="unhighlight()" />
+<form id="textForm" action="" method="POST">
+    <label for="classNumber">Class Number:</label>
+    <input id="classNumber" name="classNumber" required>
+    <button class="submit" type="submit">Submit</button>
+</form>
 <script>
-    
-    var x = 1
-    function highlight() {
-        $("#Academic_Building").css({ fill: "var(--highligthcolor)" });
-        
-    }
-    function unhighlight() {
-        $("#Academic_Building").css({ fill: "#002e6b" });
-        
-    }
+    $("<%= id %>").css({ fill: "var(--highligthcolor)" })
 </script>
 
 

@@ -40,9 +40,64 @@ var users = [
   { name: 'jane', email: 'jane@learnboost.com' }
 ];
 
+var location = [
+  { name: 'Academic Building', id: '#Academic_Building'},
+  { name: 'Gateway Garden', id: '#Gateway_Garden'},
+  { name: 'URBN Center', id: '#URBN_Center'},
+  { name: '3401 Market Street School of Education', id: '#3401_Market_Street_School_of_Education'},
+  { name: 'Urban Eatery', id: '#Urban_Eatery'},
+  { name: 'URBN Center Annex', id: '#URBN_Center_Annex'},
+  { name: 'Health Sciences Building', id: '#Health_Sciences_Building'},
+  { name: '3675 Market Street College of Computing Informatics', id: '#3675_Market_Street_College_of_Computing_Informatics'},
+  { name: 'Drexel Recreation Center', id: '#Drexel_Recreation_Center'},
+  { name: 'Rush Building', id: '#Rush_Building'},
+  { name: 'Nesbitt Hall', id: '#Nesbitt_Hall'},
+  { name: 'Armory', id: '#Armory'},
+  { name: 'University Crossings', id: '#University Crossings'},
+  { name: 'Caneris Hall', id: '#Caneris_Hall'},
+  { name: 'Lindy Center for Civic Engagement', id: '#Lindy_Center_for_Civic_Engagement'},
+  { name: '3210 Cherry Street', id: '#3210_Cherry_Street'},
+  { name: 'North Hall', id: '#North_Hall'},
+  { name: 'Bentley Hall Pennoni Honors College', id: '#Bentley_Hall_Pennoni_Honors_College'},
+  { name: 'Towers Hall', id: '#Towers_Hall'},
+  { name: 'Northside Dining Terrace', id: '#Northside_Dining_Terrace'},
+  { name: 'Race Street Residences', id: '#Race_Street_Residences'},
+  { name: 'Raymond G. Perelman Center for Jewish Life', id: '#Raymond_G._Perelman_Center_for_Jewish_Life'},
+  { name: 'Kelly Hall', id: '#Kelly_Hall'},
+  { name: 'Van Rensselaer Hall', id: '#Van_Rensselaer_Hall'},
+  { name: 'Millennium Hall', id: '#Millennium_Hall'},
+  { name: 'Ross Commons', id: '#Ross_Commons'},
+  { name: 'Language and Communication Center', id: '#Language_and_Communication_Center'},
+  { name: 'PSA Building', id: '#PSA_Building'},
+  { name: 'General Services Building', id: '#General_Services_Building'},
+  { name: 'Kline Law Building and Library', id: '#Kline_Law_Building_and_Library'},
+  { name: 'W.W. Hagerty Library', id: '#W.W._Hagerty_Library'},
+  { name: 'The Study at University City', id: '#The_Study_at_University_City'},
+  { name: 'Integrated Sciences Building', id: '#Integrated_Sciences_Building'},
+  { name: 'Korman Center', id: '#Korman_Center'},
+  { name: 'Pearlstein Business Learning Center', id: '#Pearlstein_Business_Learning_Center'},
+  { name: 'College of Business', id: '#College_of_Business'},
+  { name: 'Disque Hall', id: '#Disque_Hall'},
+  { name: 'Stratton Hall', id: '#Stratton_Hall'},
+  { name: 'Paul Peck Alumni Center', id: '#Paul_Peck_Alumni_Center'},
+  { name: 'Bossone Research Enterprise Center', id: '#Bossone_Research_Enterprise_Center'},
+  { name: 'LeBow Engineering Center College of Engineering', id: '#LeBow_Engineering_Center_College_of_Engineering'},
+  { name: 'Center for Automation Technology', id: '#Center_for_Automation_Technology'},
+  { name: 'Main Building', id: '#Main_Building'},
+  { name: 'Randell Hall', id: '#Randell_Hall'},
+  { name: 'Curtis Hall', id: '#Curtis_Hall'},
+  { name: 'Alumni Engineering Labs', id: '#Alumni_Engineering_Labs'},
+  { name: 'Chestnut Square A', id: '#Chestnut_Square_A'},
+  { name: 'MacAlister Hall College of Arts and Sciences', id: '#MacAlister_Hall_College_of_Arts_and_Sciences'},
+  { name: 'James Creese Student Center', id: '#James_Creese_Student_Center'},
+  { name: 'Mandell Theater', id: '#Mandell_Theater'},
+  { name: 'Chestnut Square B', id: '#Chestnut_Square_B'}
+]
+
+
 var startdestination = ""
 var enddestination = ""
-
+var classNumber = ""
 app.get('/', function(req, res){
   res.render('users', {
     users: users,
@@ -61,21 +116,29 @@ app.get('/test', function(req, res){
 app.get('/input', function (req, res) {
   res.render('input', {
       title: "Input Form",
-      err: ""
+      err: "",
+      location: location
   });
 });
 
 app.get('/floor', function (req, res) {
   res.render('floor', {
       title: "floor",
-      err: ""
+      err: "",
+      id: "#class" + classNumber + "map",
   });
 });
 
 app.get('/map-test', function (req, res) {
+  location.forEach(function(one){
+    if (one.name == startdestination) {
+      startid = one.id
+    }
+  })
   res.render('map-test', {
       title: "test",
       err: "",
+      id: startid
   });
 });
 
@@ -84,18 +147,13 @@ app.post('/input/', (req, res) => {
   console.log("Using ending Body-parser: ", req.body.enddestination);
   startdestination = req.body.startdestination;
   enddestination = req.body.enddestination;
-  if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(startdestination)
-   && 
-  ["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(enddestination)) 
-  {
-      res.redirect('/map');
-  }
-  else {
-    res.render('input', {
-      title: "Input Form",
-      err: "Please Input a Valid Location"
-    });
-  }
+  res.redirect('/map-test');
+})
+
+app.post('/map-test/', (req, res) => {
+  classNumber = req.body.classNumber;
+  console.log(classNumber);
+  res.redirect('/floor');
 })
 
 app.get('/map', function (req, res) {

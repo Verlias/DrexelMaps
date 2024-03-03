@@ -3,10 +3,10 @@
         <form id="textForm" action="" method="POST">
             <label for="startdestination">Starting Class Location:</label>
             <input id="startdestination" name="startdestination" required>
-            <button class="autofill" type="button" onclick="fillinput1(this)">Disque Hall 108</button>
-            <button class="autofill" type="button" onclick="fillinput1(this)">Randell Hall 120</button>
-            <button class="autofill" type="button" onclick="fillinput1(this)">Lebow Engineering Center 134</button>
-            <button class="autofill" type="button" onclick="fillinput1(this)">Korman Center 111</button>
+            <% location.forEach(function(user){ %>
+                <button class="autofill" type="button" onclick="fillinput1(this)"><%= user.name %></button>
+            <% }) %>
+            
             <p><%= err %></p>
             
             <label for="enddestination">Ending Class Location:</label>
