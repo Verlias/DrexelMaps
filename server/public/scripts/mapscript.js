@@ -313,7 +313,7 @@ var destinationend = document.getElementById("destinationend");
 var DestEnd = destinationend.textContent;
 const destinationNodeStart = getDestinationNodeStart(DestStart);
 const destinationNodeEnd = getDestinationNodeEnd(DestEnd);
-stack = new PriorityQueue(destinationNodeStart, r);
+stack = new PriorityQueue(destinationNodeStart, destinationNodeEnd);
 stack.astar();
 
 // Draw map image
@@ -327,7 +327,7 @@ function draw() {
         nodes[i].drawConnections(ctx, offsetX, offsetY, scale);
     }
 
-    r.drawRoute(ctx, offsetX, offsetY, scale); // Draw the path starting from the ending node
+    destinationNodeEnd.drawRoute(ctx, offsetX, offsetY, scale); // Draw the path starting from the ending node
 }
 
 // Handle arrow keys for panning

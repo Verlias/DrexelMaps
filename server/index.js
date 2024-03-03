@@ -40,7 +40,8 @@ var users = [
   { name: 'jane', email: 'jane@learnboost.com' }
 ];
 
-var test = "a"
+var startdestination = ""
+var enddestination = ""
 
 app.get('/', function(req, res){
   res.render('users', {
@@ -82,7 +83,7 @@ app.post('/input/', (req, res) => {
   console.log("Using starting Body-parser: ", req.body.startdestination);
   console.log("Using ending Body-parser: ", req.body.enddestination);
   startdestination = req.body.startdestination;
-  enddestination = req.body.startdestination;
+  enddestination = req.body.enddestination;
   if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(startdestination)
    && 
   ["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111"].includes(enddestination)) 
@@ -98,7 +99,6 @@ app.post('/input/', (req, res) => {
 })
 
 app.get('/map', function (req, res) {
-    console.log(test)
     res.render('map', {
       title: "Map",
       ds: startdestination,
