@@ -1,9 +1,11 @@
-// Node class
+// ----------Start of Classes---------- //
 class Node {
-    constructor(name, position, connections) {
+    constructor(name, position, connectionsbyid, id) {
         this.name = name;               // String (e.g. "Korman Center 111")
         this.position = position;       // Tuple of floats (x,y)
-        this.connections = connections; // Array of Node objects
+        this.connectionsbyid = connectionsbyid; // Array of integer objects
+        this.connections = [];          // Arrat of Node objects
+        this.id = id
         this.heuristic = 999999;        // Used to track order in the queue
         this.previous = null;           // Node object (previous connection in A*)
     }
@@ -48,7 +50,13 @@ class Node {
     }
 
     setConnections(nodes) {
-        this.connections = nodes;
+        for (var id of this.connectionsbyid) {
+            for (node of nodes) {
+                if (id == node.id) {
+                    this.connections.push(node);
+                }
+            }
+        }
     }
 
     // Drawing functions
@@ -162,6 +170,35 @@ class PriorityQueue {
     }
 }
 
+// ----------End of Classes---------- //
+
+// Reads in the Nodes
+let nodes = []; // Define nodes outside the function
+async function fetchNodes() {
+    try {
+        const response = await fetch("other/building_locations.json");
+        if (!response.ok) {
+            throw new Error("Could not fetch resource.");
+        }
+        const values = await response.json();
+        nodes = values.map(value => new Node(value.name, value.position, value.connections, value.id));
+
+        return nodes;
+    } catch (error) {
+        console.error(error);
+        return []; // or handle the error as needed
+    }
+}
+function getNode(input) {
+    // Gets the node based on name
+    for (var node of nodes) {
+        if (node.name == input) {
+            return node;
+        }
+    }
+    return; // Return null for unknown input
+}
+
 // Canvas
 const canvas = document.getElementById('mapCanvas');
 const ctx = canvas.getContext('2d');
@@ -172,198 +209,59 @@ canvas.height = window.innerHeight;
 
 // Load map image
 const mapImage = new Image();
-mapImage.src = 'img/map3.svg'; // Path to your map image
+mapImage.src = 'img/map3.svg';
 
 // Initial position and scale
 let offsetX = -100;
 let offsetY = -500;
 let scale = .5;
 
-// List of Test Nodes
-// FIXME: Data assigned and altered inside the fetch block
-// cannot be accessed outside of the fetch block
-
-/*
-let nodes2 = [];
-fetch("other/building_locations.json")
-    .then(response => {
-        if (!response.ok) throw new Error("Could not fetch resource.")
-        return response.json()
-    })
-    .then(values => {
-        values.forEach(value => nodes2.push(new Node(value.name, value.position, value.connections)))
-        return nodes2
-    })
-    .then(nodes2 => {
-        nodes2[0].setConnections([nodes2[1], nodes2[2], nodes2[3]]);
-        nodes2[1].setConnections([nodes2[0], nodes2[2], nodes2[3]]);
-        nodes2[2].setConnections([nodes2[0], nodes2[1], nodes2[3], nodes2[4]]);
-        nodes2[3].setConnections([nodes2[0], nodes2[1], nodes2[2], nodes2[9]]);
-        nodes2[4].setConnections([nodes2[5], nodes2[2], nodes2[9]]);
-        nodes2[5].setConnections([nodes2[4], nodes2[6], nodes2[7]])
-        nodes2[6].setConnections([nodes2[5], nodes2[10]])
-        nodes2[7].setConnections([nodes2[5], nodes2[8], nodes2[10], nodes2[11]])
-        nodes2[8].setConnections([nodes2[7], nodes2[9], nodes2[12], nodes2[13]])
-        nodes2[9].setConnections([nodes2[3], nodes2[4]])
-        nodes2[10].setConnections([nodes2[6], nodes2[7], nodes2[12], nodes2[14]])
-        nodes2[11].setConnections([nodes2[7], nodes2[10], nodes2[12]])
-        nodes2[12].setConnections([nodes2[8], nodes2[11], nodes2[13]])
-        nodes2[13].setConnections([nodes2[8], nodes2[12]])
-        nodes2[14].setConnections([nodes2[10]])
-        console.log(nodes2)
-    })
-    .catch(error => console.error(error))
-
-console.log(nodes2)
-*/
-
-a = new Node("A", [1506, 1324], []);
-b = new Node("B", [1679, 1310], []);
-c = new Node("C", [1474, 1400], []);
-d = new Node("D", [1681, 1385], []);
-e = new Node("E", [1495, 1475], []);
-f = new Node("F", [1466, 1523], []);
-g = new Node("G", [1364, 1596], []);
-h = new Node("H", [1593, 1598], []);
-i = new Node("I", [1717, 1611], []);
-j = new Node("J", [1821, 1556], []);
-k = new Node("K", [1451, 1652], []);
-l = new Node("L", [1583, 1652], []);
-m = new Node("M", [1708, 1725], []);
-n = new Node("N", [1779, 1669], []);
-o = new Node("O", [1830, 1669], []);
-p = new Node("P", [622, 1774], []);
-q = new Node("Q", [1080, 1824], []);
-r = new Node("R", [1311, 1830], []);
-s = new Node("S", [1625, 1876], []);
-t = new Node("T", [1884, 1853], []);
-u = new Node("U", [495, 1863], []);
-v = new Node("V", [1046, 1949], []);
-w = new Node("W", [1307, 1987], []);
-x = new Node("X", [1441, 1995], []);
-y = new Node("Y", [1673, 2070], []);
-z = new Node("Z", [1725, 1951], []);
-aa = new Node("AA", [1865, 2066], []);
-ab = new Node("AB", [1394, 2154], []);
-ac = new Node("AC", [1463, 2158], []);
-ad = new Node("AD", [1541, 2170], []);
-ae = new Node("AE", [1735, 2180], []);
-af = new Node("AF", [1967, 2225], []);
-ag = new Node("AG", [2049, 2252], []);
-ah = new Node("AH", [2147, 2244], []);
-ai = new Node("AI", [2151, 2313], []);
-aj = new Node("AJ", [1549, 2315], []);
-ak = new Node("AK", [1641, 2321], []);
-al = new Node("AL", [1831, 2397], []);
-am = new Node("AM", [1637, 2443], []);
-an = new Node("AN", [1623, 2486], []);
-ao = new Node("AO", [1692, 2523], []);
-ap = new Node("AP", [1794, 2505], []);
-aq = new Node("AQ", [1857, 2494], []);
-
-const nodes = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, r]; // All of the nodes
-// o, p, q, r, s, t, u, v, w, x, y, z, aa, ab, ac, ad, ae, af, ag, ah, ai, aj, ak, al, am, an, ao, ap, aq]
-
-// Sample connections
-a.setConnections([b, c, d]);
-b.setConnections([a, c, d]);
-c.setConnections([a, b, d, e]);
-d.setConnections([a, b, c, j]);
-e.setConnections([f, c, j]);
-f.setConnections([e, g, h]);
-g.setConnections([f, k]);
-h.setConnections([f, i, k, l]);
-i.setConnections([h, j, m, n]);
-j.setConnections([d, e]);
-k.setConnections([g, h, l, r]);
-l.setConnections([h, k, m]);
-m.setConnections([i, l, n]);
-n.setConnections([i, m]);
-r.setConnections([k]);
-
-function fillinput1(button) {
-    var inputbox = document.getElementById('startdestination');
-    var autofillValue = button.innerText;
-    inputbox.value = autofillValue;
-}
-
-function fillinput2(button) {
-    var inputbox = document.getElementById('enddestination');
-    var autofillValue = button.innerText;
-    inputbox.value = autofillValue;
-}
-
-function getDestinationNodeStart(input) {
-    // Map lowercase input to the corresponding node
-    switch (input) {
-        case 'Disque Hall 108':
-            return a;
-        case 'Randell Hall 120':
-            return b;
-        case 'Lebow Engineering Center 134':
-            return c;
-        case 'Korman Center 111':
-            return d;
-        // Add more cases for other nodes if needed
-        default:
-            return; // Return null for unknown input
-    }
-}
-
-function getDestinationNodeEnd(input) {
-    // Map lowercase input to the corresponding node
-    switch (input) {
-        case 'Disque Hall 108':
-            return a;
-        case 'Randell Hall 120':
-            return b;
-        case 'Lebow Engineering Center 134':
-            return c;
-        case 'Korman Center 111':
-            return d;
-        // Add more cases for other nodes if needed
-        default:
-            return; // Return null for unknown input
-    }
-}
-
-function validateinput(input) {
-    // Validation will check if the class is in the database
-    if (["Disque Hall 108", "Randell Hall 120", "Lebow Engineering Center 134", "Korman Center 111",].includes(input)) {
-        document.getElementById("msg").innerHTML = "Input Recieved!"
-        return true
-    }
-    else {
-        document.getElementById("msg").innerHTML = "Please Input a Valid Location"
-        return false
-    }
-}
-
-
-
-
 
 var destinationstart = document.getElementById("destinationstart");
-var DestStart = destinationstart.textContent;
+const DestStart = destinationstart.textContent;
 var destinationend = document.getElementById("destinationend");
-var DestEnd = destinationend.textContent;
-const destinationNodeStart = getDestinationNodeStart(DestStart);
-const destinationNodeEnd = getDestinationNodeEnd(DestEnd);
-stack = new PriorityQueue(destinationNodeStart, destinationNodeEnd);
-stack.astar();
+const DestEnd = destinationend.textContent;
+var destinationNodeStart = null;
+var destinationNodeEnd = null;
+fetchNodes().then(nodes => {
+    // Define starting and end node
+    destinationNodeStart = getNode(DestStart);
+    destinationNodeEnd = getNode(DestEnd);
+
+    // Define connections
+    for (node of nodes) {
+        node.setConnections(nodes);
+    }
+
+    stack = new PriorityQueue(destinationNodeStart, destinationNodeEnd);
+    stack.astar(); // Creates linked list of fastest route with head being the end node
+});
 
 // Draw map image
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(mapImage, offsetX, offsetY, mapImage.width * scale, mapImage.height * scale);
 
-    // Draw all the points and connections
-    for (let i = 0; i < nodes.length; i++) {
-        nodes[i].drawCircle(ctx, offsetX, offsetY, scale, "green");
-        nodes[i].drawConnections(ctx, offsetX, offsetY, scale);
-    }
+    // Waits to draw until nodes have been fetched from json
+    if (nodes.length != 0) {
+        // Draw all the points and connections
+        for (var node of nodes) {
+            node.drawCircle(ctx, offsetX, offsetY, scale, "green");
+            node.drawConnections(ctx, offsetX, offsetY, scale);
+        }
 
-    destinationNodeEnd.drawRoute(ctx, offsetX, offsetY, scale); // Draw the path starting from the ending node
+        try {
+            destinationNodeStart.drawCircle(ctx, offsetX, offsetY, scale, "green")
+            destinationNodeEnd.drawCircle(ctx, offsetX, offsetY, scale, "blue")
+
+            destinationNodeEnd.drawRoute(ctx, offsetX, offsetY, scale); // Draw the path starting from the ending node
+        } catch {
+            console.log("Input Not Recieved")
+        }
+    }
+    else {
+        console.log("JSON loading... Try panning the page to refresh");
+    }
 }
 
 // Handle arrow keys for panning

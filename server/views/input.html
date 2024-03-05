@@ -1,24 +1,23 @@
 ﻿<%- include('header.html') -%>
 <div class="FormContainer">
-        <form id="textForm" action="" method="POST">
-            <label for="startdestination">Starting Class Location:</label>
-            <input id="startdestination" name="startdestination" required>
-            <% location.forEach(function(user){ %>
-                <button class="autofill" type="button" onclick="fillinput1(this)"><%= user.name %></button>
-            <% }) %>
-            
-            <p><%= err %></p>
-            
-            <label for="enddestination">Ending Class Location:</label>
-            <input id="enddestination" name="enddestination" required>
-            <button class="autofill" type="button" onclick="fillinput2(this)">Disque Hall 108</button>
-            <button class="autofill" type="button" onclick="fillinput2(this)">Randell Hall 120</button>
-            <button class="autofill" type="button" onclick="fillinput2(this)">Lebow Engineering Center 134</button>
-            <button class="autofill" type="button" onclick="fillinput2(this)">Korman Center 111</button>
-            <p><%= err %></p>
-            <button class="submit" type="submit">Submit</button>
-        </form>
+    <form id="textForm" action="" method="POST">
+        <label for="startdestination">Starting Class Location:</label>
+        <input id="startdestination" name="startdestination" required>
+        <% location.forEach(function(user){ %>
+        <button class="autofill" type="button" onclick="fillinput1(this)"><%= user.name %></button>
+        <% }) %>
+
+        <p><%= err %></p>
+
+        <label for="enddestination">Ending Class Location:</label>
+        <input id="enddestination" name="enddestination" required>
+        <% location.forEach(function(user){ %>
+        <button class="autofill" type="button" onclick="fillinput2(this)"><%= user.name %></button>
+        <% }) %>
+        <p><%= err %></p>
+        <button class="submit" type="submit">Submit</button>
+    </form>
 </div>
 
-    <script src="/scripts/mapscript.js"></script>
+    <script src="/scripts/inputscript.js"></script>
 <%- include('footer.html') -%>
