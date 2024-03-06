@@ -109,7 +109,7 @@
 {
     "name": "Race Street Residences",
     "position": [1593, 1598],
-    "connections": [7, 8, 10, 11],
+    "connections": [7, 8, 10, 11, 12, 13],
     "id": 9
 },
 {
@@ -121,20 +121,20 @@
 {
     "name": "Towers Hall",
     "position": [1451, 1652],
-    "connections": [8, 9],
+    "connections": [8, 9, 12],
     "id": 11
 },
 {
     "name": "Bentley Hall and Pennoni Honors College",
     "position": [1583, 1652],
-    "connections": [],
+    "connections": [9, 11, 13],
     "id": 12
 },
 {
-    "name": "Academic Building, Design Art Annex, Drexel Police Station, 3210 Cherry Street",
+    "name": "3210 Cherry Street",
     "position": [1708, 1725],
-    "connections": [],
-    "id": 0
+    "connections": [9, 12],
+    "id": 13
 },
 {
     "name": "Lindy Center for Civic Engagement",

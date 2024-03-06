@@ -86,7 +86,7 @@ class Node {
         ctx.strokeStyle = color;
         ctx.lineWidth = 3;
         ctx.stroke();
-        ctx.closePath()
+        ctx.closePath();
     }
 
     drawRoute(ctx, offsetX, offsetY, scale) {
@@ -235,6 +235,9 @@ fetchNodes().then(nodes => {
 
     stack = new PriorityQueue(destinationNodeStart, destinationNodeEnd);
     stack.astar(); // Creates linked list of fastest route with head being the end node
+
+    // Initial draw
+    draw()
 });
 
 // Draw map image
@@ -313,6 +316,3 @@ document.addEventListener('keydown', e => {
     }
     draw();
 });
-
-// Initial draw
-mapImage.onload = draw;
