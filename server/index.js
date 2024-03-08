@@ -171,14 +171,6 @@ app.get('/map', function (req, res) {
 });
 
 
-app.get('/about', function (req, res) {
-  res.render('about', {
-      title: "About"
-  });
-});
-
-
-
 /* istanbul ignore next */
 if (!module.parent) {
   app.listen(3000);

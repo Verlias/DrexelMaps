@@ -63,7 +63,7 @@ class Node {
     drawCircle(ctx, offsetX, offsetY, scale, color) {
         const newPos = this.getShifted(offsetX, offsetY, scale)
         ctx.beginPath();
-        ctx.arc(newPos[0], newPos[1], 5, 0, 2 * Math.PI);
+        ctx.arc(newPos[0], newPos[1], 3, 0, 2 * Math.PI);
         ctx.fillStyle = color;
         ctx.fill();
         ctx.closePath()
