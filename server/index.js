@@ -122,11 +122,11 @@ app.get('/input', function (req, res) {
 });
 
 app.get('/floor', function (req, res) {
-  res.render('floor', {
-      title: "floor",
-      err: "",
-      id: "#class" + classNumber + "map",
-  });
+  res.render('korman1', {
+    title: "floor",
+    err: "",
+    id: "#N" + classNumber.toString(),
+});
 });
 
 app.get('/map-test', function (req, res) {
