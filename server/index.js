@@ -35,9 +35,9 @@ app.set('view engine', 'html');
 
 // Dummy users
 var users = [
-  { name: 'tobi', email: 'tobi@learnboost.com' },
-  { name: 'loki', email: 'loki@learnboost.com' },
-  { name: 'jane', email: 'jane@learnboost.com' }
+    { name: 'tobi', email: 'tobi@learnboost.com' },
+    { name: 'loki', email: 'loki@learnboost.com' },
+    { name: 'jane', email: 'jane@learnboost.com' }
 ];
 
 var location = [
@@ -74,7 +74,7 @@ var location = [
   //{ name: 'W.W. Hagerty Library', id: '#W.W._Hagerty_Library'},
   //{ name: 'The Study at University City', id: '#The_Study_at_University_City'},
   //{ name: 'Integrated Sciences Building', id: '#Integrated_Sciences_Building'},
-  { name: 'Korman Center', id: '#Korman_Center'},
+  //{ name: 'Korman Center', id: '#Korman_Center'},
   //{ name: 'Pearlstein Business Learning Center', id: '#Pearlstein_Business_Learning_Center'},
   //{ name: 'College of Business', id: '#College_of_Business'},
   //{ name: 'Disque Hall', id: '#Disque_Hall'},
@@ -98,58 +98,56 @@ var location = [
 var startdestination = ""
 var enddestination = ""
 var classNumber = ""
-app.get('/', function(req, res){
-  res.render('users', {
-    users: users,
-    title: "EJS example",
-    header: "Some users"
-  });
+app.get('/', function (req, res) {
+    res.render('users', {
+        users: users,
+        title: "EJS example",
+        header: "Some users"
+    });
 });
 
-app.get('/test', function(req, res){
-  res.render('test', {
-    title: "EJS example",
-    header: "Some users"
-  });
+app.get('/test', function (req, res) {
+    res.render('test', {
+        title: "EJS example",
+        header: "Some users"
+    });
 });
 
 app.get('/input', function (req, res) {
-  res.render('input', {
-      title: "Input Form",
-      err: "",
-      location: location
-  });
+    res.render('input', {
+        title: "Input Form",
+        err: "",
+        location: location
+    });
 });
 
 app.get('/floor', function (req, res) {
-  console.log("N" + classNumber.toString())
-  res.render('korman1', {
+  res.render('floor', {
       title: "floor",
       err: "",
-      id: "#N" + classNumber.toString(),
-     
+      id: "#class" + classNumber + "map",
   });
 });
 
 app.get('/map-test', function (req, res) {
-  location.forEach(function(one){
-    if (one.name == startdestination) {
-      startid = one.id
-    }
-  })
-  res.render('map-test', {
-      title: "test",
-      err: "",
-      id: startid
-  });
+    location.forEach(function (one) {
+        if (one.name == startdestination) {
+            startid = one.id
+        }
+    })
+    res.render('map-test', {
+        title: "test",
+        err: "",
+        id: startid
+    });
 });
 
 app.post('/input/', (req, res) => {
-  console.log("Using starting Body-parser: ", req.body.startdestination);
-  console.log("Using ending Body-parser: ", req.body.enddestination);
-  startdestination = req.body.startdestination;
-  enddestination = req.body.enddestination;
-  res.redirect('/map');
+    console.log("Using starting Body-parser: ", req.body.startdestination);
+    console.log("Using ending Body-parser: ", req.body.enddestination);
+    startdestination = req.body.startdestination;
+    enddestination = req.body.enddestination;
+    res.redirect('/map');
 })
 
 app.post('/map/', (req, res) => {
@@ -159,30 +157,22 @@ app.post('/map/', (req, res) => {
 })
 
 app.post('/map-test/', (req, res) => {
-  classNumber = req.body.classNumber;
-  console.log(classNumber);
-  res.redirect('/floor');
+    classNumber = req.body.classNumber;
+    console.log(classNumber);
+    res.redirect('/floor');
 })
 
 app.get('/map', function (req, res) {
     res.render('map', {
-      title: "Map",
-      ds: startdestination,
-      de: enddestination,
-  });
+        title: "Map",
+        ds: startdestination,
+        de: enddestination,
+    });
 });
-
-
-app.get('/about', function (req, res) {
-  res.render('about', {
-      title: "About"
-  });
-});
-
 
 
 /* istanbul ignore next */
 if (!module.parent) {
-  app.listen(3000);
-  console.log('Express started on port 3000');
+    app.listen(3000);
+    console.log('Express started on port 3000');
 }
