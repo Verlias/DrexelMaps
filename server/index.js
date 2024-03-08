@@ -74,7 +74,7 @@ var location = [
   //{ name: 'W.W. Hagerty Library', id: '#W.W._Hagerty_Library'},
   //{ name: 'The Study at University City', id: '#The_Study_at_University_City'},
   //{ name: 'Integrated Sciences Building', id: '#Integrated_Sciences_Building'},
-  //{ name: 'Korman Center', id: '#Korman_Center'},
+  { name: 'Korman Center', id: '#Korman_Center'},
   //{ name: 'Pearlstein Business Learning Center', id: '#Pearlstein_Business_Learning_Center'},
   //{ name: 'College of Business', id: '#College_of_Business'},
   //{ name: 'Disque Hall', id: '#Disque_Hall'},
@@ -122,10 +122,12 @@ app.get('/input', function (req, res) {
 });
 
 app.get('/floor', function (req, res) {
-  res.render('floor', {
+  console.log("N" + classNumber.toString())
+  res.render('korman1', {
       title: "floor",
       err: "",
-      id: "#class" + classNumber + "map",
+      id: "#N" + classNumber.toString(),
+     
   });
 });
 
