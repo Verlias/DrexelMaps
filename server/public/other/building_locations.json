@@ -8,301 +8,301 @@
   {
     "name": "Van Rensselaer Hall",
     "position": [ 1506, 1324 ],
-    "connections": [ ],
+    "connections": [ 105 ],
     "id": 2
   },
   {
     "name": "PSA Building",
     "position": [ 1679, 1310 ],
-    "connections": [ ],
+    "connections": [ 106 ],
     "id": 3
   },
   {
     "name": "Millennium Hall",
     "position": [ 1474, 1400 ],
-    "connections": [ ],
+    "connections": [ 105 ],
     "id": 4
   },
   {
     "name": "Language and Communication Center",
     "position": [ 1681, 1385 ],
-    "connections": [ ],
+    "connections": [116 ],
     "id": 5
   },
   {
     "name": "Kelly Hall",
     "position": [ 1495, 1475 ],
-    "connections": [ ],
+    "connections": [ 114 ],
     "id": 6
   },
   {
     "name": "Northside Dining Terrace",
     "position": [ 1466, 1523 ],
-    "connections": [ ],
+    "connections": [ 114 ],
     "id": 7
   },
   {
     "name": "Raymond G. Perelman Center for Jewish Life",
     "position": [ 1364, 1596 ],
-    "connections": [ ],
+    "connections": [ 125 ],
     "id": 8
   },
   {
     "name": "Race Street Residences",
     "position": [ 1593, 1598 ],
-    "connections": [ ],
+    "connections": [ 126 ],
     "id": 9
   },
   {
     "name": "North Hall",
     "position": [ 1821, 1556 ],
-    "connections": [ ],
+    "connections": [ 119 ],
     "id": 10
   },
   {
     "name": "Towers Hall",
     "position": [ 1451, 1652 ],
-    "connections": [ ],
+    "connections": [ 125 ],
     "id": 11
   },
   {
     "name": "Bentley Hall and Pennoni Honors College",
     "position": [ 1583, 1652 ],
-    "connections": [ ],
+    "connections": [ 126 ],
     "id": 12
   },
   {
     "name": "3210 Cherry Street",
     "position": [ 1708, 1725 ],
-    "connections": [ ],
+    "connections": [ 129 ],
     "id": 13
   },
   {
     "name": "Lindy Center for Civic Engagement",
     "position": [ 1779, 1669 ],
-    "connections": [],
+    "connections": [127 ],
     "id": 14
   },
   {
     "name": "Steinbright Career Development Center",
     "position": [ 1830, 1669 ],
-    "connections": [],
+    "connections": [127],
     "id": 15
   },
   {
     "name": "Pearlstein Gallery",
     "position": [ 1080, 1824 ],
-    "connections": [],
+    "connections": [123, 139],
     "id": 16
   },
   {
     "name": "Urban Eatery",
     "position": [ 1311, 1830 ],
-    "connections": [],
+    "connections": [134, 140],
     "id": 17
   },
   {
     "name": "Rush Building",
     "position": [ 1625, 1876 ],
-    "connections": [],
+    "connections": [135],
     "id": 18
   },
   {
     "name": "Caneris Hall",
     "position": [ 1884, 1853 ],
-    "connections": [],
+    "connections": [130],
     "id": 19
   },
   {
     "name": "Antoinette Westphal College of Media Arts & Design",
     "position": [ 1040, 1957 ],
-    "connections": [],
+    "connections": [139, 144],
     "id": 20
   },
   {
     "name": "3401 Market Street School of Education",
     "position": [ 1307, 1987 ],
-    "connections": [],
+    "connections": [140],
     "id": 21
   },
   {
     "name": "Recreation Center and Daskalakis Athletic Center",
     "position": [ 1441, 1995 ],
-    "connections": [],
+    "connections": [145],
     "id": 22
   },
   {
     "name": "Nesbitt Hall",
     "position": [ 1673, 2070 ],
-    "connections": [],
+    "connections": [146],
     "id": 23
   },
   {
     "name": "Arlen Specter US Squash Center",
     "position": [ 1725, 1951 ],
-    "connections": [],
+    "connections": [135, 136],
     "id": 24
   },
   {
     "name": "Gateway Garden",
     "position": [ 1865, 2066 ],
-    "connections": [],
+    "connections": [147],
     "id": 25
   },
   {
     "name": "University Crossings Student Apartments",
     "position": [ 1882, 2022 ],
-    "connections": [],
+    "connections": [136],
     "id": 26
   },
   {
     "name": "General Services Building",
     "position": [ 1394, 2154 ],
-    "connections": [],
+    "connections": [145, 152],
     "id": 27
   },
   {
     "name": "Kline Law Building",
     "position": [ 1463, 2158 ],
-    "connections": [],
+    "connections": [145, 146],
     "id": 28
   },
   {
     "name": "W.W. Hagerty Library",
     "position": [ 1541, 2170 ],
-    "connections": [],
+    "connections": [146],
     "id": 29
   },
   {
     "name": "Pearlstein Business Learning Center",
     "position": [ 1735, 2180 ],
-    "connections": [],
+    "connections": [147],
     "id": 30
   },
   {
     "name": "Paul Peck Alumni Center",
     "position": [ 1967, 2225 ],
-    "connections": [],
+    "connections": [148],
     "id": 31
   },
   {
     "name": "LeBow Engineering Center College of Engineering",
     "position": [ 2147, 2244 ],
-    "connections": [],
+    "connections": [149],
     "id": 32
   },
   {
     "name": "Center for Automation Technology",
     "position": [ 2151, 2313 ],
-    "connections": [],
+    "connections": [159],
     "id": 33
   },
   {
     "name": "The Study Hotel Building",
     "position": [ 1549, 2315 ],
-    "connections": [],
+    "connections": [153, 157],
     "id": 34
   },
   {
     "name": "Papadakis Integrated Sciences Building",
     "position": [ 1641, 2321 ],
-    "connections": [],
+    "connections": [153, 157],
     "id": 35
   },
   {
     "name": "Stratton Hall",
     "position": [ 1831, 2397 ],
-    "connections": [],
+    "connections": [158],
     "id": 36
   },
   {
     "name": "Chestnut Square (facing Papadakis)",
     "position": [ 1637, 2443 ],
-    "connections": [],
+    "connections": [157],
     "id": 37
   },
   {
     "name": "MacAlister Hall College of Arts and Sciences",
     "position": [ 1623, 2486 ],
-    "connections": [],
+    "connections": [157],
     "id": 38
   },
   {
     "name": "Mandell Theater",
     "position": [ 1692, 2523 ],
-    "connections": [],
+    "connections": [157],
     "id": 39
   },
   {
     "name": "James Creese Student Center",
     "position": [ 1794, 2505 ],
-    "connections": [],
+    "connections": [158],
     "id": 40
   },
   {
     "name": "Chestnut Square (facing Stratton)",
     "position": [ 1794, 2505 ],
-    "connections": [],
+    "connections": [158],
     "id": 41
   },
   {
     "name": "Main Building",
     "position": [ 1982, 2392 ],
-    "connections": [],
+    "connections": [43, 158, 160],
     "id": 42
   },
   {
     "name": "Randell Hall",
     "position": [ 2047, 2403 ],
-    "connections": [],
+    "connections": [42, 44],
     "id": 43
   },
   {
     "name": "Curtis Hall",
     "position": [ 2112, 2413 ],
-    "connections": [],
+    "connections": [43, 45],
     "id": 44
   },
   {
     "name": "Alumni Engineering Labs",
     "position": [ 2141, 2413 ],
-    "connections": [],
+    "connections": [44, 159],
     "id": 45
   },
   {
     "name": "Korman Center",
     "position": [ 1720, 2268 ],
-    "connections": [],
+    "connections": [153],
     "id": 46
   },
   {
     "name": "Bossone Research Enterprise Center",
     "position": [ 2049, 2252 ],
-    "connections": [],
+    "connections": [148],
     "id": 47
   },
   {
     "name": "Disque Hall",
     "position": [ 1869, 2332 ],
-    "connections": [],
+    "connections": [160],
     "id": 48
   },
   {
     "name": "LeBow Hall (College of Business)",
     "position": [ 1835, 2205 ],
-    "connections": [],
+    "connections": [147],
     "id": 49
   },
   {
     "name": "3675 Market Street (College of Computing and Informatics Building)",
     "position": [ 495, 1863 ],
-    "connections": [],
+    "connections": [142],
     "id": 50
   },
   {
     "name": "Health Science Building",
     "position": [ 622, 1774 ],
-    "connections": [],
+    "connections": [131, 133, 137, 138],
     "id": 51
   },
   {
@@ -356,7 +356,7 @@
       1420,
       1286
     ],
-    "connections": [ 1, 104, 114 ],
+    "connections": [ 1, 2, 4, 104, 114 ],
     "id": 105
   },
   {
@@ -437,7 +437,7 @@
       1424,
       1548
     ],
-    "connections": [7, 105, 113, 115, 125],
+    "connections": [7, 6, 105, 113, 115, 125],
     "id": 114
   },
   {
@@ -536,7 +536,7 @@
       1413,
       1617
     ],
-    "connections": [8, 114, 126, 128],
+    "connections": [8, 11, 114, 126, 128],
     "id": 125
   },
   {
@@ -545,7 +545,7 @@
       1663,
       1636
     ],
-    "connections": [],
+    "connections": [9, 12, 115, 125, 127, 129],
     "id": 126
   },
   {
@@ -554,7 +554,7 @@
       1864,
       1646
     ],
-    "connections": [],
+    "connections": [14, 15, 119, 126, 130],
     "id": 127
   },
   {
@@ -563,7 +563,7 @@
       1398,
       1716
     ],
-    "connections": [],
+    "connections": [125, 129, 134],
     "id": 128
   },
   {
@@ -572,7 +572,7 @@
       1672,
       1760
     ],
-    "connections": [],
+    "connections": [13, 126, 128, 130, 135],
     "id": 129
   },
   {
@@ -581,7 +581,7 @@
       1841,
       1787
     ],
-    "connections": [],
+    "connections": [19, 127, 129, 136],
     "id": 130
   },
   {
@@ -590,7 +590,7 @@
       468,
       1701
     ],
-    "connections": [],
+    "connections": [51, 108, 133, 137],
     "id": 131
   },
   {
@@ -599,7 +599,7 @@
       808,
       1631
     ],
-    "connections": [],
+    "connections": [121, 133],
     "id": 132
   },
   {
@@ -608,7 +608,7 @@
       787,
       1756
     ],
-    "connections": [],
+    "connections": [51, 131, 132, 138],
     "id": 133
   },
   {
@@ -617,7 +617,7 @@
       1380,
       1818
     ],
-    "connections": [],
+    "connections": [17, 124, 128, 141],
     "id": 134
   },
   {
@@ -626,7 +626,7 @@
       1654,
       1891
     ],
-    "connections": [],
+    "connections": [18, 24, 129, 136, 146],
     "id": 135
   },
   {
@@ -635,7 +635,7 @@
       1820,
       1920
     ],
-    "connections": [],
+    "connections": [24, 26, 130, 135, 147],
     "id": 136
   },
   {
@@ -644,7 +644,7 @@
       444,
       1795
     ],
-    "connections": [],
+    "connections": [51, 131, 138, 142],
     "id": 137
   },
   {
@@ -653,7 +653,7 @@
       775,
       1848
     ],
-    "connections": [],
+    "connections": [51, 133, 137, 139, 143],
     "id": 138
   },
   {
@@ -662,7 +662,7 @@
       985,
       1885
     ],
-    "connections": [],
+    "connections": [16, 20, 123, 138, 140, 144],
     "id": 139
   },
   {
@@ -671,7 +671,7 @@
       1314,
       1932
     ],
-    "connections": [],
+    "connections": [17, 21, 123, 139, 141],
     "id": 140
   },
   {
@@ -680,7 +680,7 @@
       1360,
       1942
     ],
-    "connections": [],
+    "connections": [134, 140, 145],
     "id": 141
   },
   {
@@ -689,7 +689,7 @@
       420,
       1931
     ],
-    "connections": [],
+    "connections": [50, 137, 143, 150],
     "id": 142
   },
   {
@@ -698,7 +698,7 @@
       753,
       1985
     ],
-    "connections": [],
+    "connections": [138, 142, 144],
     "id": 143
   },
   {
@@ -707,7 +707,7 @@
       963,
       2018
     ],
-    "connections": [],
+    "connections": [20, 139, 143, 145, 151],
     "id": 144
   },
   {
@@ -716,7 +716,7 @@
       1343,
       2078
     ],
-    "connections": [],
+    "connections": [22, 27, 28, 141, 144, 146, 152],
     "id": 145
   },
   {
@@ -725,7 +725,7 @@
       1616,
       2122
     ],
-    "connections": [],
+    "connections": [23, 28, 29, 135, 145, 147, 153],
     "id": 146
   },
   {
@@ -734,7 +734,7 @@
       1787,
       2150
     ],
-    "connections": [],
+    "connections": [25, 30, 49, 136, 146, 148],
     "id": 147
   },
   {
@@ -743,7 +743,7 @@
       1948,
       2174
     ],
-    "connections": [],
+    "connections": [31, 47, 149, 160],
     "id": 148
   },
   {
@@ -752,7 +752,7 @@
       2196,
       2216
     ],
-    "connections": [],
+    "connections": [32, 148, 159],
     "id": 149
   },
   {
@@ -761,7 +761,7 @@
       392,
       2071
     ],
-    "connections": [],
+    "connections": [142, 151, 154],
     "id": 150
   },
   {
@@ -770,7 +770,7 @@
       940,
       2162
     ],
-    "connections": [],
+    "connections": [144, 150, 152, 155],
     "id": 151
   },
   {
@@ -779,7 +779,7 @@
       1316,
       2223
     ],
-    "connections": [],
+    "connections": [27, 145, 151, 153, 156],
     "id": 152
   },
   {
@@ -788,7 +788,7 @@
       1597,
       2267
     ],
-    "connections": [],
+    "connections": [34, 35, 46, 152, 157],
     "id": 153
   },
   {
@@ -797,7 +797,7 @@
       373,
       2208
     ],
-    "connections": [],
+    "connections": [150, 155],
     "id": 154
   },
   {
@@ -806,7 +806,7 @@
       918,
       2296
     ],
-    "connections": [],
+    "connections": [151, 154, 156],
     "id": 155
   },
   {
@@ -815,7 +815,7 @@
       1292,
       2357
     ],
-    "connections": [],
+    "connections": [152, 155, 157],
     "id": 156
   },
   {
@@ -824,7 +824,7 @@
       1580,
       2402
     ],
-    "connections": [],
+    "connections": [34, 35, 37, 38, 39, 153, 156, 158],
     "id": 157
   },
   {
@@ -833,7 +833,7 @@
       1893,
       2453
     ],
-    "connections": [],
+    "connections": [36, 40, 41, 42, 157, 160],
     "id": 158
   },
   {
@@ -842,7 +842,7 @@
       2170,
       2365
     ],
-    "connections": [],
+    "connections": [33, 45, 149, 160],
     "id": 159
   },
   {
@@ -851,7 +851,7 @@
       1968,
       2335
     ],
-    "connections": [],
+    "connections": [42, 48, 148, 158, 159],
     "id": 160
   }
 ]

@@ -205,6 +205,18 @@ function getNode(input) {
     return; // Return null for unknown input
 }
 
+// Toggles connections on and off
+var connectionson = false
+function toggleconnections() {
+    if (connectionson) {
+        connectionson = false
+    }
+    else {
+        connectionson = true
+    }
+    draw() // "Refreshes" the page
+}
+
 // Canvas
 const canvas = document.getElementById('mapCanvas');
 const ctx = canvas.getContext('2d');
@@ -258,9 +270,13 @@ function draw() {
 
         // Draw all the points and connections
         for (var node of nodes) {
-            node.drawCircle(ctx, offsetX, offsetY, scale, "green");
-            node.drawConnections(ctx, offsetX, offsetY, scale);
-            node.drawText(ctx, offsetX, offsetY, scale);
+            
+            if (connectionson) {
+                node.drawCircle(ctx, offsetX, offsetY, scale, "green");
+                node.drawConnections(ctx, offsetX, offsetY, scale);
+                node.drawText(ctx, offsetX, offsetY, scale);
+            }
+            
         }
 
         try {
@@ -339,7 +355,7 @@ document.addEventListener('keydown', e => {
 });
 
 /* Uncomment when you want to add points to the map,
-make sure to the id and update the starting id accordingly */
+make sure to the id and update the starting id accordingly 
 
 startingid = 160 // Must be +1 of last id in json
 
@@ -383,3 +399,4 @@ function downloadJsonFile() {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
 }
+*/
