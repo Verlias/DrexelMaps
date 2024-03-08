@@ -114,6 +114,12 @@ class Node {
             this.drawTo(ctx, offsetX, offsetY, scale, item, "black")
         }
     }
+
+    drawText(ctx, offsetX, offsetY, scale) {
+        let newPos = this.getShifted(offsetX, offsetY, scale);
+        ctx.font = "12px Arial";
+        ctx.fillText(String(this.id), newPos[0], newPos[1])
+    }
 }
 
 class PriorityQueue {
@@ -216,6 +222,8 @@ let offsetX = -100;
 let offsetY = -500;
 let scale = .5;
 
+// For adding points to the map
+points = []
 
 var destinationstart = document.getElementById("destinationstart");
 const DestStart = destinationstart.textContent;
@@ -237,20 +245,22 @@ fetchNodes().then(nodes => {
     stack.astar(); // Creates linked list of fastest route with head being the end node
 
     // Initial draw
-    draw()
+    draw();
 });
 
 // Draw map image
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(mapImage, offsetX, offsetY, mapImage.width * scale, mapImage.height * scale);
 
     // Waits to draw until nodes have been fetched from json
     if (nodes.length != 0) {
+        ctx.drawImage(mapImage, offsetX, offsetY, mapImage.width * scale, mapImage.height * scale);
+
         // Draw all the points and connections
         for (var node of nodes) {
             node.drawCircle(ctx, offsetX, offsetY, scale, "green");
             node.drawConnections(ctx, offsetX, offsetY, scale);
+            node.drawText(ctx, offsetX, offsetY, scale);
         }
 
         try {
@@ -264,6 +274,17 @@ function draw() {
     }
     else {
         console.log("JSON loading... Try panning the page to refresh");
+    }
+
+    for (point of points) {
+        var newX = Math.floor((point.position[0] * scale + offsetX));
+        var newY = Math.floor((point.position[1] * scale + offsetY));
+        ctx.beginPath();
+        ctx.arc(newX, newY, 3, 0, 2 * Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+        ctx.closePath();
+
     }
 }
 
@@ -316,3 +337,49 @@ document.addEventListener('keydown', e => {
     }
     draw();
 });
+
+/* Uncomment when you want to add points to the map,
+make sure to the id and update the starting id accordingly */
+
+startingid = 160 // Must be +1 of last id in json
+
+// Left click to add point
+document.addEventListener('click', function(event) {
+    var rect = canvas.getBoundingClientRect();
+    var xnative = Math.floor(((event.clientX - rect.left) - offsetX)/scale); 
+    var ynative = Math.floor(((event.clientY - rect.top) - offsetY)/scale);
+
+    points.push({ name: "road", position: [xnative, ynative], connections: [], id: startingid });
+    startingid = startingid + 1;
+    draw();
+});
+
+// Right click to delete last point
+document.addEventListener('contextmenu', function (event) {
+    points.pop()
+    startingid = startingid - 1;
+    draw();
+});
+
+// To save points created press s
+document.addEventListener('keydown', function (event) {
+    if (event.key == 's') {
+        console.log("Update startingid to: " + String(startingid));
+        downloadJsonFile();
+    };
+});
+
+// Downloads a json file that you can copy paste to end of actual json
+function downloadJsonFile() {
+    var jsonContent = JSON.stringify(points, null, 2);
+    var blob = new Blob([jsonContent], { type: "application/json" });
+    var url = URL.createObjectURL(blob);
+
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'road_locations.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}

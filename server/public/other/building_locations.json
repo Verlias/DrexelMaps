@@ -2,79 +2,79 @@
   {
     "name": "Ross Commons",
     "position": [ 1456, 1326 ],
-    "connections": [ 2, 4 ],
+    "connections": [ 105 ],
     "id": 1
   },
   {
     "name": "Van Rensselaer Hall",
     "position": [ 1506, 1324 ],
-    "connections": [ 1, 3 ],
+    "connections": [ ],
     "id": 2
   },
   {
     "name": "PSA Building",
     "position": [ 1679, 1310 ],
-    "connections": [ 2, 4, 5 ],
+    "connections": [ ],
     "id": 3
   },
   {
     "name": "Millennium Hall",
     "position": [ 1474, 1400 ],
-    "connections": [ 1, 3, 6 ],
+    "connections": [ ],
     "id": 4
   },
   {
     "name": "Language and Communication Center",
     "position": [ 1681, 1385 ],
-    "connections": [ 3, 6, 10 ],
+    "connections": [ ],
     "id": 5
   },
   {
     "name": "Kelly Hall",
     "position": [ 1495, 1475 ],
-    "connections": [ 4, 5, 7 ],
+    "connections": [ ],
     "id": 6
   },
   {
     "name": "Northside Dining Terrace",
     "position": [ 1466, 1523 ],
-    "connections": [ 6, 8, 9 ],
+    "connections": [ ],
     "id": 7
   },
   {
     "name": "Raymond G. Perelman Center for Jewish Life",
     "position": [ 1364, 1596 ],
-    "connections": [ 7, 9, 11 ],
+    "connections": [ ],
     "id": 8
   },
   {
     "name": "Race Street Residences",
     "position": [ 1593, 1598 ],
-    "connections": [ 7, 8, 10, 11, 12, 13 ],
+    "connections": [ ],
     "id": 9
   },
   {
     "name": "North Hall",
     "position": [ 1821, 1556 ],
-    "connections": [ 5, 9 ],
+    "connections": [ ],
     "id": 10
   },
   {
     "name": "Towers Hall",
     "position": [ 1451, 1652 ],
-    "connections": [ 8, 9, 12 ],
+    "connections": [ ],
     "id": 11
   },
   {
     "name": "Bentley Hall and Pennoni Honors College",
     "position": [ 1583, 1652 ],
-    "connections": [ 9, 11, 13 ],
+    "connections": [ ],
     "id": 12
   },
   {
     "name": "3210 Cherry Street",
     "position": [ 1708, 1725 ],
-    "connections": [ 9, 12 ],
+    "connections": [ ],
     "id": 13
   },
   {
@@ -120,7 +120,7 @@
     "id": 20
   },
   {
-    "name": "School of Education, Drexel Student Health Center",
+    "name": "3401 Market Street School of Education",
     "position": [ 1307, 1987 ],
     "connections": [],
     "id": 21
@@ -307,80 +307,551 @@
   },
   {
     "name": "road",
-    "position": [ 1420, 1291 ],
-    "connections": [],
+    "position": [
+      546,
+      1405
+    ],
+    "connections": [101, 108],
+    "id": 100
+  },
+  {
+    "name": "road",
+    "position": [
+      740,
+      1382
+    ],
+    "connections": [100, 102, 110],
     "id": 101
   },
   {
     "name": "road",
-    "position": [ 1508, 1269 ],
-    "connections": [],
+    "position": [
+      812,
+      1373
+    ],
+    "connections": [101, 109, 103],
     "id": 102
   },
   {
     "name": "road",
-    "position": [ 1633, 1310 ],
-    "connections": [],
+    "position": [
+      1013,
+      1343
+    ],
+    "connections": [ 102, 104, 112 ],
     "id": 103
   },
   {
     "name": "road",
-    "position": [ 1425, 1400 ],
-    "connections": [],
+    "position": [
+      1186,
+      1320
+    ],
+    "connections": [ 103, 104, 113 ],
     "id": 104
   },
   {
     "name": "road",
-    "position": [ 1637, 1382 ],
-    "connections": [],
+    "position": [
+      1420,
+      1286
+    ],
+    "connections": [ 1, 104, 114 ],
     "id": 105
   },
   {
     "name": "road",
-    "position": [ 1426, 1474 ],
-    "connections": [],
+    "position": [
+      1622,
+      1258
+    ],
+    "connections": [3, 105, 107, 115],
     "id": 106
   },
   {
     "name": "road",
-    "position": [ 1422, 1534 ],
-    "connections": [],
+    "position": [
+      1728,
+      1243
+    ],
+    "connections": [106, 116],
     "id": 107
   },
   {
     "name": "road",
-    "position": [ 1413, 1608 ],
-    "connections": [],
+    "position": [
+      514,
+      1522
+    ],
+    "connections": [100, 120, 131],
     "id": 108
   },
   {
     "name": "road",
-    "position": [ 1587, 1630 ],
-    "connections": [],
+    "position": [
+      821,
+      1410
+    ],
+    "connections": [102, 110],
     "id": 109
   },
   {
     "name": "road",
-    "position": [ 1803, 1533 ],
-    "connections": [],
+    "position": [
+      807,
+      1430
+    ],
+    "connections": [101, 111],
     "id": 110
   },
   {
     "name": "road",
-    "position": [ 1408, 1647 ],
-    "connections": [],
+    "position": [
+      887,
+      1485
+    ],
+    "connections": [110, 121, 122],
     "id": 111
   },
   {
     "name": "road",
-    "position": [ 1578, 1741 ],
-    "connections": [],
+    "position": [
+      1044,
+      1560
+    ],
+    "connections": [103, 113, 122],
     "id": 112
   },
   {
     "name": "road",
-    "position": [ 1720, 1764 ],
-    "connections": [],
+    "position": [
+      1201,
+      1557
+    ],
+    "connections": [104, 112, 114, 124],
     "id": 113
+  },
+  {
+    "name": "road",
+    "position": [
+      1424,
+      1548
+    ],
+    "connections": [7, 105, 113, 115, 125],
+    "id": 114
+  },
+  {
+    "name": "road",
+    "position": [
+      1653,
+      1538
+    ],
+    "connections": [106, 114, 118, 126],
+    "id": 115
+  },
+  {
+    "name": "road",
+    "position": [
+      1745,
+      1355
+    ],
+    "connections": [5, 107, 117],
+    "id": 116
+  },
+  {
+    "name": "road",
+    "position": [
+      1756,
+      1443
+    ],
+    "connections": [116, 118],
+    "id": 117
+  },
+  {
+    "name": "road",
+    "position": [
+      1766,
+      1535
+    ],
+    "connections": [115, 117, 119],
+    "id": 118
+  },
+  {
+    "name": "road",
+    "position": [
+      1882,
+      1534
+    ],
+    "connections": [10, 118, 127],
+    "id": 119
+  },
+  {
+    "name": "road",
+    "position": [
+      776,
+      1570
+    ],
+    "connections": [108, 121],
+    "id": 120
+  },
+  {
+    "name": "road",
+    "position": [
+      820,
+      1594
+    ],
+    "connections": [111, 120, 123, 132],
+    "id": 121
+  },
+  {
+    "name": "road",
+    "position": [
+      1031,
+      1581
+    ],
+    "connections": [111, 112, 123, 124],
+    "id": 122
+  },
+  {
+    "name": "road",
+    "position": [
+      1010,
+      1720
+    ],
+    "connections": [16, 121, 122, 139, 140],
+    "id": 123
+  },
+  {
+    "name": "road",
+    "position": [
+      1207,
+      1702
+    ],
+    "connections": [113, 122, 134],
+    "id": 124
+  },
+  {
+    "name": "road",
+    "position": [
+      1413,
+      1617
+    ],
+    "connections": [8, 114, 126, 128],
+    "id": 125
+  },
+  {
+    "name": "road",
+    "position": [
+      1663,
+      1636
+    ],
+    "connections": [],
+    "id": 126
+  },
+  {
+    "name": "road",
+    "position": [
+      1864,
+      1646
+    ],
+    "connections": [],
+    "id": 127
+  },
+  {
+    "name": "road",
+    "position": [
+      1398,
+      1716
+    ],
+    "connections": [],
+    "id": 128
+  },
+  {
+    "name": "road",
+    "position": [
+      1672,
+      1760
+    ],
+    "connections": [],
+    "id": 129
+  },
+  {
+    "name": "road",
+    "position": [
+      1841,
+      1787
+    ],
+    "connections": [],
+    "id": 130
+  },
+  {
+    "name": "road",
+    "position": [
+      468,
+      1701
+    ],
+    "connections": [],
+    "id": 131
+  },
+  {
+    "name": "road",
+    "position": [
+      808,
+      1631
+    ],
+    "connections": [],
+    "id": 132
+  },
+  {
+    "name": "road",
+    "position": [
+      787,
+      1756
+    ],
+    "connections": [],
+    "id": 133
+  },
+  {
+    "name": "road",
+    "position": [
+      1380,
+      1818
+    ],
+    "connections": [],
+    "id": 134
+  },
+  {
+    "name": "road",
+    "position": [
+      1654,
+      1891
+    ],
+    "connections": [],
+    "id": 135
+  },
+  {
+    "name": "road",
+    "position": [
+      1820,
+      1920
+    ],
+    "connections": [],
+    "id": 136
+  },
+  {
+    "name": "road",
+    "position": [
+      444,
+      1795
+    ],
+    "connections": [],
+    "id": 137
+  },
+  {
+    "name": "road",
+    "position": [
+      775,
+      1848
+    ],
+    "connections": [],
+    "id": 138
+  },
+  {
+    "name": "road",
+    "position": [
+      985,
+      1885
+    ],
+    "connections": [],
+    "id": 139
+  },
+  {
+    "name": "road",
+    "position": [
+      1314,
+      1932
+    ],
+    "connections": [],
+    "id": 140
+  },
+  {
+    "name": "road",
+    "position": [
+      1360,
+      1942
+    ],
+    "connections": [],
+    "id": 141
+  },
+  {
+    "name": "road",
+    "position": [
+      420,
+      1931
+    ],
+    "connections": [],
+    "id": 142
+  },
+  {
+    "name": "road",
+    "position": [
+      753,
+      1985
+    ],
+    "connections": [],
+    "id": 143
+  },
+  {
+    "name": "road",
+    "position": [
+      963,
+      2018
+    ],
+    "connections": [],
+    "id": 144
+  },
+  {
+    "name": "road",
+    "position": [
+      1343,
+      2078
+    ],
+    "connections": [],
+    "id": 145
+  },
+  {
+    "name": "road",
+    "position": [
+      1616,
+      2122
+    ],
+    "connections": [],
+    "id": 146
+  },
+  {
+    "name": "road",
+    "position": [
+      1787,
+      2150
+    ],
+    "connections": [],
+    "id": 147
+  },
+  {
+    "name": "road",
+    "position": [
+      1948,
+      2174
+    ],
+    "connections": [],
+    "id": 148
+  },
+  {
+    "name": "road",
+    "position": [
+      2196,
+      2216
+    ],
+    "connections": [],
+    "id": 149
+  },
+  {
+    "name": "road",
+    "position": [
+      392,
+      2071
+    ],
+    "connections": [],
+    "id": 150
+  },
+  {
+    "name": "road",
+    "position": [
+      940,
+      2162
+    ],
+    "connections": [],
+    "id": 151
+  },
+  {
+    "name": "road",
+    "position": [
+      1316,
+      2223
+    ],
+    "connections": [],
+    "id": 152
+  },
+  {
+    "name": "road",
+    "position": [
+      1597,
+      2267
+    ],
+    "connections": [],
+    "id": 153
+  },
+  {
+    "name": "road",
+    "position": [
+      373,
+      2208
+    ],
+    "connections": [],
+    "id": 154
+  },
+  {
+    "name": "road",
+    "position": [
+      918,
+      2296
+    ],
+    "connections": [],
+    "id": 155
+  },
+  {
+    "name": "road",
+    "position": [
+      1292,
+      2357
+    ],
+    "connections": [],
+    "id": 156
+  },
+  {
+    "name": "road",
+    "position": [
+      1580,
+      2402
+    ],
+    "connections": [],
+    "id": 157
+  },
+  {
+    "name": "road",
+    "position": [
+      1893,
+      2453
+    ],
+    "connections": [],
+    "id": 158
+  },
+  {
+    "name": "road",
+    "position": [
+      2170,
+      2365
+    ],
+    "connections": [],
+    "id": 159
+  },
+  {
+    "name": "road",
+    "position": [
+      1968,
+      2335
+    ],
+    "connections": [],
+    "id": 160
   }
 ]
