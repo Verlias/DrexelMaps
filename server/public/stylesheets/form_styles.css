@@ -29,6 +29,13 @@ input {
     border-radius: 4px;
 }
 
+input[type="text"]{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px
+}
+
 .submit {
     background-color: #FFC200;
     color: #003882;
@@ -44,6 +51,7 @@ input {
     color: #FFC200;
 }
 
+/*
 .autofill {
     width: 100%;
     padding: 10px 20px;
@@ -53,6 +61,38 @@ input {
 }
 
 .autofill:hover {
+    background-color: #FFC200;
+    color: #003882;
+}
+*/
+ul {
+    list-style: none;
+}
+
+.list-names1 {
+    list-style: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    text-align: left;
+}
+
+.list-names1:hover {
+    background-color: #FFC200;
+    color: #003882;
+}
+
+.list-names2 {
+    list-style: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    text-align: left;
+}
+
+.list-names2:hover {
     background-color: #FFC200;
     color: #003882;
 }

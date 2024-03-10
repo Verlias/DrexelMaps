@@ -1,19 +1,25 @@
 ﻿<%- include('header.html') -%>
 <div class="FormContainer">
-    <form id="textForm" action="" method="POST">
+    <form autocomplete="off" id="textForm" action="" method="POST">
         <label for="startdestination">Starting Class Location:</label>
         <input id="startdestination" name="startdestination" required>
-        <% location.forEach(function(user){ %>
+        <ul class="list1">
+
+        </ul>
+        <!--<% location.forEach(function(user){ %>
         <button class="autofill" type="button" onclick="fillinput1(this)"><%= user.name %></button>
-        <% }) %>
+        <% }) %>-->
 
         <p><%= err %></p>
 
         <label for="enddestination">Ending Class Location:</label>
         <input id="enddestination" name="enddestination" required>
-        <% location.forEach(function(user){ %>
+        <!--<% location.forEach(function(user){ %>
         <button class="autofill" type="button" onclick="fillinput2(this)"><%= user.name %></button>
-        <% }) %>
+        <% }) %>-->
+        <ul class="list2">
+
+        </ul>
         <p><%= err %></p>
         <button class="submit" type="submit">Submit</button>
     </form>
