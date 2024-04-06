@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+const cors = require('cors'); // Import the cors middleware
 const bodyparser = require('body-parser')
 
 var app = module.exports = express();
@@ -18,6 +19,7 @@ var app = module.exports = express();
 app.engine('.html', require('ejs').__express);
 
 app.use(bodyparser.urlencoded({ extended: true }))
+app.use(cors());
 app.use(bodyparser.json())
 
 // Optional since express defaults to CWD/views
@@ -149,6 +151,7 @@ app.post('/input/', (req, res) => {
     enddestination = req.body.enddestination;
     res.redirect('/map');
 })
+
 
 app.post('/map/', (req, res) => {
     classNumber = req.body.classNumber;
