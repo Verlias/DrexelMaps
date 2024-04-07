@@ -1,13 +1,13 @@
 // ----------Start of Classes---------- //
 class Node {
     constructor(name, position, connectionsbyid, id) {
-        this.name = name;                       // String (e.g. "Korman Center 111")
-        this.position = position;               // Tuple of floats (x,y)
-        this.connectionsbyid = connectionsbyid; // Array of integers
-        this.connections = [];                  // Array of Node objects
-        this.id = id                            // Integer id
-        this.heuristic = 999999;                // Used to track order in the queue
-        this.previous = null;                   // Node object (previous connection in A*)
+        this.name = name;               // String (e.g. "Korman Center 111")
+        this.position = position;       // Tuple of floats (x,y)
+        this.connectionsbyid = connectionsbyid; // Array of integer objects
+        this.connections = [];          // Arrat of Node objects
+        this.id = id
+        this.heuristic = 999999;        // Used to track order in the queue
+        this.previous = null;           // Node object (previous connection in A*)
     }
 
     // Getters
@@ -240,7 +240,6 @@ points = []
 var destinationstart = document.getElementById("destinationstart");
 const DestStart = destinationstart.textContent;
 var destinationend = document.getElementById("destinationend");
-console.log(document.getElementById("nodes"));
 const DestEnd = destinationend.textContent;
 var destinationNodeStart = null;
 var destinationNodeEnd = null;
@@ -356,9 +355,9 @@ document.addEventListener('keydown', e => {
 });
 
 /* Uncomment when you want to add points to the map,
-make sure to the id and update the starting id accordingly
+make sure to the id and update the starting id accordingly 
 
-startingid = 161 // Must be +1 of last id in json
+startingid = 160 // Must be +1 of last id in json
 
 // Left click to add point
 document.addEventListener('click', function(event) {
