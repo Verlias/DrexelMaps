@@ -240,6 +240,7 @@ points = []
 var destinationstart = document.getElementById("destinationstart");
 const DestStart = destinationstart.textContent;
 var destinationend = document.getElementById("destinationend");
+console.log(document.getElementById("nodes"));
 const DestEnd = destinationend.textContent;
 var destinationNodeStart = null;
 var destinationNodeEnd = null;

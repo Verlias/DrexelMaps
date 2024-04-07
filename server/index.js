@@ -2,6 +2,8 @@ var express = require('express');
 var path = require('path');
 const cors = require('cors'); // Import the cors middleware
 const bodyparser = require('body-parser')
+const { ObjectId } = require('mongodb')
+const { connectToDb, getDb } = require('./db')
 
 var app = module.exports = express();
 
@@ -96,10 +98,26 @@ var location = [
   //{ name: 'Chestnut Square B', id: '#Chestnut_Square_B'}
 ]
 
-
+// Global variables for input
 var startdestination = ""
 var enddestination = ""
 var classNumber = ""
+
+
+// db connection
+let db
+
+connectToDb((err) => {
+    if (!err) {
+        /* istanbul ignore next */
+        if (!module.parent) {
+            app.listen(3000);
+            console.log('Express started on port 3000');
+        }
+        db = getDb()
+    }
+})
+
 app.get('/', function (req, res) {
     res.render('users', {
         users: users,
@@ -165,17 +183,45 @@ app.post('/map-test/', (req, res) => {
     res.redirect('/floor');
 })
 
-app.get('/map', function (req, res) {
-    res.render('map', {
-        title: "Map",
-        ds: startdestination,
-        de: enddestination,
+/* Example of getting nodes from DB
+async function getNodesFromDB() {
+    let nodes = [];
+    const cursor = db.collection('nodes').find();
+
+    await cursor.forEach(node => {
+        nodes.push(node);
     });
+
+    return nodes;
+}
+*/
+
+app.get('/map', async function (req, res) {
+    try {
+        //let nodes = await getNodesFromDB();
+
+        res.render('map', {
+            title: "Map",
+            ds: startdestination,
+            de: enddestination,
+        });
+    } catch (error) {
+        console.error('Error retrieving nodes:', error);
+        // Handle the error appropriately, for example:
+        res.status(500).send('Internal Server Error');
+    }
 });
 
+app.get('/profile/:drexelid', (req, res) => {
 
-/* istanbul ignore next */
-if (!module.parent) {
-    app.listen(3000);
-    console.log('Express started on port 3000');
-}
+    db.collection('users')
+        .findOne({ drexelid: req.params.drexelid })
+        .then(doc => {
+            res.status(200).json(doc)
+        })
+        .catch(err => {
+            res.status(500).json({error: 'Could not fetch document'})
+        })
+})
+
+
