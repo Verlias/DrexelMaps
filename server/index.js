@@ -9,7 +9,8 @@ const mongoose = require('mongoose');
 var app = module.exports = express();
 const signupRoute = require('./signup');
 console.log('Express started on port 3000')
-const uri = "mongodb+srv://loganvoravong:606h6mKrlBLaHkFm@drexelmapusers.zzgb1wf.mongodb.net/?retryWrites=true&w=majority&appName=drexelmapusers";
+app.listen(3000)
+// const uri = "mongodb+srv://loganvoravong:606h6mKrlBLaHkFm@drexelmapusers.zzgb1wf.mongodb.net/?retryWrites=true&w=majority&appName=drexelmapusers";
 
 // Set the Stable API version in the MongoClientOptions object
 const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
