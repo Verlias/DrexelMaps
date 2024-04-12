@@ -2,10 +2,33 @@ var express = require('express');
 var path = require('path');
 const cors = require('cors'); // Import the cors middleware
 const bodyparser = require('body-parser')
-const { ObjectId } = require('mongodb')
-const { connectToDb, getDb } = require('./db')
+// const { ObjectId } = require('mongodb')
+// const { connectToDb, getDb } = require('./db')
+const mongoose = require('mongoose');
 
 var app = module.exports = express();
+const signupRoute = require('./signup');
+console.log('Express started on port 3000')
+const uri = "mongodb+srv://loganvoravong:606h6mKrlBLaHkFm@drexelmapusers.zzgb1wf.mongodb.net/?retryWrites=true&w=majority&appName=drexelmapusers";
+
+// Set the Stable API version in the MongoClientOptions object
+const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
+// Create a Mongoose client with a MongoClientOptions object to set the Stable API version
+mongoose.connect(uri, clientOptions)
+  .then(() => 
+  console.log('mongo connect successful'),
+  app.listen(3000))
+  .catch(error => console.error('mongo connect error:', error));
+  
+
+const signupSchema = new mongoose.Schema({
+  name: String,
+  email: String,
+  password: String,
+  confirmPassword: String
+});
+
+const Signup = mongoose.model('Signup', signupSchema);
 
 // Register ejs as .html. If we did
 // not call this, we would need to
@@ -105,18 +128,18 @@ var classNumber = ""
 
 
 // db connection
-let db
+// let db
 
-connectToDb((err) => {
-    if (!err) {
+// connectToDb((err) => {
+    // if (!err) {
         /* istanbul ignore next */
-        if (!module.parent) {
-            app.listen(3000);
-            console.log('Express started on port 3000');
-        }
-        db = getDb()
-    }
-})
+        // if (!module.parent) {
+            // app.listen(3000);
+            //console.log('Express started on port 3000');
+        // }
+        //db = getDb()
+    // }
+// })
 
 app.get('/', function (req, res) {
     res.render('users', {
@@ -224,4 +247,18 @@ app.get('/profile/:drexelid', (req, res) => {
         })
 })
 
+app.post('/api/signup', async (req, res) => {
 
+    const formData = req.body;
+    // Process the form data (e.g., save to a database)
+    try{
+      const newSignup = new Signup(formData);
+      await newSignup.save();
+  
+      console.log('Sign up data received:', formData);
+      res.send({ message: 'Sign up successful' });
+     } catch (error) {
+       console.error('error on mongo save', error);
+       res.status(500).send({ message: 'server error' });
+    }
+  });
