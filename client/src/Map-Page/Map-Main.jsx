@@ -29,7 +29,6 @@ function MapMain() {
         };
     }, []);
 
-
     return (
         <>
             <canvas id="mapCanvas"></canvas>
