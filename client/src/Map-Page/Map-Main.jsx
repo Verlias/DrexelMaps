@@ -1,56 +1,48 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios"; // Import Axios
+
 import styles from "./Map-Page.module.css";
 
-function MapMain(){
+function MapMain() {
+    const [data, setData] = useState({ ds: "Ross Commons", de: "Korman Center" });
+
     useEffect(() => {
+        // Fetch data from the backend
+        const fetchData = async () => {
+            try {
+                // Make a GET request to fetch data from localhost:3000/destinations/
+                const response = await axios.get("http://localhost:3000/destinations/");
+                // Update the state with the fetched data
+                setData(response.data);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+        fetchData();
+
         const script = document.createElement('script');
         script.src = "src/scripts/mapscript.js";
         script.async = true;
         document.body.appendChild(script);
         return () => {
-            document.body.removeChild(script)
-        }
-    })
+            document.body.removeChild(script);
+        };
+    }, []);
 
-    // Check if geolocation is available
-    if ("geolocation" in navigator) {
-        // Request current position
-        navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-    } 
-    else {
-        console.log("Geolocation is not supported by this browser.");
-    }
 
-    // Success callback function
-    function successCallback(position) {
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
-
-        document.getElementById("long").innerHTML = longitude;
-        document.getElementById("lat").innerHTML = latitude;
-        console.log("latitude: " + latitude);
-        console.log("longitude: " + longitude);
-    }
-
-    // Error callback function
-    function errorCallback(error) {
-        document.getElementById("long").innerHTML = "Location";
-        document.getElementById("lat").innerHTML = "Not Recieved";
-        console.error("Error getting user's location:", error);
-    }
-
-    return(
+    return (
         <>
-            <div className={styles.MapContentContainer}>
-            <p id="long">Longitude</p>
-            <p id="lat">Latitude</p>
-            <h1 className={styles.MapHeadline}>Our Interactive Map</h1>
-            <div className={styles.MapContainer}>
-                <canvas id="mapCanvas"></canvas>
-            </div>
-            </div>
+            <canvas id="mapCanvas"></canvas>
+            <div style={{ position: "absolute", bottom: 0 }} id="destinationstart">{data.ds}</div>
+            <div style={{ position: "absolute", bottom: "15px" }} id="destinationend">{data.de}</div>
+            <form id="textForm" action="" method="POST" style={{ position: "absolute", bottom: "40px", left: "40px" }}>
+                <label htmlFor="classNumber">Class Number:</label>
+                <input id="classNumber" name="classNumber" required />
+                <button className="submit" type="submit" style={{ marginTop: "10px" }}>Submit</button>
+            </form>
+            <button className="submit" type="submit" style={{ position: "absolute", bottom: "15px", right: "15px" }} >Toggle Connections</button>
         </>
     );
 };
 
-export default MapMain
+export default MapMain;
