@@ -264,3 +264,20 @@ app.post('/api/signup', async (req, res) => {
        res.status(500).send({ message: 'server error' });
     }
   });
+
+  app.get('/api/login', async (req, res) => {
+    const userData = req.body;
+
+    // Process the form data (e.g., save to a database)
+    try{  
+      console.log('Email received:', userData.email);
+      console.log('Password received:', userData.password)
+
+      if (true){
+        res.send({ message: 'Login successful' });
+      }
+     } catch (error) {
+       console.error('Could not find user', error);
+       res.status(500).send({ message: 'server error' });
+    }
+  });
