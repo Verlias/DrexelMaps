@@ -22,11 +22,11 @@ function Login(){
         setEmailError("Please enter an email");
       }
 
-      if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)){
+      if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(userData.email)){
         setEmailError("Invalid email")
       }
 
-      if (password === ""){
+      if (userData.password === ""){
         setPasswordError("Please enter a password");
       }
     }
