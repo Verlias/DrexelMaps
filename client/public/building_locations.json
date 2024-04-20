@@ -128,7 +128,7 @@
   {
     "name": "Recreation Center and Daskalakis Athletic Center",
     "position": [ 1441, 1995 ],
-    "connections": [ 145 ],
+    "connections": [ 145, 175, 178, 180 ],
     "id": 22
   },
   {
@@ -164,19 +164,19 @@
   {
     "name": "Kline Law Building",
     "position": [ 1463, 2158 ],
-    "connections": [ 145, 146 ],
+    "connections": [ 145, 146, 179 ],
     "id": 28
   },
   {
     "name": "W.W. Hagerty Library",
     "position": [ 1541, 2170 ],
-    "connections": [ 146 ],
+    "connections": [ 196 ],
     "id": 29
   },
   {
     "name": "Pearlstein Business Learning Center",
     "position": [ 1735, 2180 ],
-    "connections": [ 147 ],
+    "connections": [ 183, 185 ],
     "id": 30
   },
   {
@@ -212,7 +212,7 @@
   {
     "name": "Stratton Hall",
     "position": [ 1831, 2397 ],
-    "connections": [ 158 ],
+    "connections": [ 158, 193 ],
     "id": 36
   },
   {
@@ -248,7 +248,7 @@
   {
     "name": "Main Building",
     "position": [ 1982, 2392 ],
-    "connections": [ 43, 158, 160 ],
+    "connections": [ 43, 158 ],
     "id": 42
   },
   {
@@ -272,19 +272,19 @@
   {
     "name": "Korman Center",
     "position": [ 1720, 2268 ],
-    "connections": [ 153 ],
+    "connections": [ 186 ],
     "id": 46
   },
   {
     "name": "Bossone Research Enterprise Center",
     "position": [ 2049, 2252 ],
-    "connections": [ 148 ],
+    "connections": [ 189 ],
     "id": 47
   },
   {
     "name": "Disque Hall",
     "position": [ 1869, 2332 ],
-    "connections": [ 160 ],
+    "connections": [ 188, 193 ],
     "id": 48
   },
   {
@@ -617,7 +617,7 @@
       1380,
       1818
     ],
-    "connections": [ 17, 124, 128, 141 ],
+    "connections": [ 17, 124, 128, 141, 172, 174 ],
     "id": 134
   },
   {
@@ -680,7 +680,7 @@
       1360,
       1942
     ],
-    "connections": [ 134, 140, 145 ],
+    "connections": [ 134, 140, 145, 174 ],
     "id": 141
   },
   {
@@ -716,7 +716,7 @@
       1343,
       2078
     ],
-    "connections": [ 22, 27, 28, 141, 144, 146, 152 ],
+    "connections": [ 22, 27, 28, 141, 144, 146, 152, 179 ],
     "id": 145
   },
   {
@@ -725,7 +725,7 @@
       1616,
       2122
     ],
-    "connections": [ 23, 28, 29, 145, 147, 153, 161 ],
+    "connections": [ 23, 28, 145, 161, 178, 179, 181, 196 ],
     "id": 146
   },
   {
@@ -734,7 +734,7 @@
       1787,
       2150
     ],
-    "connections": [ 30, 49, 146, 148, 162],
+    "connections": [ 49, 148, 162, 163, 185, 197 ],
     "id": 147
   },
   {
@@ -743,7 +743,7 @@
       1948,
       2174
     ],
-    "connections": [ 31, 47, 149, 160 ],
+    "connections": [ 31, 149, 160, 189, 192 ],
     "id": 148
   },
   {
@@ -788,7 +788,7 @@
       1597,
       2267
     ],
-    "connections": [ 34, 35, 46, 152, 157 ],
+    "connections": [ 34, 35, 152, 157, 196 ],
     "id": 153
   },
   {
@@ -824,7 +824,7 @@
       1580,
       2402
     ],
-    "connections": [ 34, 35, 37, 38, 39, 153, 156, 158 ],
+    "connections": [ 34, 35, 37, 38, 39, 153, 156, 158, 195 ],
     "id": 157
   },
   {
@@ -833,7 +833,7 @@
       1893,
       2453
     ],
-    "connections": [ 36, 40, 41, 42, 157, 160 ],
+    "connections": [ 36, 40, 41, 42, 157, 195 ],
     "id": 158
   },
   {
@@ -851,7 +851,7 @@
       1968,
       2335
     ],
-    "connections": [ 42, 48, 148, 158, 159 ],
+    "connections": [ 148, 159 ],
     "id": 160
   },
   {
@@ -860,7 +860,7 @@
       1638,
       1975
     ],
-    "connections": [135, 146, 162, 164],
+    "connections": [ 135, 146, 162, 164 ],
     "id": 161
   },
   {
@@ -869,7 +869,7 @@
       1797,
       2081
     ],
-    "connections": [25, 136, 147, 161, 163],
+    "connections": [ 25, 136, 147, 161, 163 ],
     "id": 162
   },
   {
@@ -878,7 +878,7 @@
       1905,
       2167
     ],
-    "connections": [],
+    "connections": [ 147, 162, 192 ],
     "id": 163
   },
   {
@@ -887,7 +887,7 @@
       1625,
       1964
     ],
-    "connections": [],
+    "connections": [ 161, 165, 167 ],
     "id": 164
   },
   {
@@ -896,7 +896,7 @@
       1567,
       1987
     ],
-    "connections": [],
+    "connections": [ 164, 166, 176 ],
     "id": 165
   },
   {
@@ -905,7 +905,7 @@
       1502,
       1977
     ],
-    "connections": [],
+    "connections": [ 165, 167, 175 ],
     "id": 166
   },
   {
@@ -914,7 +914,7 @@
       1517,
       1894
     ],
-    "connections": [],
+    "connections": [ 161, 166, 168, 170 ],
     "id": 167
   },
   {
@@ -923,7 +923,7 @@
       1560,
       1850
     ],
-    "connections": [161, 169, 171],
+    "connections": [ 161, 169, 167, 171 ],
     "id": 168
   },
   {
@@ -932,7 +932,7 @@
       1580,
       1747
     ],
-    "connections": [128, 129, 168],
+    "connections": [ 128, 129, 168 ],
     "id": 169
   },
   {
@@ -941,7 +941,7 @@
       1468,
       1861
     ],
-    "connections": [],
+    "connections": [ 167, 171, 172, 174 ],
     "id": 170
   },
   {
@@ -950,7 +950,7 @@
       1511,
       1841
     ],
-    "connections": [],
+    "connections": [ 168, 170, 172 ],
     "id": 171
   },
   {
@@ -959,17 +959,8 @@
       1424,
       1830
     ],
-    "connections": [],
+    "connections": [ 134, 170, 171 ],
     "id": 172
-  },
-  {
-    "name": "road",
-    "position": [
-      1377,
-      1824
-    ],
-    "connections": [],
-    "id": 173
   },
   {
     "name": "road",
@@ -977,16 +968,16 @@
       1367,
       1892
     ],
-    "connections": [],
+    "connections": [ 134, 141, 170 ],
     "id": 174
   },
   {
-    "name": "road",
+    "name": "entrance",
     "position": [
       1498,
       2000
     ],
-    "connections": [],
+    "connections": [ 22, 166 ],
     "id": 175
   },
   {
@@ -995,7 +986,7 @@
       1565,
       2007
     ],
-    "connections": [],
+    "connections": [ 165, 177 ],
     "id": 176
   },
   {
@@ -1004,16 +995,16 @@
       1581,
       2015
     ],
-    "connections": [],
+    "connections": [ 176, 178 ],
     "id": 177
   },
   {
-    "name": "road",
+    "name": "entrance",
     "position": [
       1582,
       2077
     ],
-    "connections": [],
+    "connections": [ 22, 146, 177 ],
     "id": 178
   },
   {
@@ -1022,16 +1013,178 @@
       1475,
       2095
     ],
-    "connections": [],
+    "connections": [ 28, 145, 146, 180 ],
     "id": 179
   },
   {
-    "name": "road",
+    "name": "entrance",
     "position": [
       1480,
       2072
     ],
-    "connections": [],
+    "connections": [ 22, 179 ],
     "id": 180
+  },
+  {
+    "name": "road",
+    "position": [
+      1646,
+      2174
+    ],
+    "connections": [ 146, 182, 196, 197 ],
+    "id": 181
+  },
+  {
+    "name": "road",
+    "position": [
+      1682,
+      2210
+    ],
+    "connections": [ 181, 183 ],
+    "id": 182
+  },
+  {
+    "name": "entrrance",
+    "position": [
+      1724,
+      2218
+    ],
+    "connections": [ 30, 182, 184 ],
+    "id": 183
+  },
+  {
+    "name": "road",
+    "position": [
+      1766,
+      2228
+    ],
+    "connections": [ 183, 185, 186 ],
+    "id": 184
+  },
+  {
+    "name": "entrance",
+    "position": [
+      1772,
+      2194
+    ],
+    "connections": [ 30, 147, 184 ],
+    "id": 185
+  },
+  {
+    "name": "entrance",
+    "position": [
+      1780,
+      2274
+    ],
+    "connections": [ 46, 184, 187, 194 ],
+    "id": 186
+  },
+  {
+    "name": "road",
+    "position": [
+      1832,
+      2276
+    ],
+    "connections": [ 186, 188, 191, 193 ],
+    "id": 187
+  },
+  {
+    "name": "entrance",
+    "position": [
+      1866,
+      2280
+    ],
+    "connections": [ 48, 187, 189 ],
+    "id": 188
+  },
+  {
+    "name": "road",
+    "position": [
+      1946,
+      2294
+    ],
+    "connections": [ 47, 160, 188, 190 ],
+    "id": 189
+  },
+  {
+    "name": "entrance",
+    "position": [
+      1926,
+      2362
+    ],
+    "connections": [ 42, 158, 160, 89 ],
+    "id": 190
+  },
+  {
+    "name": "road",
+    "position": [
+      1924,
+      2208
+    ],
+    "connections": [ 187, 192 ],
+    "id": 191
+  },
+  {
+    "name": "road",
+    "position": [
+      1928,
+      2168
+    ],
+    "connections": [ 148, 163, 191 ],
+    "id": 192
+  },
+  {
+    "name": "entrance",
+    "position": [
+      1820,
+      2358
+    ],
+    "connections": [ 36, 48, 194 ],
+    "id": 193
+  },
+  {
+    "name": "road",
+    "position": [
+      1726,
+      2350
+    ],
+    "connections": [ 186, 193, 195 ],
+    "id": 194
+  },
+  {
+    "name": "road",
+    "position": [
+      1646,
+      2408
+    ],
+    "connections": [ 157, 158 ],
+    "id": 195
+  },
+  {
+    "name": "road",
+    "position": [
+      1606,
+      2176
+    ],
+    "connections": [ 29, 146, 153, 181 ],
+    "id": 196
+  },
+  {
+    "name": "road",
+    "position": [
+      1668,
+      2128
+    ],
+    "connections": [ 146, 181, 147 ],
+    "id": 197
+  },
+  {
+    "name": "road",
+    "position": [
+      1748,
+      1408
+    ],
+    "connections": [],
+    "id": 198
   }
 ]
