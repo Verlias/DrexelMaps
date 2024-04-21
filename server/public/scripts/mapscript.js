@@ -357,7 +357,7 @@ document.addEventListener('keydown', e => {
 /* Uncomment when you want to add points to the map,
 make sure to the id and update the starting id accordingly 
 
-startingid = 160 // Must be +1 of last id in json
+startingid = 181 // Must be +1 of last id in json
 
 // Left click to add point
 document.addEventListener('click', function(event) {
