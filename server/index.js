@@ -173,3 +173,21 @@ app.post('/api/signup', async (req, res) => {
        res.status(500).send({ message: 'server error' });
     }
   });
+
+  app.post('/api/login', async (req, res) => {
+    const userData = req.body;
+
+    // Finds existing user in database after receiving 
+    // email and password from the frontend login page.
+    try{  
+      console.log('Email received:', userData.email);
+      console.log('Password received:', userData.password);
+      const user = await Signup.findOne({'email': userData.email, 'password': userData.password}, 'email password');
+      if ((userData.email === user.email) && (userData.password === user.password)){
+        res.send({ message: 'Login successful' });
+      }
+     } catch (error) {
+       console.error('Could not find user', error);
+       res.status(500).send({ message: 'server error' });
+    }
+  });

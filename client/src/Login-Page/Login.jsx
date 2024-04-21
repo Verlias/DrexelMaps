@@ -37,14 +37,18 @@ function Login(){
       setUserData({ ...userData, [e.target.name]: e.target.value });
     };
       
-    const handleSubmit = async (e) => {
-      e.preventDefault(); // Prevent default form submission behavior
+    const handleSubmit = async (event) => {
+      event.preventDefault(); // Prevent default form submission behavior
       try {
           // Send form data to the backend using Axios GET request
-          const response = await axios.get("http://localhost:3000/api/login", userData);
+          const response = await axios({
+            url: "http://localhost:3000/api/login",
+            method: "POST",
+            data: userData
+          });
           console.log(response.data); // Log response from the backend
       } catch (error) {
-          console.error("Error signing up:", error);
+          console.log(error.toJSON());
       }
   };
 
