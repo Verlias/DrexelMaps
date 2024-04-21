@@ -139,55 +139,38 @@ app.get('/profile/:drexelid', (req, res) => {
         .catch(err => {
             res.status(500).json({error: 'Could not fetch document'})
         })
-})
+});
 
 app.post('/api/signup', async (req, res) => {
 
-    const formData = req.body;
-    // Process the form data (e.g., save to a database)
-    try{
-      const newSignup = new Signup(formData);
-      await newSignup.save();
+  const formData = req.body;
+  // Process the form data (e.g., save to a database)
+  try{
+    const newSignup = new Signup(formData);
+    await newSignup.save();
   
-      console.log('Sign up data received:', formData);
-      res.send({ message: 'Sign up successful' });
-     } catch (error) {
-       console.error('error on mongo save', error);
-       res.status(500).send({ message: 'server error' });
+    console.log('Sign up data received:', formData);
+    res.send({ message: 'Sign up successful' });
+    } catch (error) {
+      console.error('error on mongo save', error);
+      res.status(500).send({ message: 'server error' });
+  }
+});
+
+app.post('/api/login', async (req, res) => {
+  const userData = req.body;
+
+  // Finds existing user in database after receiving 
+  // email and password from the frontend login page.
+  try{  
+    console.log('Email received:', userData.email);
+    console.log('Password received:', userData.password);
+    const user = await Signup.findOne({'email': userData.email, 'password': userData.password}, 'email password');
+    if ((userData.email === user.email) && (userData.password === user.password)){
+      res.status(200).send({ message: "Login successful" });
+      console.log("Login successful");
     }
-  });
-
-  app.get('/api/login', async (req, res) => {
-    const userData = req.body;
-
-    // Process the form data (e.g., save to a database)
-    try{  
-      console.log('Email received:', userData.email);
-      console.log('Password received:', userData.password)
-
-      if (true){
-        res.send({ message: 'Login successful' });
-      }
-     } catch (error) {
-       console.error('Could not find user', error);
-       res.status(500).send({ message: 'server error' });
-    }
-  });
-
-  app.post('/api/login', async (req, res) => {
-    const userData = req.body;
-
-    // Finds existing user in database after receiving 
-    // email and password from the frontend login page.
-    try{  
-      console.log('Email received:', userData.email);
-      console.log('Password received:', userData.password);
-      const user = await Signup.findOne({'email': userData.email, 'password': userData.password}, 'email password');
-      if ((userData.email === user.email) && (userData.password === user.password)){
-        res.send({ message: 'Login successful' });
-      }
-     } catch (error) {
-       console.error('Could not find user', error);
-       res.status(500).send({ message: 'server error' });
-    }
-  });
+  } catch (error) {
+      res.status(500).send({ message: 'server error' });
+  }
+});

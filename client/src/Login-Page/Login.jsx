@@ -40,15 +40,16 @@ function Login(){
     const handleSubmit = async (event) => {
       event.preventDefault(); // Prevent default form submission behavior
       try {
-          // Send form data to the backend using Axios GET request
+          // Send user input to the backend using Axios POST request
           const response = await axios({
             url: "http://localhost:3000/api/login",
             method: "POST",
             data: userData
           });
-          console.log(response.data); // Log response from the backend
+          if (response.status === 200) navigate('/Profile');
       } catch (error) {
-          console.log(error.toJSON());
+          setPasswordError("The password you entered is not correct");
+          console.log("User does not exist");
       }
   };
 
