@@ -1,9 +1,53 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import {Link} from "react-router-dom";
 import styles from "./Profile.module.css";
 import Header from "../Components/Header";
+import buildingData from "./building_locations.json";
 
-function UserDash(){
+function UserDash() {
+    const [saveInput, setSaveInput] = useState("");
+    const [saveSuggestions, setSaveSuggestions] = useState([]);
+
+    useEffect(() => {
+        // Fetching building names from JSON data
+        const names = buildingData.map(building => building.name).filter(name => name !== 'road').sort();
+        setSaveSuggestions(names);
+    }, []);
+
+    const handleInputChange = (event, setValue, setSuggestions) => {
+        const { value } = event.target;
+        setValue(value);
+        if (value.trim() === '') {
+            setSuggestions(buildingData.map(building => building.name).filter(name => name !== 'road').sort());
+            return;
+        }
+        const filteredSuggestions = buildingData
+            .map(building => building.name)
+            .filter(name => name.toLowerCase().startsWith(value.toLowerCase()));
+        setSuggestions(filteredSuggestions);
+    };
+
+    const displayNames = (value, setValue, setSuggestions) => {
+        setValue(value);
+        setSuggestions([]);
+    };
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await axios.post('http://localhost:3000/save/', {
+                save: saveInput
+            });
+            console.log(response.data); // assuming backend sends some response
+            // If you want to navigate after successful submission, uncomment the following line:
+            // navigate('/map');
+        } catch (error) {
+            console.error("Error submitting data:", error);
+            // Handle error, show message to user, etc.
+        }
+    };
+
 
     return(
         <>
@@ -34,6 +78,18 @@ function UserDash(){
                     <div className={styles.profile_info}>
                     </div>
                 </div>
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="saveform">Save Class:</label>
+                    <input id="saveform" name="saveform" value={saveInput} onChange={(e) => handleInputChange(e, setSaveInput, setSaveSuggestions)} required />
+                    <ul className="list1">
+                        {saveSuggestions.map((name, index) => (
+                            <li key={index} className="list-names1" style={{ cursor: "pointer" }} onClick={() => displayNames(name, setSaveInput, setSaveSuggestions)}>
+                                <b>{name}</b>
+                            </li>
+                        ))}
+                    </ul>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </>
     )

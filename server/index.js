@@ -82,6 +82,10 @@ app.post('/input/', (req, res) => {
     res.redirect('/map');
 });
 
+app.post('/save/', (req, res) => {
+    console.log(req.body.save);
+})
+
 app.get('/destinations/', (req, res) => {
     res.json({
         ds: startdestination,
