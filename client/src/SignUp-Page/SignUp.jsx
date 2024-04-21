@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios"; // Import Axios for making HTTP requests
 import styles from "./SignUp.module.css";
 import Header from "../Components/Header.jsx";
+import { useNavigate } from "react-router-dom";
 
 function SignUp() {
     // State to store form data
@@ -12,6 +13,7 @@ function SignUp() {
         confirmPassword: "",
     });
 
+    const navigate = useNavigate();
     // Function to handle changes in form fields
     const handleChange = (e) => {
         // Update formData state with the new value of the changed input field
@@ -24,6 +26,7 @@ function SignUp() {
             // Send form data to the backend using Axios POST request
             const response = await axios.post("http://localhost:3000/api/signup", formData);
             console.log(response.data); // Log response from the backend
+            if (response.status === 200) navigate('/Profile');
         } catch (error) {
             console.error("Error signing up:", error);
         }

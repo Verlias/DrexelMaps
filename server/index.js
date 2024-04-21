@@ -150,7 +150,7 @@ app.post('/api/signup', async (req, res) => {
     await newSignup.save();
   
     console.log('Sign up data received:', formData);
-    res.send({ message: 'Sign up successful' });
+    res.status(200).send({ message: 'Sign up successful' });
     } catch (error) {
       console.error('error on mongo save', error);
       res.status(500).send({ message: 'server error' });
