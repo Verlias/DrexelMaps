@@ -84,9 +84,9 @@ function UserDash() {
                 </div>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="saveform">Save Class:</label>
-                    <input id="saveform" name="saveform" value={saveInput} onChange={(e) => handleInputChange(e, setSaveInput, setSaveSuggestions)} required />
                     <input type="text" placeholder="Nickname" value={nicknameInput} onChange={(e) => setNicknameInput(e.target.value)} required />
                     <input type="text" placeholder="Class Number" value={classNumberInput} onChange={(e) => setClassNumberInput(e.target.value)} required />
+                    <input id="saveform" name="saveform" value={saveInput} onChange={(e) => handleInputChange(e, setSaveInput, setSaveSuggestions)} required />
                     <ul className="list1">
                         {saveSuggestions.map((name, index) => (
                             <li key={index} className="list-names1" style={{ cursor: "pointer" }} onClick={() => displayNames(name, setSaveInput, setSaveSuggestions)}>

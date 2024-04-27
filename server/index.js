@@ -30,8 +30,8 @@ const signupSchema = new mongoose.Schema({
 
 const classSchema = new mongoose.Schema({
     nickname: String,
-    building: { type: String, required: true },
-    roomnumber: { type: String, required: true },
+    building: String,
+    roomnumber: String
 });
 
 const userclassesSchema = new mongoose.Schema({
@@ -42,7 +42,7 @@ const userclassesSchema = new mongoose.Schema({
 
 const Signup = mongoose.model('Signup', signupSchema);
 const Class = mongoose.model('Class', classSchema)
-const UserClass = mongoose.model('UserClass', classSchema)
+const UserClass = mongoose.model('UserClass', userclassesSchema)
 
 app.engine('.html', require('ejs').__express);
 
@@ -67,9 +67,14 @@ app.set('view engine', 'html');
 var startdestination = ""
 var enddestination = ""
 var classNumber = ""
+var currentuser = null
 
 app.get('/', function (req, res) {
     res.redirect('/input/');
+});
+
+app.get('/checkuser/', function (req, res) {
+    console.log(currentuser);
 });
 
 app.get('/input', function (req, res) {
@@ -156,20 +161,27 @@ app.get('/profile/:drexelid', (req, res) => {
 });
 
 app.post('/api/save', async (req, res) => {
+    if (currentuser != null) {
+        const formData = req.body;
+        // Process the form data (e.g., save to a database)
+        try {
+            const newClass = new Class(formData);
+            await newClass.save();
 
-    const formData = req.body;
-    console.log(formData);
-    // Process the form data (e.g., save to a database)
-    try {
-        const newClass = new Class(formData);
-        await newClass.save();
+            const newUserClass = new UserClass({ userId: currentuser._id, classId: newClass._id });
+            await newUserClass.save()
 
-        console.log('Save class data received:', formData);
-        res.status(200).send({ message: 'Save Successful' });
-    } catch (error) {
-        console.error('error on mongo save', error);
-        res.status(500).send({ message: 'server error' });
+            console.log('Save class data received:', formData);
+            res.status(200).send({ message: 'Save Successful' });
+        } catch (error) {
+            console.error('error on mongo save', error);
+            res.status(500).send({ message: 'server error' });
+        }
     }
+    else {
+        console.error('No user logged in')
+    }
+    
 });
 
 app.post('/api/signup', async (req, res) => {
@@ -199,7 +211,8 @@ app.post('/api/login', async (req, res) => {
     const user = await Signup.findOne({'email': userData.email, 'password': userData.password}, 'email password');
     if ((userData.email === user.email) && (userData.password === user.password)){
       res.status(200).send({ message: "Login successful" });
-      console.log("Login successful");
+        console.log("Login successful");
+        currentuser = user;
     }
   } catch (error) {
       res.status(500).send({ message: 'server error' });
