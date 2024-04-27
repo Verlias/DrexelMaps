@@ -28,7 +28,21 @@ const signupSchema = new mongoose.Schema({
   confirmPassword: String
 });
 
+const classSchema = new mongoose.Schema({
+    nickname: String,
+    building: { type: String, required: true },
+    roomnumber: { type: String, required: true },
+});
+
+const userclassesSchema = new mongoose.Schema({
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'Signup', required: true },
+    classId: { type: mongoose.Schema.Types.ObjectId, ref: 'Class', required: true }
+});
+
+
 const Signup = mongoose.model('Signup', signupSchema);
+const Class = mongoose.model('Class', classSchema)
+const UserClass = mongoose.model('UserClass', classSchema)
 
 app.engine('.html', require('ejs').__express);
 
@@ -139,6 +153,23 @@ app.get('/profile/:drexelid', (req, res) => {
         .catch(err => {
             res.status(500).json({error: 'Could not fetch document'})
         })
+});
+
+app.post('/api/save', async (req, res) => {
+
+    const formData = req.body;
+    console.log(formData);
+    // Process the form data (e.g., save to a database)
+    try {
+        const newClass = new Class(formData);
+        await newClass.save();
+
+        console.log('Save class data received:', formData);
+        res.status(200).send({ message: 'Save Successful' });
+    } catch (error) {
+        console.error('error on mongo save', error);
+        res.status(500).send({ message: 'server error' });
+    }
 });
 
 app.post('/api/signup', async (req, res) => {
