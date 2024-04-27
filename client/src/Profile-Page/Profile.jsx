@@ -10,11 +10,16 @@ function UserDash() {
     const [nicknameInput, setNicknameInput] = useState("");
     const [classNumberInput, setClassNumberInput] = useState("");
     const [saveSuggestions, setSaveSuggestions] = useState([]);
+    const [profileData, setProfileData] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         // Fetching building names from JSON data
         const names = buildingData.map(building => building.name).filter(name => name !== 'road').sort();
         setSaveSuggestions(names);
+        
+        // Fetch user profile data when the component mounts
+        fetchProfileData();
     }, []);
 
     const handleInputChange = (event, setValue, setSuggestions) => {
@@ -52,13 +57,25 @@ function UserDash() {
         }
     };
 
+    const fetchProfileData = async () => {
+        try {
+            // Fetch user profile data from the backend
+            const response = await axios.get('http://localhost:3000/api/profile');
+            // Set the fetched profile data in state
+            setProfileData(response.data);
+            setLoading(false);
+        } catch (error) {
+            console.error("Error fetching profile data:", error);
+            setLoading(false);
+        }
+    };
 
     return (
         <>
             <Header />
-            <div class={styles.container}>
+            <div className={styles.container}>
                 <div className={styles.header}>
-                    <img src="profile-pic.jpg" alt="Profile Picture"></img>
+                    <img src="profile-pic.jpg" alt="Profile Picture" />
                     <h1>Welcome Zacharius</h1>
                 </div>
                 <div className={styles.content}>
@@ -80,6 +97,18 @@ function UserDash() {
                         </ul>
                     </div>
                     <div className={styles.profile_info}>
+                        <h2>Profile Information</h2>
+                        {loading ? (
+                            <p>Loading profile...</p>
+                        ) : profileData ? (
+                            <div>
+                                <p>Name: {profileData.name}</p>
+                                <p>Email: {profileData.email}</p>
+                                {/* Display other profile information as needed */}
+                            </div>
+                        ) : (
+                            <p>No profile data available</p>
+                        )}
                     </div>
                 </div>
                 <form onSubmit={handleSubmit}>
