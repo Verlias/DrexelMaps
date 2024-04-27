@@ -218,3 +218,26 @@ app.post('/api/login', async (req, res) => {
       res.status(500).send({ message: 'server error' });
   }
 });
+
+
+app.get('/api/profile', async (req, res) => {
+    try {
+        // Ensure that the user is logged in before accessing their profile
+        if (!currentuser) {
+            return res.status(401).send({ message: "User not authenticated" });
+        }
+
+        // Fetch the user's profile information from the database
+        const userProfile = await Signup.findById(currentuser._id);
+
+        // If user profile found, send it in the response
+        if (userProfile) {
+            res.status(200).json(userProfile);
+        } else {
+            res.status(404).send({ message: "User profile not found" });
+        }
+    } catch (error) {
+        console.error("Error fetching user profile:", error);
+        res.status(500).send({ message: 'Server error' });
+    }
+});
