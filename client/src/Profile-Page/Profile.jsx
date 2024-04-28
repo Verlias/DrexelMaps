@@ -11,7 +11,9 @@ function UserDash() {
     const [classNumberInput, setClassNumberInput] = useState("");
     const [saveSuggestions, setSaveSuggestions] = useState([]);
     const [profileData, setProfileData] = useState(null);
+    const [savedClasses, setSavedClasses] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [loadingClasses, setLoadingClasses] = useState(true);
 
     useEffect(() => {
         // Fetching building names from JSON data
@@ -20,6 +22,7 @@ function UserDash() {
         
         // Fetch user profile data when the component mounts
         fetchProfileData();
+        fetchClassesData();
     }, []);
 
     const handleInputChange = (event, setValue, setSuggestions) => {
@@ -48,15 +51,17 @@ function UserDash() {
                 building: saveInput,
                 roomnumber: classNumberInput
             });
-            console.log(response.data); // assuming backend sends some response
-            // If you want to navigate after successful submission, uncomment the following line:
-            // navigate('/map');
+            window.location.reload();
         } catch (error) {
             console.error("Error submitting data:", error);
-            // Handle error, show message to user, etc.
         }
     };
 
+    const handleButtonClick = (classItem) => {
+        console.log(classItem);
+    };
+
+    // Gets the profile data
     const fetchProfileData = async () => {
         try {
             // Fetch user profile data from the backend
@@ -66,6 +71,20 @@ function UserDash() {
             setLoading(false);
         } catch (error) {
             console.error("Error fetching profile data:", error);
+            setLoading(false);
+        }
+    };
+
+    // Gets the saved classes
+    const fetchClassesData = async () => {
+        try {
+            // Fetch user saved classes data from the backend
+            const response = await axios.get('http://localhost:3000/api/saved');
+            // Set the saved classes data in state
+            setSavedClasses(response.data);
+            setLoadingClasses(false);
+        } catch (error) {
+            console.error("Error fetching saved classes:", error);
             setLoading(false);
         }
     };
@@ -108,6 +127,22 @@ function UserDash() {
                             </div>
                         ) : (
                             <p>No profile data available</p>
+                        )}
+
+                        <h2>Saved Classes</h2>
+                        {loadingClasses ? (
+                            <p>Loading Saved Classes</p>
+                        ) : savedClasses && savedClasses.length > 0 ? (
+                            <div>
+                                {savedClasses.map((classItem, index) => (
+                                    <div key={index}>
+                                        <p>{classItem.nickname} | {classItem.building} | {classItem.roomnumber}</p>
+                                        <button onClick={() => handleButtonClick(classItem)}>Delete</button>
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            <p>No saved classes</p>
                         )}
                     </div>
                 </div>

@@ -74,14 +74,13 @@ app.get('/', function (req, res) {
 });
 
 app.get('/checkuser/', function (req, res) {
-    console.log(currentuser);
+    res.status(200).send({ message: currentuser });
 });
 
 app.get('/input', function (req, res) {
     res.render('input', {
         title: "Input Form",
-        err: "",
-        location: location
+        err: ""
     });
 });
 
@@ -100,10 +99,6 @@ app.post('/input/', (req, res) => {
     enddestination = req.body.enddestination;
     res.redirect('/map');
 });
-
-app.post('/save/', (req, res) => {
-    console.log(req.body.save);
-})
 
 app.get('/destinations/', (req, res) => {
     res.json({
@@ -241,3 +236,34 @@ app.get('/api/profile', async (req, res) => {
         res.status(500).send({ message: 'Server error' });
     }
 });
+
+app.get('/api/saved', async (req, res) => {
+    try {
+        if (!currentuser) {
+            return res.status(401).send({ message: "User not authenticated" });
+        }
+
+        const userClasses = await UserClass.find({ userId: currentuser._id }).exec();
+
+        if (userClasses.length === 0) {
+            return res.status(404).send({ message: "No saved classes found for the user" });
+        }
+        else {
+            classes = [];
+            for (const userClass of userClasses) {
+                try {
+                    const classById = await Class.findOne({ _id: userClass.classId }).exec();
+                    classes.push(classById);
+                } catch (error) {
+                    console.error('Error querying class by id:', error);
+                }
+            }
+
+            res.status(200).json(classes);
+        }  
+    } catch (error) {
+        console.error("Error fetching saved classes:", error);
+        res.status(500).send({ message: 'Server error' });
+    }
+});
+
