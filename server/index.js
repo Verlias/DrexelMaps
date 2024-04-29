@@ -3,6 +3,7 @@ var path = require('path');
 const cors = require('cors'); // Import the cors middleware
 const bodyparser = require('body-parser')
 const mongoose = require('mongoose');
+var passwordValidator = require('password-validator');
 
 var app = module.exports = express();
 const signupRoute = require('./signup');
@@ -28,7 +29,32 @@ const signupSchema = new mongoose.Schema({
   confirmPassword: String
 });
 
+const classSchema = new mongoose.Schema({
+    nickname: String,
+    building: String,
+    roomnumber: String
+});
+
+const userclassesSchema = new mongoose.Schema({
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'Signup', required: true },
+    classId: { type: mongoose.Schema.Types.ObjectId, ref: 'Class', required: true }
+});
+
+// Useful for checking if the user's password meets
+// all criteria
+const passwordCriteria = new passwordValidator();
+  
+passwordCriteria
+.is().min(8)
+.is().max(30)
+.has().uppercase()
+.has().lowercase()
+.has().digits(2)
+.has().not().spaces();
+
 const Signup = mongoose.model('Signup', signupSchema);
+const Class = mongoose.model('Class', classSchema)
+const UserClass = mongoose.model('UserClass', userclassesSchema)
 
 app.engine('.html', require('ejs').__express);
 
@@ -53,16 +79,20 @@ app.set('view engine', 'html');
 var startdestination = ""
 var enddestination = ""
 var classNumber = ""
+var currentuser = null
 
 app.get('/', function (req, res) {
     res.redirect('/input/');
 });
 
+app.get('/checkuser/', function (req, res) {
+    res.status(200).send({ message: currentuser });
+});
+
 app.get('/input', function (req, res) {
     res.render('input', {
         title: "Input Form",
-        err: "",
-        location: location
+        err: ""
     });
 });
 
@@ -81,10 +111,6 @@ app.post('/input/', (req, res) => {
     enddestination = req.body.enddestination;
     res.redirect('/map');
 });
-
-app.post('/save/', (req, res) => {
-    console.log(req.body.save);
-})
 
 app.get('/destinations/', (req, res) => {
     res.json({
@@ -141,21 +167,73 @@ app.get('/profile/:drexelid', (req, res) => {
         })
 });
 
+app.post('/api/save', async (req, res) => {
+    if (currentuser != null) {
+        const formData = req.body;
+        // Process the form data (e.g., save to a database)
+        try {
+            const newClass = new Class(formData);
+            await newClass.save();
+
+            const newUserClass = new UserClass({ userId: currentuser._id, classId: newClass._id });
+            await newUserClass.save()
+
+            console.log('Save class data received:', formData);
+            res.status(200).send({ message: 'Save Successful' });
+        } catch (error) {
+            console.error('error on mongo save', error);
+            res.status(500).send({ message: 'server error' });
+        }
+    }
+    else {
+        console.error('No user logged in')
+    }
+    
+});
+
 app.post('/api/signup', async (req, res) => {
 
-  const formData = req.body;
-  // Process the form data (e.g., save to a database)
-  try{
-    const newSignup = new Signup(formData);
-    await newSignup.save();
+    const formData = req.body;
   
-    console.log('Sign up data received:', formData);
-    res.status(200).send({ message: 'Sign up successful' });
-    } catch (error) {
-      console.error('error on mongo save', error);
-      res.status(500).send({ message: 'server error' });
-  }
-});
+    // Process the form data (e.g., save to a database)
+    try{
+      // Checks if email in formData already exist in database
+      // If the email exists in database, account cannot be created.
+      existingUser = await Signup.findOne({'email': formData.email}, 'email');
+      if (existingUser !== null){
+          if ((formData.email === existingUser.email)){
+              console.log("Email already exists in database.");
+              res.status(400).send({ message: "Email already exists", emailExists: true });
+          }
+      }
+  
+      // Checks if the input in both password fields do not match.
+      // If passwords do not match, user account cannot be created.
+      else if ((formData.password !== formData.confirmPassword)){
+          console.log("Passwords do not match")
+          res.status(400).send({ message: "Passwords do not match", passwordsAreDifferent: true });
+      }
+  
+      // Assuming that the inputs in both password fields match, if the confirmed
+      // password does not meet the password criteria, user account cannot be created.
+      else if (passwordCriteria.validate(formData.confirmPassword) === false){
+          console.log("Password does not meet criteria");
+          res.status(400).send({ message: "Password does not meet criteria", passwordFailedCriteria: true});
+      }
+      
+      // Saves the formData as a new user, indicating that
+      // user account creation was successful.
+      else {
+          await new Signup(formData).save();
+          console.log('Sign up data received:', formData);
+          res.status(200).send({ message: 'Sign up successful' });
+      }
+      } catch (error) {
+        console.error('error on mongo save', error);
+        res.status(500).send({ message: 'server error' });
+    }
+  });
+  
 
 app.post('/api/login', async (req, res) => {
   const userData = req.body;
@@ -168,9 +246,64 @@ app.post('/api/login', async (req, res) => {
     const user = await Signup.findOne({'email': userData.email, 'password': userData.password}, 'email password');
     if ((userData.email === user.email) && (userData.password === user.password)){
       res.status(200).send({ message: "Login successful" });
-      console.log("Login successful");
+        console.log("Login successful");
+        currentuser = user;
     }
   } catch (error) {
       res.status(500).send({ message: 'server error' });
   }
 });
+
+
+app.get('/api/profile', async (req, res) => {
+    try {
+        // Ensure that the user is logged in before accessing their profile
+        if (!currentuser) {
+            return res.status(401).send({ message: "User not authenticated" });
+        }
+
+        // Fetch the user's profile information from the database
+        const userProfile = await Signup.findById(currentuser._id);
+
+        // If user profile found, send it in the response
+        if (userProfile) {
+            res.status(200).json(userProfile);
+        } else {
+            res.status(404).send({ message: "User profile not found" });
+        }
+    } catch (error) {
+        console.error("Error fetching user profile:", error);
+        res.status(500).send({ message: 'Server error' });
+    }
+});
+
+app.get('/api/saved', async (req, res) => {
+    try {
+        if (!currentuser) {
+            return res.status(401).send({ message: "User not authenticated" });
+        }
+
+        const userClasses = await UserClass.find({ userId: currentuser._id }).exec();
+
+        if (userClasses.length === 0) {
+            return res.status(404).send({ message: "No saved classes found for the user" });
+        }
+        else {
+            classes = [];
+            for (const userClass of userClasses) {
+                try {
+                    const classById = await Class.findOne({ _id: userClass.classId }).exec();
+                    classes.push(classById);
+                } catch (error) {
+                    console.error('Error querying class by id:', error);
+                }
+            }
+
+            res.status(200).json(classes);
+        }  
+    } catch (error) {
+        console.error("Error fetching saved classes:", error);
+        res.status(500).send({ message: 'Server error' });
+    }
+});
+
