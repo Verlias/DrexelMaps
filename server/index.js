@@ -3,7 +3,6 @@ var path = require('path');
 const cors = require('cors'); // Import the cors middleware
 const bodyparser = require('body-parser')
 const mongoose = require('mongoose');
-var passwordValidator = require('password-validator');
 
 var app = module.exports = express();
 const signupRoute = require('./signup');
@@ -40,17 +39,6 @@ const userclassesSchema = new mongoose.Schema({
     classId: { type: mongoose.Schema.Types.ObjectId, ref: 'Class', required: true }
 });
 
-// Useful for checking if the user's password meets
-// all criteria
-const passwordCriteria = new passwordValidator();
-  
-passwordCriteria
-.is().min(8)
-.is().max(30)
-.has().uppercase()
-.has().lowercase()
-.has().digits(2)
-.has().not().spaces();
 
 const Signup = mongoose.model('Signup', signupSchema);
 const Class = mongoose.model('Class', classSchema)
@@ -193,47 +181,19 @@ app.post('/api/save', async (req, res) => {
 
 app.post('/api/signup', async (req, res) => {
 
-    const formData = req.body;
+  const formData = req.body;
+  // Process the form data (e.g., save to a database)
+  try{
+    const newSignup = new Signup(formData);
+    await newSignup.save();
   
-    // Process the form data (e.g., save to a database)
-    try{
-      // Checks if email in formData already exist in database
-      // If the email exists in database, account cannot be created.
-      existingUser = await Signup.findOne({'email': formData.email}, 'email');
-      if (existingUser !== null){
-          if ((formData.email === existingUser.email)){
-              console.log("Email already exists in database.");
-              res.status(400).send({ message: "Email already exists", emailExists: true });
-          }
-      }
-  
-      // Checks if the input in both password fields do not match.
-      // If passwords do not match, user account cannot be created.
-      else if ((formData.password !== formData.confirmPassword)){
-          console.log("Passwords do not match")
-          res.status(400).send({ message: "Passwords do not match", passwordsAreDifferent: true });
-      }
-  
-      // Assuming that the inputs in both password fields match, if the confirmed
-      // password does not meet the password criteria, user account cannot be created.
-      else if (passwordCriteria.validate(formData.confirmPassword) === false){
-          console.log("Password does not meet criteria");
-          res.status(400).send({ message: "Password does not meet criteria", passwordFailedCriteria: true});
-      }
-      
-      // Saves the formData as a new user, indicating that
-      // user account creation was successful.
-      else {
-          await new Signup(formData).save();
-          console.log('Sign up data received:', formData);
-          res.status(200).send({ message: 'Sign up successful' });
-      }
-      } catch (error) {
-        console.error('error on mongo save', error);
-        res.status(500).send({ message: 'server error' });
-    }
-  });
-  
+    console.log('Sign up data received:', formData);
+    res.status(200).send({ message: 'Sign up successful' });
+    } catch (error) {
+      console.error('error on mongo save', error);
+      res.status(500).send({ message: 'server error' });
+  }
+});
 
 app.post('/api/login', async (req, res) => {
   const userData = req.body;
