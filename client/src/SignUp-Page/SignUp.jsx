@@ -12,6 +12,8 @@ function SignUp() {
         password: "",
         confirmPassword: "",
     });
+    const [emailError, setEmailError] = useState("");
+    const [confirmPasswordError, setConfirmPasswordError] = useState("");
 
     const navigate = useNavigate();
     // Function to handle changes in form fields
@@ -21,6 +23,8 @@ function SignUp() {
     };
     // Function to handle form submission
     const handleSubmit = async (e) => {
+      setEmailError("");
+      setConfirmPasswordError("");
         e.preventDefault(); // Prevent default form submission behavior
         try {
             // Send form data to the backend using Axios POST request
@@ -29,6 +33,27 @@ function SignUp() {
             if (response.status === 200) navigate('/Profile');
         } catch (error) {
             console.error("Error signing up:", error);
+            console.log(error.response.data);
+            if (error.response.data.emailExists){
+              setEmailError("Email has already been used");
+            }
+            if (error.response.data.passwordsAreDifferent){
+              setConfirmPasswordError("Passwords do not match");
+            }
+            if (error.response.data.passwordFailedCriteria){
+              setConfirmPasswordError(
+              <>
+                <p>Password must contain the following:</p>
+                <ul>
+                  <li>At least one lower-case alphabet letter</li>
+                  <li>At least one upper-case alphabet letter</li>
+                  <li>At least one number</li>
+                  <li>At least one special character</li>
+                  <li>Minimum length of 8 characters</li>
+                </ul>
+              </>
+              );
+            }
         }
     };
 
