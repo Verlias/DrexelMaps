@@ -57,8 +57,15 @@ function UserDash() {
         }
     };
 
-    const handleButtonClick = (classItem) => {
-        console.log(classItem);
+    const handleDelete = async (id) => {
+        try {
+            const response = await axios.post('http://localhost:3000/api/deleteclass/', {
+                itemId: id
+            });
+            window.location.reload();
+        } catch (error) {
+            console.error("Error deleting data:", error);
+        }
     };
 
     // Gets the profile data
@@ -137,7 +144,7 @@ function UserDash() {
                                 {savedClasses.map((classItem, index) => (
                                     <div key={index}>
                                         <p>{classItem.nickname} | {classItem.building} | {classItem.roomnumber}</p>
-                                        <button onClick={() => handleButtonClick(classItem)}>Delete</button>
+                                        <button onClick={() => handleDelete(classItem._id)}>Delete</button>
                                     </div>
                                 ))}
                             </div>

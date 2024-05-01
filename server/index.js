@@ -158,7 +158,6 @@ app.get('/profile/:drexelid', (req, res) => {
 app.post('/api/save', async (req, res) => {
     if (currentuser != null) {
         const formData = req.body;
-        // Process the form data (e.g., save to a database)
         try {
             const newClass = new Class(formData);
             await newClass.save();
@@ -177,6 +176,25 @@ app.post('/api/save', async (req, res) => {
         console.error('No user logged in')
     }
     
+});
+
+app.post('/api/deleteclass', async (req, res) => {
+    if (currentuser != null) {
+        const formData = req.body;
+        try {
+            await Class.findByIdAndDelete(formData.itemId);
+            await UserClass.findOneAndDelete({ classId: formData.itemId });
+
+            res.status(200).send({ message: 'Delete Successful' });
+        } catch (error) {
+            console.error('error on mongo delete', error);
+            res.status(500).send({ message: 'server error' });
+        }
+    }
+    else {
+        console.error('No user logged in')
+    }
+
 });
 
 app.post('/api/signup', async (req, res) => {
