@@ -30,7 +30,9 @@ function SignUp() {
             // Send form data to the backend using Axios POST request
             const response = await axios.post("http://localhost:3000/api/signup", formData);
             console.log(response.data); // Log response from the backend
-            if (response.status === 200) navigate('/Profile');
+            const { token } = response.data
+            localStorage.setItem('token', token);
+            navigate('/Profile');
         } catch (error) {
             console.error("Error signing up:", error);
             console.log(error.response.data);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Profile.module.css";
 import Header from "../Components/Header";
 import buildingData from "./building_locations.json";
@@ -14,6 +14,22 @@ function UserDash() {
     const [savedClasses, setSavedClasses] = useState([]);
     const [loading, setLoading] = useState(true);
     const [loadingClasses, setLoadingClasses] = useState(true);
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            navigate('/Login');
+        }
+    }, []);
+
+    const handleClick = async (e) => {
+        // Update formData state with the new value of the changed input field
+        e.preventDefault();
+        localStorage.removeItem('token');
+        navigate('/Login');
+    };
 
     useEffect(() => {
         // Fetching building names from JSON data
@@ -119,7 +135,7 @@ function UserDash() {
                             <li>
                                 <Link to="/settings">Settings</Link>
                             </li>
-                            <li><a href="">Log out</a></li>
+                            <button onClick={handleClick}>Log out</button>
                         </ul>
                     </div>
                     <div className={styles.profile_info}>

@@ -4,6 +4,8 @@ const cors = require('cors'); // Import the cors middleware
 const bodyparser = require('body-parser')
 const mongoose = require('mongoose');
 var passwordValidator = require('password-validator');
+const jwt = require('jsonwebtoken');
+
 
 var app = module.exports = express();
 const signupRoute = require('./signup');
@@ -210,67 +212,102 @@ app.post('/api/deleteclass', async (req, res) => {
 });
 
 app.post('/api/signup', async (req, res) => {
-
     const formData = req.body;
   
-    // Process the form data (e.g., save to a database)
-    try{
-      // Checks if email in formData already exist in database
-      // If the email exists in database, account cannot be created.
-      existingUser = await Signup.findOne({'email': formData.email}, 'email');
-      if (existingUser !== null){
-          if ((formData.email === existingUser.email)){
-              console.log("Email already exists in database.");
-              res.status(400).send({ message: "Email already exists", emailExists: true });
-          }
-      }
+    try {
+        // Check if email already exists in the database
+        const existingUser = await Signup.findOne({ 'email': formData.email });
+        if (existingUser) {
+            console.log("Email already exists in database.");
+            return res.status(400).send({ message: "Email already exists", emailExists: true });
+        }
+
+        // Check if passwords match
+        if (formData.password !== formData.confirmPassword) {
+            console.log("Passwords do not match");
+            return res.status(400).send({ message: "Passwords do not match", passwordsAreDifferent: true });
+        }
+
+        // Check if password meets criteria (You need to define passwordCriteria.validate)
+        if (!passwordCriteria.validate(formData.password)) {
+            console.log("Password does not meet criteria");
+            return res.status(400).send({ message: "Password does not meet criteria", passwordFailedCriteria: true });
+        }
+
+        // If all validations pass, save the user to the database
+        const newUser = await new Signup(formData).save();
+        console.log('Sign up data received:', formData);
+
+        // Generate JWT token
+        const token = jwt.sign({ userID: newUser._id }, 'privatekey', { expiresIn: '30s' });
+
+        // Send back the token and success message
+        res.status(200).send({ message: 'Sign up successful', token: token });
+    } catch (error) {
+        console.error('Error on mongo save', error);
+        res.status(500).send({ message: 'Server error' });
+    }
+});
+
+/*
+app.post('/api/login', async (req, res) => {
+    const userData = req.body;
+
+    try {
+        console.log('Email received:', userData.email);
+        console.log('Password received:', userData.password);
+        const user = await Signup.findOne({ 'email': userData.email });
+
+        if (!user) {
+            console.log("User not found");
+            return res.status(400).send({ message: 'User not found' });
+        }
+
+        // Check if passwords match
+        if (userData.password !== user.password) {
+            console.log("Invalid password");
+            return res.status(401).send({ message: 'Invalid password' });
+        }
+
+        // Passwords match, generate token
+        const token = jwt.sign({ userID: user._id }, 'privatekey', { expiresIn: '30s' });
+        console.log("JWT Token:", token);
+        
+        // Send the token back to the frontend
+        res.json({token: token });
+
+    } catch (error) {
+        console.error("Error during login:", error);
+        res.status(500).send({ message: 'Server error' });
+    }
+});
+*/
+
+app.post('/api/login', async (req, res) => {
+    const userData = req.body;
   
-      // Checks if the input in both password fields do not match.
-      // If passwords do not match, user account cannot be created.
-      else if ((formData.password !== formData.confirmPassword)){
-          console.log("Passwords do not match")
-          res.status(400).send({ message: "Passwords do not match", passwordsAreDifferent: true });
+    // Finds existing user in database after receiving 
+    // email and password from the frontend login page.
+    try{  
+      console.log('Email received:', userData.email);
+      console.log('Password received:', userData.password);
+      const user = await Signup.findOne({'email': userData.email, 'password': userData.password}, 'email password');
+      if ((userData.email === user.email) && (userData.password === user.password)){
+        // res.status(200).send({ message: "Login successful" });
+        const token = jwt.sign({ userID: user._id }, 'privatekey', { expiresIn: '30s' });
+        console.log("JWT Token:", token);
+        // Send the token back to the frontend
+        res.json({token: token });  
+        console.log("Login successful");
+          currentuser = user;
       }
-  
-      // Assuming that the inputs in both password fields match, if the confirmed
-      // password does not meet the password criteria, user account cannot be created.
-      else if (passwordCriteria.validate(formData.confirmPassword) === false){
-          console.log("Password does not meet criteria");
-          res.status(400).send({ message: "Password does not meet criteria", passwordFailedCriteria: true});
-      }
-      
-      // Saves the formData as a new user, indicating that
-      // user account creation was successful.
-      else {
-          await new Signup(formData).save();
-          console.log('Sign up data received:', formData);
-          res.status(200).send({ message: 'Sign up successful' });
-      }
-      } catch (error) {
-        console.error('error on mongo save', error);
+    } catch (error) {
         res.status(500).send({ message: 'server error' });
     }
   });
+  
+  
 
-
-app.post('/api/login', async (req, res) => {
-  const userData = req.body;
-
-  // Finds existing user in database after receiving 
-  // email and password from the frontend login page.
-  try{  
-    console.log('Email received:', userData.email);
-    console.log('Password received:', userData.password);
-    const user = await Signup.findOne({'email': userData.email, 'password': userData.password}, 'email password');
-    if ((userData.email === user.email) && (userData.password === user.password)){
-      res.status(200).send({ message: "Login successful" });
-        console.log("Login successful");
-        currentuser = user;
-    }
-  } catch (error) {
-      res.status(500).send({ message: 'server error' });
-  }
-});
 
 
 app.get('/api/profile', async (req, res) => {

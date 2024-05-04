@@ -36,22 +36,51 @@ function Login(){
       // Update formData state with the new value of the changed input field
       setUserData({ ...userData, [e.target.name]: e.target.value });
     };
-      
+    /*
     const handleSubmit = async (event) => {
       event.preventDefault(); // Prevent default form submission behavior
+      
       try {
-          // Send user input to the backend using Axios POST request
-          const response = await axios({
-            url: "http://localhost:3000/api/login",
-            method: "POST",
-            data: userData
-          });
-          if (response.status === 200) navigate('/Profile');
+          const response = await axios.post("http://localhost:3000/api/login", userData);
+          console.log("Response from server:", response.data);
+          
+          const { token } = response.data;
+          if (token) {
+              localStorage.setItem('token', token);
+              console.log("Token stored in localStorage:", token);
+              navigate('/Profile');
+          } else {
+              console.log("Token not received from server");
+              // Handle error: token not received
+          }
       } catch (error) {
           setPasswordError("The password you entered is not correct");
-          console.log("User does not exist");
+          console.error("Error during login:", error);
       }
   };
+  */
+
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+    try {
+        // Send user input to the backend using Axios POST request
+        const response = await axios({
+          url: "http://localhost:3000/api/login",
+          method: "POST",
+          data: userData
+        });
+        console.log(response.data); // Log response from the backend
+        const { token } = response.data
+        localStorage.setItem('token', token);
+        navigate('/Profile');
+    } catch (error) {
+        setPasswordError("The password you entered is not correct");
+        console.log("User does not exist");
+    }
+};
+
+  
+  
 
     return (
         <>
