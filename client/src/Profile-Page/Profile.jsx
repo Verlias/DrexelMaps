@@ -91,6 +91,7 @@ function UserDash() {
             const response = await axios.get('http://localhost:3000/api/profile');
             // Set the fetched profile data in state
             setProfileData(response.data);
+            console.log(profileData.name);
             setLoading(false);
         } catch (error) {
             console.error("Error fetching profile data:", error);
@@ -116,10 +117,10 @@ function UserDash() {
         <>
             <Header />
             <div className={styles.container}>
-                <div className={styles.header}>
+                {/* <div className={styles.header}>
                     <img src="profile-pic.jpg" alt="Profile Picture" />
+                </div> */}
                     <h1>Welcome Zacharius</h1>
-                </div>
                 <div className={styles.content}>
                     <div className={styles.sidebar}>
                         <h2 className={styles.sidebar_h2}>
@@ -135,7 +136,7 @@ function UserDash() {
                             <li>
                                 <Link to="/settings">Settings</Link>
                             </li>
-                            <button onClick={handleClick}>Log out</button>
+                            <button onClick={handleClick}>Log Out</button>
                         </ul>
                     </div>
                     <div className={styles.profile_info}>
@@ -156,10 +157,12 @@ function UserDash() {
                         {loadingClasses ? (
                             <p>Loading Saved Classes</p>
                         ) : savedClasses && savedClasses.length > 0 ? (
-                            <div>
+                            <div className={styles.savedClassList}>
                                 {savedClasses.map((classItem, index) => (
                                     <div key={index}>
-                                        <p>{classItem.nickname} | {classItem.building} | {classItem.roomnumber}</p>
+                                        <p><b>Class Name:</b> {classItem.nickname}</p>
+                                        <p><b>Room Number:</b> {classItem.roomnumber}</p>
+                                        <p><b>Drexel Building:</b> {classItem.building}</p>
                                         <button onClick={() => handleDelete(classItem._id)}>Delete</button>
                                     </div>
                                 ))}
