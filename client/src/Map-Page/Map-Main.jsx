@@ -5,6 +5,7 @@ import styles from "./Map-Page.module.css";
 
 function MapMain() {
     const [data, setData] = useState({ ds: "Ross Commons", de: "Korman Center" });
+    const [roomnumber, setRoomnumber] = useState("");
 
     useEffect(() => {
         // Fetch data from the backend
@@ -29,14 +30,27 @@ function MapMain() {
         };
     }, []);
 
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await axios.post('http://localhost:3000/api/roomnum', {
+                classNumber: roomnumber
+            });
+            console.log(response.data);
+
+        } catch (error) {
+            console.error("Error submitting roomnumber:", error);
+        }
+    };
+
     return (
         <>
             <canvas id="mapCanvas"></canvas>
             <div style={{ position: "absolute", bottom: 0 }} id="destinationstart">{data.ds}</div>
             <div style={{ position: "absolute", bottom: "15px" }} id="destinationend">{data.de}</div>
-            <form id="textForm" action="" method="POST" style={{ position: "absolute", bottom: "40px", left: "40px" }}>
+            <form onSubmit={handleSubmit} style={{ position: "absolute", bottom: "40px", left: "40px" }}>
                 <label htmlFor="classNumber">Class Number:</label>
-                <input id="classNumber" name="classNumber" required />
+                <input id="classNumber" name="classNumber" required onChange={(e) => setRoomnumber(e.target.value)} />
                 <button className="submit" type="submit" style={{ marginTop: "10px" }}>Submit</button>
             </form>
             <button className="submit" type="submit" style={{ position: "absolute", bottom: "15px", right: "15px" }} >Toggle Connections</button>

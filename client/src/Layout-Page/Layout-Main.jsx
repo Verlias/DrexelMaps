@@ -10,17 +10,19 @@ const LayoutMain = () => {
     const [svgs, setSvgs] = useState([]);
     const [currentSvgIndex, setCurrentSvgIndex] = useState(0);
     const [building, setBuilding] = useState("");
+    const [roomnumber, setRoomnumber] = useState("");
     const [floorplanAvailable, setFloorplanAvailable] = useState(false);
-    const [loading, setLoading] = useState(true);
+    const [loadingBuilding, setLoadingBuilding] = useState(true);
+    const [loadingRoom, setLoadingRoom] = useState(true);
     const [inputValue, setInputValue] = useState("");
     const [manualInput, setManualInput] = useState(false);
 
     useEffect(() => {
-        if (building === "Korman Center") {
+        if (building === "korman center") {
             setSvgs([kormanFloor1, kormanFloor2]);
             setFloorplanAvailable(true);
         }
-        else if (building === "Main Building") {
+        else if (building === "main building") {
             setSvgs([mainFloor1, mainFloor2]);
             setFloorplanAvailable(true);
         }
@@ -32,6 +34,8 @@ const LayoutMain = () => {
         // Prevents fetch when manually changing building
         if (!manualInput) {
             fetchBuilding();
+            fetchRoomnumber();
+            console.log(roomnumber);
         }
     }, [building]);
 
@@ -40,11 +44,23 @@ const LayoutMain = () => {
         try {
             const response = await axios.get('http://localhost:3000/destinations');
             // Building is stored with key de on backend
-            setBuilding(response.data.de);
-            setLoading(false);
+            setBuilding(response.data.de.toLowerCase());
+            setLoadingBuilding(false);
         } catch (error) {
             console.error("Error fetching building:", error);
-            setLoading(false);
+            setLoadingBuilding(false);
+        }
+    };
+
+    const fetchRoomnumber = async () => {
+        try {
+            const response = await axios.get('http://localhost:3000/api/roomnum');
+            // Building is stored with key de on backend
+            setRoomnumber(response.data.roomnum.toLowerCase());
+            setLoadingRoom(false);
+        } catch (error) {
+            console.error("Error fetching building:", error);
+            setLoadingRoom(false);
         }
     };
 
