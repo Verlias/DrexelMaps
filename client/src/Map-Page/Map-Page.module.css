@@ -1,25 +1,5 @@
-@media (prefers-reduced-motion: no-preference) {
-    * {
-      scroll-behavior: smooth;
-    }
-}
-
-.MapContentContainer{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top:200px;
-}
-
-
-.MapHeadline {
-    text-align: center;
-}
-
-.MapContainer {
-    border:2px solid black;
-    margin: auto;
-    text-align: center;
-    width: 80%;
-    height: 1000px;
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
 }

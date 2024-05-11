@@ -26,10 +26,12 @@
   }
   
   /* Add a black background color to the top navigation */
-  .HeaderNav {
+.HeaderNav {
     background-color: #07294D;
-    overflow: hidden; 
-  }
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
 
   .HeaderNav ul {
     margin: 0px;

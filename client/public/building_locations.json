@@ -295,14 +295,14 @@
   },
   {
     "name": "3675 Market Street (College of Computing and Informatics Building)",
-    "position": [ 495, 1863 ],
-    "connections": [ 142 ],
+    "position": [ 812, 1930 ],
+    "connections": [ 143 ],
     "id": 50
   },
   {
     "name": "Health Science Building",
-    "position": [ 622, 1774 ],
-    "connections": [ 131, 133, 137, 138 ],
+    "position": [ 870, 1820 ],
+    "connections": [ 133, 138, 139 ],
     "id": 51
   },
   {
@@ -590,7 +590,7 @@
       468,
       1701
     ],
-    "connections": [ 51, 108, 133, 137 ],
+    "connections": [ 108, 133, 137 ],
     "id": 131
   },
   {
@@ -644,7 +644,7 @@
       444,
       1795
     ],
-    "connections": [ 51, 131, 138, 142 ],
+    "connections": [ 131, 138, 142 ],
     "id": 137
   },
   {
@@ -662,7 +662,7 @@
       985,
       1885
     ],
-    "connections": [ 16, 20, 123, 138, 140, 144 ],
+    "connections": [ 16, 20, 51, 123, 138, 140, 144 ],
     "id": 139
   },
   {
@@ -689,7 +689,7 @@
       420,
       1931
     ],
-    "connections": [ 50, 137, 143, 150 ],
+    "connections": [ 137, 143, 150 ],
     "id": 142
   },
   {
@@ -698,7 +698,7 @@
       753,
       1985
     ],
-    "connections": [ 138, 142, 144 ],
+    "connections": [ 50, 138, 142, 144 ],
     "id": 143
   },
   {

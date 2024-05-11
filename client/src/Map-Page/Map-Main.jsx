@@ -4,7 +4,7 @@ import axios from "axios"; // Import Axios
 import styles from "./Map-Page.module.css";
 
 function MapMain() {
-    const [data, setData] = useState({ ds: "Ross Commons", de: "Korman Center" });
+    const [data, setData] = useState({});
     const [roomnumber, setRoomnumber] = useState("");
 
     useEffect(() => {
@@ -43,6 +43,10 @@ function MapMain() {
         }
     };
 
+    const handleToggleConnections = async (event) => {
+        toggleconnections();
+    };
+
     return (
         <>
             <canvas id="mapCanvas"></canvas>
@@ -53,7 +57,7 @@ function MapMain() {
                 <input id="classNumber" name="classNumber" required onChange={(e) => setRoomnumber(e.target.value)} />
                 <button className="submit" type="submit" style={{ marginTop: "10px" }}>Submit</button>
             </form>
-            <button className="submit" type="submit" style={{ position: "absolute", bottom: "15px", right: "15px" }} >Toggle Connections</button>
+            <button className="submit" type="submit" onClick={handleToggleConnections} style={{ position: "absolute", bottom: "15px", right: "15px" }}>Toggle Connections</button>
         </>
     );
 };
