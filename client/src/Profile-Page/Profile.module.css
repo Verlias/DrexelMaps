@@ -1,3 +1,8 @@
+/*
+NOTE: Code in comments currently aren't being used 
+anywhere else in the source code OR incomplete implementation
+*/
+
 .header {
     display: flex;
     font-family: Arial, sans-serif;
@@ -24,7 +29,7 @@
     margin: 0;
 }
 
-/*.container {
+/* .container {
     font-family: Arial, sans-serif;
     display: grid;
     width: 95%;
@@ -34,7 +39,7 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: auto;
-}*/
+} */
 
 .content {
     font-family: Arial, sans-serif;
@@ -47,6 +52,7 @@
     padding-left: 0px;
 }
 
+/* Side Bar Styling */
 .sidebar {
     display: block;
     height: 700px;
@@ -65,22 +71,46 @@
 
 .sidebar ul {
     list-style-type: none;
-    padding: 0;
+    list-style-position: inside;
+    padding: 0px;
 }
 
 .sidebar li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .sidebar a {
-    color: black;
+    background-color: hsl(211, 83%, 16%);
+    color: #ffc600;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    display: flex;
     text-decoration: none;
 }
 
 .sidebar a:hover {
-    text-decoration: underline;
+    background-color: hsl(200, 100%, 30%);
 }
 
+.sidebar button {
+    border-style: none;
+    background-color: hsl(211, 83%, 16%);
+    color: #ffc600;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+}
+
+.sidebar button:hover {
+    background-color: hsl(200, 100%, 30%);
+    cursor: pointer;
+}
+
+/* Profile Information Styling */
 .profileInfo {
     padding: 20px;
     padding-top: 0px;
@@ -97,7 +127,40 @@
     margin-bottom: 0px;
 }
 
-.dashInfo {
+/* Saved Classes Styling */
+.savedClassList {
+    width: 100%;
+    height: 575px;
+    overflow: auto;
+}
+.savedClassList div {
+    border-style: solid;
+    padding: 15px;
+}
+
+.savedClassList p {
+    text-align: left;
+    font-weight: normal;
+}
+
+.savedClassList button {
+    background-color: red;
+    color: black;
+    text-align: center;
+    padding: 7.5px;
+    width: 75px;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.savedClassList button:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* .dashInfo {
     padding: 20px;
     padding-top: 0px;
     width: 100%;
@@ -173,7 +236,7 @@
 
 progress::-webkit-progress-bar {
     background-color: #d6d6d6;
-}
+} */
 
 .label {
     font-family: Arial, sans-serif;
@@ -209,7 +272,8 @@ progress::-webkit-progress-bar {
     background-color: #4799d7;
 }
 
-.updateButton {
+
+/* .updateButton {
     font-family: Arial, sans-serif;
     background-color: #72b4e7;
     color: #fff;
@@ -239,4 +303,4 @@ progress::-webkit-progress-bar {
 
 .cancelButton:hover {
     background-color: #6c6c6c;
-}
+} */

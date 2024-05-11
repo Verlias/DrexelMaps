@@ -26,13 +26,23 @@
   }
   
   /* Add a black background color to the top navigation */
-  .HeaderNav {
+.HeaderNav {
     background-color: #07294D;
-    overflow: hidden; 
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
+  .HeaderNav ul {
+    margin: 0px;
+    padding: 0px;
+    border-style: solid;
+    border-color: aqua;
   }
  
   /* Style the links inside navigation bar */
-  .NavLink {
+  .NavLink{
+    height: 100%;
     float: left;
     color: #FFC600;
     text-align: center;
@@ -41,26 +51,28 @@
     font-size: 17px;
     vertical-align: middle;
   }
-
-  .NavText{
-    color: #FFC600; 
-  }
   
   /* Change the color of links on hover */
   .NavLink:hover {
     background-color: #006699;
     color: white;
   }
+
+  .NavText {
+    color: #FFC600; 
+  }
   
   /* Style the Drexel logo inside navigation bar*/
   .DrexelTitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    margin-right: 15px;
+    padding-bottom: auto;
     font: 25px "Miller-Text";
     float: right;
     color: #FFC600;
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-    margin: 2.5px;
-    padding-right: 15px;
-    vertical-align: middle;
   }

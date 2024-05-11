@@ -7,8 +7,8 @@ function Header(){
     return(
         <>
             <header className={styles.HeaderNav}>
-                <nav className={styles.NavBar}>
-                    <ul className={styles.NavList}>
+                <nav>
+                    <ul>
                         <li className={styles.NavLink}><Link to="/Home" style={{textDecoration : 'none'}}><span className={styles.NavText}>Home</span></Link></li>
                         <li className={styles.NavLink}><Link to="/Map" style={{textDecoration : 'none'}}><span className={styles.NavText}>Map</span></Link></li>
                         <li className={styles.NavLink}><Link to="/Input" style={{textDecoration : 'none'}}><span className={styles.NavText}>Input</span></Link></li>
@@ -17,8 +17,8 @@ function Header(){
                         <li className={styles.NavLink}><Link to="/Login" style={{textDecoration : 'none'}}><span className={styles.NavText}>Login</span></Link></li>
                         <li className={styles.NavLink}><Link to="/Profile" style={{textDecoration : 'none'}}><span className={styles.NavText}>Profile</span></Link></li>
                     </ul>
+                    <p class={styles.DrexelTitle}>Drexel University</p>
                 </nav>
-                <p class={styles.DrexelTitle}>Drexel University</p>
             </header>
            
         </>

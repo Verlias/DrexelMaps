@@ -122,7 +122,7 @@ app.get('/destinations/', (req, res) => {
 });
 
 
-app.post('/map/', (req, res) => {
+app.post('/api/roomnum', (req, res) => {
     classNumber = req.body.classNumber;
     console.log(classNumber);
     res.redirect('/floor');
@@ -362,3 +362,8 @@ app.get('/api/saved', async (req, res) => {
     }
 });
 
+app.get('/api/roomnum', (req, res) => {
+    res.json({
+        roomnum: classNumber
+    })
+});
