@@ -181,7 +181,7 @@ function UserDash() {
                             </li>
                         ))}
                     </ul>
-                    <button type="submit">Submit</button>
+                    <button className={styles.ProfileButton}type="submit">Submit</button>
                 </form>
             </div>
         </>

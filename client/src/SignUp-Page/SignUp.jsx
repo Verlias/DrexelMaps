@@ -62,54 +62,62 @@ function SignUp() {
   return (
     <>
       <Header />
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.SignUpform} onSubmit={handleSubmit}>
         <div>
           <h1 className={styles.header}>Sign Up</h1>
 
-          <label className={styles.label}>Name:</label>
+          <label className={styles.SignUpLabel}>Name:</label>
           <input
+            className={styles.SignUpInput}
             type="text"
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
             required
+            placeholder="Enter your name here"
           />
 
-          <label className={styles.label}>Email:</label>
+          <label className={styles.SignUpLabel}>Email:</label>
           <input
+            className={styles.SignUpInput}
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
             required
+            placeholder="Enter your email here"
           />
 
-          <label className={styles.label}>Password:</label>
+          <label className={styles.SignUpLabel}>Password:</label>
           <input
+            className={styles.SignUpInput}
             type="password"
             id="password"
             name="password"
             value={formData.password}
             onChange={handleChange}
             required
+            placeholder="Enter your password here"
           />
 
-          <label className={styles.label}>Re-enter Password:</label>
+          <label className={styles.SignUpLabel}>Re-enter Password:</label>
           <input
+            className={styles.SignUpInput}
             type="password"
             id="confirmPassword"
             name="confirmPassword"
             value={formData.confirmPassword}
             onChange={handleChange}
             required
+            placeholder="Re-enter your password here"
           />
 
-          <button type="cancel" onClick={() => {}}>
+          <button className={styles.SignUpButtons} type="cancel" onClick={() => {}}>
             Cancel
           </button>
-          <button type="submit">Sign Up</button>
+          <button className={styles.SignUpButtons} type="submit">Sign Up</button>
         </div>
       </form>
     </>

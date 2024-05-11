@@ -23,8 +23,8 @@ input {
 }
 
 .submit {
-    background-color: #FFC200;
-    color: #003882;
+    background-color: #003882;
+    color: #FFC200;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -33,8 +33,8 @@ input {
 }
 
 .submit:hover {
-    background-color: #003882;
-    color: #FFC200;
+    background-color: #FFC200;
+    color: #003882;
 }
 
 .autofill {
@@ -46,6 +46,6 @@ input {
 }
 
 .autofill:hover {
-    background-color: #FFC200;
-    color: #003882;
+    background-color: #003882;
+    color: #FFC200;
 }

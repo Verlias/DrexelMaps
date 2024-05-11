@@ -1,0 +1,59 @@
+.LoginForm {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.LoginLabel {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.LoginInput {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.LoginButtons {
+    background-color: #003882;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color:white;
+    text-decoration: none;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUpLink{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+.LoginButtons:hover {
+    background-color: #FFC200;
+    color: black;
+}
+
+.autofill {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    text-align: left;
+}
+

@@ -1,0 +1,13 @@
+.LayoutButton {
+    background-color: #003882;
+    margin-top:10px;
+    padding: 10px 20px;
+    align-items: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color:white;
+    text-decoration: none;
+  }
+  

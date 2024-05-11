@@ -5,6 +5,7 @@ import kormanFloor1 from '../assets/floor_layouts/korman_floor1.svg';
 import kormanFloor2 from '../assets/floor_layouts/korman_floor2.svg';
 import mainFloor1 from '../assets/floor_layouts/main_floor1.svg';
 import mainFloor2 from '../assets/floor_layouts/main_floor2.svg';
+import styles from "./Layout-Page.module.css";
 
 const LayoutMain = () => {
     const [svgs, setSvgs] = useState([]);
@@ -68,7 +69,7 @@ const LayoutMain = () => {
             {floorplanAvailable ? (
                 <>
                     {svgs.map((item, index) => (
-                        <button key={index} onClick={() => switchSvg(index)}>{index}</button>
+                        <button className={styles.LayoutButton} key={index} onClick={() => switchSvg(index)}>{index}</button>
                     ))}
                     <img src={svgs[currentSvgIndex]} alt={`Floor ${currentSvgIndex + 1}`} />
                 </>
@@ -80,7 +81,7 @@ const LayoutMain = () => {
                     Enter building name:
                     <input type="text" value={inputValue} onChange={handleChange} />
                 </label>
-                <button type="submit">Submit</button>
+                <button className={styles.LayoutButton} type="submit">Submit</button>
             </form>
         </div>
     );

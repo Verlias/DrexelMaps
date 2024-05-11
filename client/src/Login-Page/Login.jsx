@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import { useNavigate } from "react-router-dom";
 import {Link} from "react-router-dom";
 import axios from "axios"; // Import Axios for making HTTP requests
+import styles from "./Login.module.css";
 
 function Login(){
     const [userData, setUserData] = useState({
@@ -85,33 +86,33 @@ function Login(){
     return (
         <>
         <Header></Header>
-        <form onSubmit={handleSubmit}>
+        <form className={styles.LoginForm} onSubmit={handleSubmit}>
             <div>
                 <h1>Login</h1>
-                <label>Email:</label>
-                <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="Enter your email here"
-                value={userData.email}
-                onChange={handleChange}
-                required/>
-                <label>{emailError}</label>
+                <label className={styles.LoginLabel}>Email:</label>
+                  <input className={styles.LoginInput}
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email here"
+                  value={userData.email}
+                  onChange={handleChange}
+                  required/>
+                <label className={styles.LoginLabel}>{emailError}</label>
 
-                <label>Password:</label>
-                <input
-                type="text"
-                id="password"
-                name="password"
-                placeholder="Enter your password here"
-                value={userData.password}
-                onChange={handleChange}
-                required/>
-                <label>{passwordError}</label>
-
-                <button type="submit"><Link to="/SignUp" style={{textDecoration: "none"}}>SignUp</Link></button>
-                <button type="submit" onClick={onButtonClick}>Log In</button>
+                <label className={styles.LoginLabel}>Password:</label>
+                  <input
+                  type="text"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password here"
+                  value={userData.password}
+                  onChange={handleChange}
+                  required/>
+                <label className={styles.LoginLabel}>{passwordError}</label>
+                
+                <button className={styles.LoginButtons} type="submit"><Link className={styles.SignUpLink} to="/SignUp">SignUp</Link></button>
+                <button className={styles.LoginButtons} type="submit" onClick={onButtonClick}>Log In</button>
             </div>
         </form>
         </>

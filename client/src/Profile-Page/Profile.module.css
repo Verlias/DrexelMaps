@@ -192,7 +192,7 @@ progress::-webkit-progress-bar {
     display: flex;
 }
 
-button[type="submit"] {
+.ProfileButton {
     font-family: Arial, sans-serif;
     background-color: #72b4e7;
     color: #fff;
@@ -202,9 +202,10 @@ button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     margin: auto;
+    align-items: center;
 }
 
-button[type="submit"]:hover {
+.ProfileButton:hover {
     background-color: #4799d7;
 }
 
