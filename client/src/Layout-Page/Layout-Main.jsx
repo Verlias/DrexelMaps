@@ -88,6 +88,10 @@ const LayoutMain = () => {
                         <button className={styles.LayoutButton} key={index} onClick={() => switchSvg(index)}>{index}</button>
                     ))}
                     <img src={svgs[currentSvgIndex]} alt={`Floor ${currentSvgIndex + 1}`} />
+
+               
+                    
+
                 </>
             ) : (
                 <p>No Available Floorplan</p>
