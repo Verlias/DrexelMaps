@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./Profile.module.css";
@@ -6,6 +6,8 @@ import Header from "../Components/Header";
 import buildingData from "./building_locations.json";
 
 function UserDash() {
+    const containerRef = useRef(null);
+    const [containerHeight, setContainerHeight] = useState('auto');
     const [saveInput, setSaveInput] = useState("");
     const [nicknameInput, setNicknameInput] = useState("");
     const [classNumberInput, setClassNumberInput] = useState("");
@@ -14,6 +16,19 @@ function UserDash() {
     const [savedClasses, setSavedClasses] = useState([]);
     const [loading, setLoading] = useState(true);
     const [loadingClasses, setLoadingClasses] = useState(true);
+
+    useEffect(() => {
+        const container = containerRef.current;
+        if (container && saveSuggestions.length > 0) {
+            const buttonHeight = container.querySelector('button').offsetHeight;
+            const maxVisibleButtons = Math.floor(window.innerHeight / buttonHeight / 2);
+            const newHeight = Math.min(saveSuggestions.length, maxVisibleButtons) * buttonHeight;
+            setContainerHeight(`${newHeight}px`);
+        }
+        else {
+            setContainerHeight("0px");
+        }
+    }, [saveSuggestions]);
 
     const navigate = useNavigate();
 
@@ -177,14 +192,14 @@ function UserDash() {
                     <input type="text" placeholder="Nickname" value={nicknameInput} onChange={(e) => setNicknameInput(e.target.value)} required />
                     <input type="text" placeholder="Class Number" value={classNumberInput} onChange={(e) => setClassNumberInput(e.target.value)} required />
                     <input id="saveform" name="saveform" value={saveInput} onChange={(e) => handleInputChange(e, setSaveInput, setSaveSuggestions)} required />
-                    <ul className="list1">
+                    <div ref={containerRef} className={styles.scrollableContainer} style={{ height: containerHeight }}>
                         {saveSuggestions.map((name, index) => (
-                            <li key={index} className="list-names1" style={{ cursor: "pointer" }} onClick={() => displayNames(name, setSaveInput, setSaveSuggestions)}>
-                                <b>{name}</b>
-                            </li>
+                            <button key={index} className={styles.autofill} style={{ cursor: "pointer" }} onClick={() => displayNames(name, setSaveInput, setSaveSuggestions)}>
+                                <p>{name}</p>
+                            </button>
                         ))}
-                    </ul>
-                    <button className={styles.ProfileButton}type="submit">Submit</button>
+                    </div>
+                    <button className={styles.ProfileButton} type="submit">Submit</button>
                 </form>
             </div>
         </>

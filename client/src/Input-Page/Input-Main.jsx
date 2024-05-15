@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import styles from "./Input-Page.module.css";
 import buildingData from "./building_locations.json";
 
 function InputMain() {
+    const containerStartingRef = useRef(null);
+    const containerEndingRef = useRef(null);
+    const [containerStartingHeight, setStartingContainerHeight] = useState('auto');
+    const [containerEndingHeight, setEndingContainerHeight] = useState('auto');
     const navigate = useNavigate();
     const [startingLocationInput, setStartingLocationInput] = useState("");
     const [endingLocationInput, setEndingLocationInput] = useState("");
@@ -12,7 +16,33 @@ function InputMain() {
     const [endingLocationSuggestions, setEndingLocationSuggestions] = useState([]);
     const [savedClasses, setSavedClasses] = useState([]);
     const token = localStorage.getItem('token');
-    
+
+    useEffect(() => {
+        const container = containerStartingRef.current;
+        if (container && startingLocationSuggestions.length > 0) {
+            const buttonHeight = container.querySelector('button').offsetHeight;
+            const maxVisibleButtons = Math.floor(window.innerHeight / buttonHeight / 3);
+            const newHeight = Math.min(startingLocationSuggestions.length, maxVisibleButtons) * buttonHeight;
+            setStartingContainerHeight(`${newHeight}px`);
+        }
+        else {
+            setStartingContainerHeight("0px");
+        }
+    }, [startingLocationSuggestions]);
+
+    useEffect(() => {
+        const container = containerEndingRef.current;
+        if (container && endingLocationSuggestions.length > 0) {
+            const buttonHeight = container.querySelector('button').offsetHeight;
+            const maxVisibleButtons = Math.floor(window.innerHeight / buttonHeight / 3);
+            const newHeight = Math.min(endingLocationSuggestions.length, maxVisibleButtons) * buttonHeight;
+            setEndingContainerHeight(`${newHeight}px`);
+        }
+        else {
+            setEndingContainerHeight("0px");
+        }
+    }, [endingLocationSuggestions]);
+
     useEffect(() => {
         // Fetch saved classes data
         if (token) fetchClassesData();
@@ -92,28 +122,27 @@ function InputMain() {
         }
     };
 
-
     return (
         <>
             <form className={styles.form} onSubmit={handleSubmit}>
                 <label htmlFor="startdestination">Starting Class Location:</label>
                 <input id="startdestination" name="startdestination" value={startingLocationInput} onChange={(e) => handleInputChange(e, setStartingLocationInput, setStartingLocationSuggestions)} required />
-                <ul className="list1">
+                <div ref={containerStartingRef} className={styles.scrollableContainer} style={{ height: containerStartingHeight }} >
                     {startingLocationSuggestions.map((name, index) => (
-                        <li key={index} className="list-names1" style={{ cursor: "pointer" }} onClick={() => displayNames(name, setStartingLocationInput, setStartingLocationSuggestions)}>
-                            <b>{name}</b>
-                        </li>
+                        <button key={index} className={styles.autofill} style={{ cursor: "pointer" }} onClick={() => displayNames(name, setStartingLocationInput, setStartingLocationSuggestions)}>
+                            <p>{name}</p>
+                        </button>
                     ))}
-                </ul>
+                </div>
                 <label htmlFor="enddestination">Ending Class Location:</label>
                 <input id="enddestination" name="enddestination" value={endingLocationInput} onChange={(e) => handleInputChange(e, setEndingLocationInput, setEndingLocationSuggestions)} required />
-                <ul className="list2">
+                <div ref={containerEndingRef} className={styles.scrollableContainer} style={{ height: containerEndingHeight }} >
                     {endingLocationSuggestions.map((name, index) => (
-                        <li key={index} className="list-names2" style={{ cursor: "pointer" }} onClick={() => displayNames(name, setEndingLocationInput, setEndingLocationSuggestions)}>
-                            <b>{name}</b>
-                        </li>
+                        <button key={index} className={styles.autofill} style={{ cursor: "pointer" }} onClick={() => displayNames(name, setEndingLocationInput, setEndingLocationSuggestions)}>
+                            <p>{name}</p>
+                        </button>
                     ))}
-                </ul>
+                </div>
                 <button className={styles.submit} type="submit">Submit</button>
             </form>
         </>
