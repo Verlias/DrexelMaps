@@ -10,4 +10,25 @@
     color:white;
     text-decoration: none;
   }
-  
+
+
+  .NoFloorPlan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+.FormLayout{
+  margin-left:750px;
+  margin-top:100px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+
+
+
+  }

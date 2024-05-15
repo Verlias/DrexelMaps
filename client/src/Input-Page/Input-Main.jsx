@@ -124,6 +124,7 @@ function InputMain() {
 
     return (
         <>
+            
             <form className={styles.form} onSubmit={handleSubmit}>
                 <label htmlFor="startdestination">Starting Class Location:</label>
                 <input id="startdestination" name="startdestination" value={startingLocationInput} onChange={(e) => handleInputChange(e, setStartingLocationInput, setStartingLocationSuggestions)} required />

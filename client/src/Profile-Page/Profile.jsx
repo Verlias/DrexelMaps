@@ -135,7 +135,6 @@ function UserDash() {
                 {/* <div className={styles.header}>
                     <img src="profile-pic.jpg" alt="Profile Picture" />
                 </div> */}
-                    <h1>Welcome Zacharius</h1>
                 <div className={styles.content}>
                     <div className={styles.sidebar}>
                         <h2 className={styles.sidebar_h2}>
