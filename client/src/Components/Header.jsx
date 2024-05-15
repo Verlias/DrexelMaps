@@ -15,7 +15,6 @@ function Header(){
             <header className={styles.HeaderNav}>
                 <nav>
                     <ul>
-                        <li className={styles.NavLink}><Link to="/Home" style={{textDecoration : 'none'}}><span className={styles.NavText}>Home</span></Link></li>
                         <li className={styles.NavLink}><Link to="/Map" style={{textDecoration : 'none'}}><span className={styles.NavText}>Map</span></Link></li>
                         <li className={styles.NavLink}><Link to="/Input" style={{textDecoration : 'none'}}><span className={styles.NavText}>Input</span></Link></li>
                         <li className={styles.NavLink}><Link to="/Layout" style={{textDecoration : 'none'}}><span className={styles.NavText}>Layout</span></Link></li>
