@@ -50,14 +50,9 @@ function MapMain() {
     return (
         <>
             <canvas id="mapCanvas"></canvas>
-            <div style={{ position: "absolute", bottom: 0 }} id="destinationstart">{data.ds}</div>
-            <div style={{ position: "absolute", bottom: "15px" }} id="destinationend">{data.de}</div>
-            <form onSubmit={handleSubmit} style={{ position: "absolute", bottom: "40px", left: "40px" }}>
-                <label htmlFor="classNumber">Class Number:</label>
-                <input id="classNumber" name="classNumber" required onChange={(e) => setRoomnumber(e.target.value)} />
-                <button className="submit" type="submit" style={{ marginTop: "10px" }}>Submit</button>
-            </form>
-            <button className="submit" type="submit" onClick={handleToggleConnections} style={{ position: "absolute", bottom: "15px", right: "15px" }}>Toggle Connections</button>
+            <div className={ styles.invisibleText } id="destinationstart">{data.ds}</div>
+            <div className={ styles.invisibleText } id="destinationend">{data.de}</div>
+            {/*To Test Routes Uncomment <button onClick={handleToggleConnections} style={{ position: "absolute", bottom: "15px", right: "15px" }}>Toggle Connections</button>*/}
         </>
     );
 };

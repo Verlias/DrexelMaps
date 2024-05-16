@@ -111,6 +111,7 @@ app.post('/input/', (req, res) => {
     console.log("Using ending Body-parser: ", req.body.enddestination);
     startdestination = req.body.startdestination;
     enddestination = req.body.enddestination;
+    classNumber = req.body.classNumber;
     res.redirect('/map');
 });
 
@@ -120,13 +121,6 @@ app.get('/destinations/', (req, res) => {
         de: enddestination
     })
 });
-
-
-app.post('/api/roomnum', (req, res) => {
-    classNumber = req.body.classNumber;
-    console.log(classNumber);
-    res.redirect('/floor');
-})
 
 /* Example of getting nodes from DB
 async function getNodesFromDB() {

@@ -1,0 +1,91 @@
+.form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit {
+    background-color: #003882;
+    color: #FFC200;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top:10px;
+}
+
+.submit:hover {
+    background-color: #FFC200;
+    color: #003882;
+}
+
+.autofill {
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+}
+
+.autofill:hover {
+    background-color: #003882;
+    color: #FFC200;
+}
+
+.scrollableContainer {
+    width: 100%; 
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.formOpen {
+    position: absolute;
+    top: 60px;
+    background: transparent;
+    cursor: pointer;
+    border: 0px solid #000;
+}
+
+.formClose {
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    cursor: pointer;
+    border: 0px solid #000;
+}
+
+.searchIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.closeIcon {
+    width: 10px;
+    height: 10px;
+}
+
+.spacedLabel {
+    margin-top:10px;
+}
