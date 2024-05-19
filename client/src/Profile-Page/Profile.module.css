@@ -143,7 +143,7 @@ anywhere else in the source code OR incomplete implementation
     font-weight: normal;
 }
 
-.savedClassList button {
+.savedClassList .deleteClassButton {
     background-color: red;
     color: black;
     text-align: center;
@@ -157,6 +157,22 @@ anywhere else in the source code OR incomplete implementation
 .savedClassList button:hover{
     font-weight: bold;
     cursor: pointer;
+}
+
+.savedClassList .addClassButtonContainer {
+    text-align: center;
+}
+
+.savedClassList .addClassButton {
+    background-color: hsl(211, 83%, 16%);
+    color: #ffc600;
+    text-align: center;
+    padding: 7.5px;
+    width: 100px;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+    align-self: center;
 }
 
 .label {

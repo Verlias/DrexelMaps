@@ -4,10 +4,12 @@ import { Link, useNavigate } from "react-router-dom";
 import styles from "./Profile.module.css";
 import Header from "../Components/Header";
 import buildingData from "./building_locations.json";
+import ProfileInputModal from "./ProfileInputModal";
 
 function UserDash() {
     const containerRef = useRef(null);
     const [containerHeight, setContainerHeight] = useState('auto');
+    const [isOpen, setIsOpen] = useState(false);
     const [saveInput, setSaveInput] = useState("");
     const [nicknameInput, setNicknameInput] = useState("");
     const [classNumberInput, setClassNumberInput] = useState("");
@@ -172,12 +174,31 @@ function UserDash() {
                             <p>Loading Saved Classes</p>
                         ) : savedClasses && savedClasses.length > 0 ? (
                             <div className={styles.savedClassList}>
+                                <div className={styles.addClassButtonContainer}>
+                                    <button className={styles.addClassButton} onClick={() => setIsOpen(true)}>Add Class</button>
+                                    <ProfileInputModal open={isOpen} onClose={() => setIsOpen(false)}>
+                                        <form onSubmit={handleSubmit}>
+                                            <label htmlFor="saveform">Save Class:</label>
+                                            <input type="text" placeholder="Nickname" value={nicknameInput} onChange={(e) => setNicknameInput(e.target.value)} required />
+                                            <input type="text" placeholder="Class Number" value={classNumberInput} onChange={(e) => setClassNumberInput(e.target.value)} required />
+                                            <input id="saveform" name="saveform" value={saveInput} onChange={(e) => handleInputChange(e, setSaveInput, setSaveSuggestions)} required />
+                                            <div ref={containerRef} className={styles.scrollableContainer} style={{ height: containerHeight }}>
+                                                {saveSuggestions.map((name, index) => (
+                                                    <button key={index} className={styles.autofill} style={{ cursor: "pointer" }} onClick={() => displayNames(name, setSaveInput, setSaveSuggestions)}>
+                                                        <p>{name}</p>
+                                                    </button>
+                                                ))}
+                                            </div>
+                                            <button className={styles.ProfileButton} type="submit">Submit</button>
+                                        </form>
+                                    </ProfileInputModal>
+                                </div>
                                 {savedClasses.map((classItem, index) => (
                                     <div key={index}>
                                         <p><b>Class Name:</b> {classItem.nickname}</p>
                                         <p><b>Room Number:</b> {classItem.roomnumber}</p>
                                         <p><b>Drexel Building:</b> {classItem.building}</p>
-                                        <button onClick={() => handleDelete(classItem._id)}>Delete</button>
+                                        <button className={styles.deleteClassButton} onClick={() => handleDelete(classItem._id)}>Delete</button>
                                     </div>
                                 ))}
                             </div>
@@ -186,20 +207,6 @@ function UserDash() {
                         )}
                     </div>
                 </div>
-                <form onSubmit={handleSubmit}>
-                    <label htmlFor="saveform">Save Class:</label>
-                    <input type="text" placeholder="Nickname" value={nicknameInput} onChange={(e) => setNicknameInput(e.target.value)} required />
-                    <input type="text" placeholder="Class Number" value={classNumberInput} onChange={(e) => setClassNumberInput(e.target.value)} required />
-                    <input id="saveform" name="saveform" value={saveInput} onChange={(e) => handleInputChange(e, setSaveInput, setSaveSuggestions)} required />
-                    <div ref={containerRef} className={styles.scrollableContainer} style={{ height: containerHeight }}>
-                        {saveSuggestions.map((name, index) => (
-                            <button key={index} className={styles.autofill} style={{ cursor: "pointer" }} onClick={() => displayNames(name, setSaveInput, setSaveSuggestions)}>
-                                <p>{name}</p>
-                            </button>
-                        ))}
-                    </div>
-                    <button className={styles.ProfileButton} type="submit">Submit</button>
-                </form>
             </div>
         </>
     )
