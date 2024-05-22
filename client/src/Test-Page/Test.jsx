@@ -5,7 +5,7 @@ import Korman1 from '../Svgs/Korman1.jsx';
 function SvgComponent() {
 
   const jQuerycode = () => {
-    $('#112').css({ fill: "#ff0000" }); 
+    $('#118').css({ fill: "#ff0000" }); 
   };
 
   useEffect(() => {

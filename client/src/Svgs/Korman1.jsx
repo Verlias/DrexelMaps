@@ -6,8 +6,7 @@ function Korman1() {
 <svg
    version="1.1"
    id="svg1"
-   width="1700"
-   height="1100"
+   width="100%"
    viewBox="0 0 3400 2200"
    sodipodi:docname="korman_floor1.svg"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
