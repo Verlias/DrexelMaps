@@ -3,24 +3,30 @@ import $ from 'jquery';
 import Korman1 from '../Svgs/Korman1.jsx';
 
 const SvgComponent = ({ id, building, floor }) => {
+    const [initialLoad, setInitialLoad] = useState(true);
     const [prevId, setPrevId] = useState('');
 
     const jQuerycode = () => {
+
         if (prevId !== '') {
             $(`#${prevId}`).css({ fill: '#000080' });
-            $(`#${prevId}L1`).css({ fill: '#ffffff' });
+            $(`#${prevId}L`).css({ fill: '#ffffff' });
         }
 
-        if (id != '') {
+        if (id !== '') {
             $(`#${id}`).css({ fill: "#FFC600" });
-            $(`#${id}L1`).css({ fill: "#000000" });
-            setPrevId(id);
+            $(`#${id}L`).css({ fill: "#000000" });
+            if (!initialLoad) {
+                setPrevId(id);
+            } else {
+                setInitialLoad(false);
+            }
         }
     };
 
     useEffect(() => {
         jQuerycode();
-     }, [id]); 
+    }, [id, initialLoad]); 
 
 
 
