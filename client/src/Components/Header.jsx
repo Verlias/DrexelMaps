@@ -30,7 +30,7 @@ function Header(){
                             </li>
                         )}
                     </ul>
-                    <p class={styles.DrexelTitle}>Drexel University</p>
+                    <p className={styles.DrexelTitle}>Drexel University</p>
                 </nav>
             </header>
            
