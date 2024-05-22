@@ -5,7 +5,6 @@ import Login from "./Login-Page/Login.jsx"
 import Layout from "./Layout-Page/Layout.jsx";
 import SignUp from "./SignUp-Page/SignUp.jsx";
 import Profile from './Profile-Page/Profile.jsx';
-import Test from "./Test-Page/Test.jsx"
 
 
 
@@ -21,7 +20,6 @@ function App() {
               <Route path="/Layout" element={<Layout />}/>
               <Route path="/SignUp" element={<SignUp />}/>
               <Route path="/Profile" element={<Profile />}/>
-              <Route path="/test" element={<Test />}/>
           </Routes>
       </Router>
     </>

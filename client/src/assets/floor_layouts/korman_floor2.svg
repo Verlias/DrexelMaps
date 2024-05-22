@@ -11,7 +11,7 @@
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlnsXlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
@@ -53,7 +53,7 @@
        y="897.46313"
        inkscape:label="201" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="2565.3513"
        y="1046.3573"
@@ -69,7 +69,7 @@
        id="path1"
        inkscape:label="200" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="2222.4849"
        y="1767.6062"
@@ -85,7 +85,7 @@
        id="path4"
        inkscape:label="204" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="2111.1558"
        y="1765.5573"
@@ -104,7 +104,7 @@
        y="736.95795"
        inkscape:label="213" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="2012.8036"
        y="786.81702"
@@ -123,7 +123,7 @@
        y="622.89679"
        inkscape:label="215" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="2001.8755"
        y="674.12189"
@@ -142,7 +142,7 @@
        y="628.32385"
        inkscape:label="206A" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="2239.9431"
        y="704.14771"
@@ -158,7 +158,7 @@
        id="path8"
        inkscape:label="218" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1973.8352"
        y="346.76135"
@@ -177,7 +177,7 @@
        y="278.18182"
        inkscape:label="220" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1838.125"
        y="337.10226"
@@ -196,7 +196,7 @@
        y="278.66476"
        inkscape:label="222" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1688.4091"
        y="337.58524"
@@ -215,7 +215,7 @@
        y="278.18182"
        inkscape:label="224" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1556.5625"
        y="334.6875"
@@ -234,7 +234,7 @@
        y="277.69885"
        inkscape:label="226" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1470.1136"
        y="327.92615"
@@ -253,7 +253,7 @@
        y="277.69885"
        inkscape:label="228" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1377.8693"
        y="346.27841"
@@ -272,7 +272,7 @@
        y="276.73294"
        inkscape:label="230" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1293.8352"
        y="331.78976"
@@ -291,7 +291,7 @@
        y="279.14774"
        inkscape:label="232" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1202.5568"
        y="333.72159"
@@ -310,7 +310,7 @@
        y="277.21591"
        inkscape:label="234" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1114.1761"
        y="336.13635"
@@ -326,7 +326,7 @@
        id="path19"
        inkscape:label="236" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1022.4148"
        y="321.16476"
@@ -342,7 +342,7 @@
        id="path20"
        inkscape:label="236A" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="950.9375"
        y="394.57385"
@@ -361,7 +361,7 @@
        y="1727.3092"
        inkscape:label="261" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1969.7745"
        y="1803.8053"
@@ -380,7 +380,7 @@
        y="1726.6262"
        inkscape:label="263" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1846.8344"
        y="1803.8053"
@@ -399,7 +399,7 @@
        y="1928.7944"
        inkscape:label="262" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1986.1665"
        y="2005.2906"
@@ -418,7 +418,7 @@
        y="1926.7455"
        inkscape:label="264" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1852.2983"
        y="2009.3885"
@@ -437,7 +437,7 @@
        y="1928.4375"
        inkscape:label="266" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1730.4261"
        y="2010.5398"
@@ -456,7 +456,7 @@
        y="1927.9546"
        inkscape:label="268" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1579.2614"
        y="2001.8466"
@@ -475,7 +475,7 @@
        y="1927.9546"
        inkscape:label="270" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1451.2784"
        y="2001.8466"
@@ -494,7 +494,7 @@
        y="1927.4285"
        inkscape:label="272" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1299.7507"
        y="2007.3396"
@@ -513,7 +513,7 @@
        y="1927.4285"
        inkscape:label="274" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1169.9805"
        y="2005.2906"
@@ -529,7 +529,7 @@
        id="path30"
        inkscape:label="276" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1021.0863"
        y="1998.4604"
@@ -548,7 +548,7 @@
        y="1727.0454"
        inkscape:label="265" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1721.25"
        y="1800.4545"
@@ -567,7 +567,7 @@
        y="1728.0114"
        inkscape:label="267" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1574.4318"
        y="1806.25"
@@ -586,7 +586,7 @@
        y="1726.0796"
        inkscape:label="269" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1438.7216"
        y="1804.3182"
@@ -605,7 +605,7 @@
        y="1727.5284"
        inkscape:label="271" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1305.9091"
        y="1802.3864"
@@ -624,7 +624,7 @@
        y="1727.0454"
        inkscape:label="273" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1175.9943"
        y="1797.5568"
@@ -643,7 +643,7 @@
        y="1728.0114"
        inkscape:label="275" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1029.6591"
        y="1803.3523"
@@ -662,7 +662,7 @@
        y="1619.588"
        inkscape:label="260" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1937.1307"
        y="1667.8835"
@@ -681,7 +681,7 @@
        y="1619.3466"
        inkscape:label="259" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1793.4517"
        y="1672.9545"
@@ -700,7 +700,7 @@
        y="1619.3466"
        inkscape:label="258" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1643.0114"
        y="1673.196"
@@ -719,7 +719,7 @@
        y="1536.7614"
        inkscape:label="254" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1440.6534"
        y="1603.4091"
@@ -738,7 +738,7 @@
        y="1537.2443"
        inkscape:label="255" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1311.7045"
        y="1600.9943"
@@ -757,7 +757,7 @@
        y="1536.7614"
        inkscape:label="256" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1175.5114"
        y="1603.892"
@@ -776,7 +776,7 @@
        y="1536.752"
        inkscape:label="257" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1032.6973"
        y="1608.467"
@@ -795,7 +795,7 @@
        y="1536.069"
        inkscape:label="284" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="800.1355"
        y="1608.8085"
@@ -814,7 +814,7 @@
        y="1460.9375"
        inkscape:label="250" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1989.7727"
        y="1515.0284"
@@ -833,7 +833,7 @@
        y="1460.9388"
        inkscape:label="251" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1859.1284"
        y="1512.8469"
@@ -852,7 +852,7 @@
        y="1461.6218"
        inkscape:label="252" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1717.0642"
        y="1518.3109"
@@ -868,7 +868,7 @@
        id="path48"
        inkscape:label="282" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="784.80115"
        y="1763.267"
@@ -887,7 +887,7 @@
        y="1333.9008"
        inkscape:label="291" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="883.8031"
        y="1394.6877"
@@ -906,7 +906,7 @@
        y="1211.6436"
        inkscape:label="293" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="891.99915"
        y="1277.8947"
@@ -925,7 +925,7 @@
        y="1319.5577"
        inkscape:label="290" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="687.09888"
        y="1387.1748"
@@ -944,7 +944,7 @@
        y="1180.2255"
        inkscape:label="292" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="691.87988"
        y="1259.4536"
@@ -963,7 +963,7 @@
        y="1088.7034"
        inkscape:label="295" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="874.92413"
        y="1162.4675"
@@ -982,7 +982,7 @@
        y="1044.1477"
        inkscape:label="294" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="687.72729"
        y="1115.625"
@@ -1001,7 +1001,7 @@
        y="967.84088"
        inkscape:label="297" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="892.5"
        y="1035.4545"
@@ -1020,7 +1020,7 @@
        y="854.82953"
        inkscape:label="296" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="689.17615"
        y="958.66479"
@@ -1039,7 +1039,7 @@
        y="855.79547"
        inkscape:label="298" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="848.06818"
        y="912.78412"
@@ -1058,7 +1058,7 @@
        y="746.51996"
        inkscape:label="246" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="744.47095"
        y="815.50305"
@@ -1074,7 +1074,7 @@
        id="path59"
        inkscape:label="242" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="718.51691"
        y="685.73285"
@@ -1090,7 +1090,7 @@
        id="path60"
        inkscape:label="240" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="928.88116"
        y="597.62573"
@@ -1109,7 +1109,7 @@
        y="1032.0143"
        inkscape:label="208C" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="2358.4021"
        y="1107.8274"
@@ -1128,7 +1128,7 @@
        y="1256.0386"
        inkscape:label="208A" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="2245.0239"
        y="1335.9497"
@@ -1147,7 +1147,7 @@
        y="1404.2498"
        inkscape:label="208B" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="2230.6809"
        y="1487.5759"
@@ -1166,7 +1166,7 @@
        y="1174.5454"
        inkscape:label="207" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1807.2159"
        y="1331.9886"
@@ -1185,7 +1185,7 @@
        y="1173.5796"
        inkscape:label="247" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1330.0568"
        y="1324.2614"
@@ -1201,7 +1201,7 @@
        id="path66"
        inkscape:label="209" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1763.75"
        y="1115.625"
@@ -1220,7 +1220,7 @@
        y="898.82916"
        inkscape:label="245" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1258.0876"
        y="1041.5763"
@@ -1239,7 +1239,7 @@
        y="633.63635"
        inkscape:label="241" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1246.0227"
        y="765"
@@ -1258,7 +1258,7 @@
        y="482.95456"
        inkscape:label="233" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1130.5966"
        y="560.22729"
@@ -1277,7 +1277,7 @@
        y="484.88635"
        inkscape:label="229" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';display:inline;opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1275"
        y="559.26135"
@@ -1296,7 +1296,7 @@
        y="484.9306"
        inkscape:label="227" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1439.7657"
        y="566.2077"
@@ -1315,7 +1315,7 @@
        y="486.81818"
        inkscape:label="223" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1613.0682"
        y="703.18182"
@@ -1331,7 +1331,7 @@
        id="path73"
        inkscape:label="217" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1949.2845"
        y="567.57373"
@@ -1350,7 +1350,7 @@
        y="485.61362"
        inkscape:label="221" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1815.4163"
        y="555.96271"
@@ -1369,7 +1369,7 @@
        y="622.89679"
        inkscape:label="211" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1821.5634"
        y="775.20599"
@@ -1388,7 +1388,7 @@
        y="900.19513"
        inkscape:label="211C" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1722.5282"
        y="976.69122"
@@ -1407,7 +1407,7 @@
        y="899.51215"
        inkscape:label="211B" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1872.1053"
        y="976.69122"
@@ -1426,7 +1426,7 @@
        y="900.19513"
        inkscape:label="211A" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:26.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';opacity:1;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="2038.7576"
        y="967.12921"

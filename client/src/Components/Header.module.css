@@ -30,6 +30,7 @@
     background-color: #07294D;
     position: fixed;
     overflow: hidden;
+    z-index: 100;
     width: 100%;
 }
 

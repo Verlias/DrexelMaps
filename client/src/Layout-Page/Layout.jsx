@@ -1,44 +1,23 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import kormanFloor1 from '../assets/floor_layouts/korman_floor1.svg';
-import kormanFloor2 from '../assets/floor_layouts/korman_floor2.svg';
-import mainFloor1 from '../assets/floor_layouts/main_floor1.svg';
-import mainFloor2 from '../assets/floor_layouts/main_floor2.svg';
+import SvgComponent from './SvgComponent.jsx';
 import styles from "./Layout-Page.module.css";
 import Header from "../Components/Header.jsx"
 
-
 const Layout = () => {
-    const [svgs, setSvgs] = useState([]);
-    const [currentSvgIndex, setCurrentSvgIndex] = useState(0);
     const [building, setBuilding] = useState("");
     const [roomnumber, setRoomnumber] = useState("");
-    const [floorplanAvailable, setFloorplanAvailable] = useState(false);
+    const [floor, setFloor] = useState("1"); 
     const [loadingBuilding, setLoadingBuilding] = useState(true);
     const [loadingRoom, setLoadingRoom] = useState(true);
-    const [inputValue, setInputValue] = useState("");
+    const [inputValues, setInputValues] = useState({ building: "", roomnumber: "" });
     const [manualInput, setManualInput] = useState(false);
 
     useEffect(() => {
-        if (building === "korman center") {
-            setSvgs([kormanFloor1, kormanFloor2]);
-            setFloorplanAvailable(true);
-        }
-        else if (building === "main building") {
-            setSvgs([mainFloor1, mainFloor2]);
-            setFloorplanAvailable(true);
-        }
-        else {
-            setFloorplanAvailable(false);
-            console.log("No Floorplans Available!");
-        }
-
         // Prevents fetch when manually changing building
         if (!manualInput) {
             fetchBuilding();
             fetchRoomnumber();
-            console.log(roomnumber);
         }
     }, [building]);
 
@@ -58,54 +37,61 @@ const Layout = () => {
     const fetchRoomnumber = async () => {
         try {
             const response = await axios.get('http://localhost:3000/api/roomnum');
-            // Building is stored with key de on backend
-            setRoomnumber(response.data.roomnum.toLowerCase());
+            setRoomnumber(response.data.roomnum);
+            setFloor((roomnumber.toString().charAt(0)));
             setLoadingRoom(false);
         } catch (error) {
-            console.error("Error fetching building:", error);
+            console.error("Error fetching roomnumber:", error);
             setLoadingRoom(false);
         }
-    };
-
-    const switchSvg = (index) => {
-        setCurrentSvgIndex(index);
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
         setManualInput(true);
-        setBuilding(inputValue);
-        setInputValue(""); // Clear the input field after submission
+        setBuilding(inputValues.building);
+        setRoomnumber(inputValues.roomnumber);
+        setFloor(roomnumber.toString().charAt(0));
+        setInputValues({ building: "", roomnumber: "" }); // Clear the input fields after submission
     };
 
     const handleChange = (event) => {
-        setInputValue(event.target.value);
+        const { name, value } = event.target;
+        setInputValues((prevValues) => ({ ...prevValues, [name]: value }));
     };
 
     return (
         <>
             <Header />
             <div style={{ textAlign: 'center' }}>
-                {floorplanAvailable ? (
-                    <>
-                        {svgs.map((item, index) => (
-                            <button className={styles.LayoutButton} key={index} onClick={() => switchSvg(index)}>{index}</button>
-                        ))}
-                        <img src={svgs[currentSvgIndex]} alt={`Floor ${currentSvgIndex + 1}`} />
-
+                <div className={styles.SvgComponentContainer}>
+                    {<SvgComponent id={roomnumber} building={building} floor={floor} />}
+                </div>
                 
-                        
 
-                    </>
-                ) : (
-                    <></>
-                )}
-                <form className={styles.FormLayout}onSubmit={handleSubmit}>
+                <form className={styles.FormLayout} onSubmit={handleSubmit}>
                     <label>
                         Enter building name:
-                        <input type="text" value={inputValue} onChange={handleChange} />
+                    <input
+                      type="text"
+                      name="building"
+                      value={inputValues.building}
+                      onChange={handleChange}
+                      required
+                    />
                     </label>
-                    <button className={styles.LayoutButton} type="submit">Submit</button>
+                    <label>
+                        Roomnumber
+                    <input
+                      type="text"
+                      name="roomnumber"
+                      value={inputValues.roomnumber}
+                      onChange={handleChange}
+                    />
+                    </label>
+                    <button className={styles.LayoutButton} type="submit">
+                        Submit
+                    </button>
                 </form>
             </div>
         </>

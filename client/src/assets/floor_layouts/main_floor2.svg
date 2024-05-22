@@ -11,7 +11,7 @@
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlnsXlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
@@ -758,7 +758,7 @@
        d="m 781,162 33,1 -0.5,27 h 36 l 0.5,-55.5 -69,-2 z"
        id="201A" />
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="809.75"
        y="870.75"
@@ -768,7 +768,7 @@
          x="809.75"
          y="870.75">212</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="925.5"
        y="986"
@@ -778,7 +778,7 @@
          x="925.5"
          y="986">212.10</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="914"
        y="945"
@@ -788,7 +788,7 @@
          x="914"
          y="945">212.12</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="990"
        y="968"
@@ -798,7 +798,7 @@
          x="990"
          y="968">212.9</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1037.5"
        y="968"
@@ -808,7 +808,7 @@
          x="1037.5"
          y="968">212.8</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1072"
        y="967.5"
@@ -818,7 +818,7 @@
          x="1072"
          y="967.5">212.75</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1113.5"
        y="969.5"
@@ -828,7 +828,7 @@
          x="1113.5"
          y="969.5">212.7</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1162"
        y="970.5"
@@ -838,7 +838,7 @@
          x="1162"
          y="970.5">212.6</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1208"
        y="950.5"
@@ -848,7 +848,7 @@
          x="1208"
          y="950.5">212.5</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1202.5"
        y="889"
@@ -858,7 +858,7 @@
          x="1202.5"
          y="889">212.4</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1140.5"
        y="893"
@@ -868,7 +868,7 @@
          x="1140.5"
          y="893">212.28</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1146.5"
        y="869.5"
@@ -878,7 +878,7 @@
          x="1146.5"
          y="869.5">212.23</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1091.5"
        y="900"
@@ -888,7 +888,7 @@
          x="1091.5"
          y="900">212.27</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1051.5"
        y="900.5"
@@ -898,7 +898,7 @@
          x="1051.5"
          y="900.5">212.26</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1092"
        y="864"
@@ -908,7 +908,7 @@
          x="1092"
          y="864">212.22</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1052"
        y="861"
@@ -918,7 +918,7 @@
          x="1052"
          y="861">212.21</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1013.5"
        y="900.5"
@@ -928,7 +928,7 @@
          x="1013.5"
          y="900.5">212.25</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="975"
        y="896"
@@ -938,7 +938,7 @@
          x="975"
          y="896">212.24</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';display:inline;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="971.5"
        y="866.5"
@@ -948,7 +948,7 @@
          x="0"
          y="0">212.19</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1015.5"
        y="867.5"
@@ -958,7 +958,7 @@
          x="1015.5"
          y="867.5">212.20</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="915"
        y="827"
@@ -968,7 +968,7 @@
          x="915"
          y="827">212.14</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="996"
        y="805.5"
@@ -978,7 +978,7 @@
          x="996"
          y="805.5">212.16</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1039"
        y="808"
@@ -988,7 +988,7 @@
          x="1039"
          y="808">212.17</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1076"
        y="811"
@@ -998,7 +998,7 @@
          x="1076"
          y="811">212.18</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1149.5"
        y="805"
@@ -1008,7 +1008,7 @@
          x="1149.5"
          y="805">212.1</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1182"
        y="810"
@@ -1018,7 +1018,7 @@
          x="1182"
          y="810">212.2</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1212"
        y="799"
@@ -1028,7 +1028,7 @@
          x="1212"
          y="799">212.3</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1126.625"
        y="660.625"
@@ -1038,7 +1038,7 @@
          x="1126.625"
          y="660.625">209</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1202.0815"
        y="564.80151"
@@ -1048,7 +1048,7 @@
          x="1202.0815"
          y="564.80151">208D</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1158.5945"
        y="576.82239"
@@ -1058,7 +1058,7 @@
          x="1158.5945"
          y="576.82239">208C</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1124.6533"
        y="576.82239"
@@ -1068,7 +1068,7 @@
          x="1124.6533"
          y="576.82239">208B</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1081.8734"
        y="578.41333"
@@ -1078,7 +1078,7 @@
          x="1081.8734"
          y="578.41333">208A</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1061.7208"
        y="519.36993"
@@ -1088,7 +1088,7 @@
          x="1061.7208"
          y="519.36993">208O</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1097.4297"
        y="521.49127"
@@ -1098,7 +1098,7 @@
          x="1097.4297"
          y="521.49127">208N</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1141.9775"
        y="520.25385"
@@ -1108,7 +1108,7 @@
          x="1141.9775"
          y="520.25385">208M</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1134.1993"
        y="492.32309"
@@ -1118,7 +1118,7 @@
          x="1134.1993"
          y="492.32309">208L</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1096.0155"
        y="493.03021"
@@ -1128,7 +1128,7 @@
          x="1096.0155"
          y="493.03021">208K</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1062.0743"
        y="494.26764"
@@ -1138,7 +1138,7 @@
          x="1062.0743"
          y="494.26764">208J</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1210.7437"
        y="434.51712"
@@ -1148,7 +1148,7 @@
          x="1210.7437"
          y="434.51712">208F</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1150.1093"
        y="436.10812"
@@ -1158,7 +1158,7 @@
          x="1150.1093"
          y="436.10812">208H</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1124.2998"
        y="436.28488"
@@ -1168,7 +1168,7 @@
          x="1124.2998"
          y="436.28488">208I</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1128.896"
        y="385.19641"
@@ -1178,7 +1178,7 @@
          x="1128.896"
          y="385.19641">207</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1178.0399"
        y="313.42508"
@@ -1188,7 +1188,7 @@
          x="1178.0399"
          y="313.42508">205</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1196.2479"
        y="250.3158"
@@ -1198,7 +1198,7 @@
          x="1196.2479"
          y="250.3158">203I</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1197.4854"
        y="187.3833"
@@ -1208,7 +1208,7 @@
          x="1197.4854"
          y="187.3833">203G</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1124.6533"
        y="167.93787"
@@ -1218,7 +1218,7 @@
          x="1124.6533"
          y="167.93787">203F</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1058.3621"
        y="177.30704"
@@ -1228,7 +1228,7 @@
          x="1058.3621"
          y="177.30704">203E</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1110"
        y="295"
@@ -1238,7 +1238,7 @@
          x="1110"
          y="295">204</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="982"
        y="245.75"
@@ -1248,7 +1248,7 @@
          x="982"
          y="245.75">202</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="903"
        y="244"
@@ -1258,7 +1258,7 @@
          x="903"
          y="244">201</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="838.25"
        y="321.25"
@@ -1268,7 +1268,7 @@
          x="838.25"
          y="321.25">229</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="679.5"
        y="973.25"
@@ -1278,7 +1278,7 @@
          x="679.5"
          y="973.25">215</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="683.5"
        y="929.25"
@@ -1288,7 +1288,7 @@
          x="683.5"
          y="929.25">214</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="604.5"
        y="924.25"
@@ -1298,7 +1298,7 @@
          x="604.5"
          y="924.25">216</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="550"
        y="955.75"
@@ -1308,7 +1308,7 @@
          x="550"
          y="955.75">218</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="494.75"
        y="950.75"
@@ -1318,7 +1318,7 @@
          x="494.75"
          y="950.75">219</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="430.75"
        y="949.25"
@@ -1328,7 +1328,7 @@
          x="430.75"
          y="949.25">221</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="630.75"
        y="826"
@@ -1338,7 +1338,7 @@
          x="630.75"
          y="826">217</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="681.5"
        y="820"
@@ -1348,7 +1348,7 @@
          x="681.5"
          y="820">213</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="407.64706"
        y="874.33752"
@@ -1358,7 +1358,7 @@
          x="407.64706"
          y="874.33752">22C</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="406.23285"
        y="829.0827"
@@ -1368,7 +1368,7 @@
          x="406.23285"
          y="829.0827">222D</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="404.81863"
        y="799.73779"
@@ -1378,7 +1378,7 @@
          x="404.81863"
          y="799.73779">222E</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="408.35416"
        y="737.51239"
@@ -1388,7 +1388,7 @@
          x="408.35416"
          y="737.51239">22F</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="491.79276"
        y="765.79663"
@@ -1398,7 +1398,7 @@
          x="491.79276"
          y="765.79663">222U</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="480.47906"
        y="706.75323"
@@ -1408,7 +1408,7 @@
          x="480.47906"
          y="706.75323">222T</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="559.32147"
        y="743.87634"
@@ -1418,7 +1418,7 @@
          x="559.32147"
          y="743.87634">222B</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="563.91766"
        y="704.6319"
@@ -1428,7 +1428,7 @@
          x="563.91766"
          y="704.6319">222A</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="401.28311"
        y="679.17609"
@@ -1438,7 +1438,7 @@
          x="401.28311"
          y="679.17609">222G</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="404.11154"
        y="634.62836"
@@ -1448,7 +1448,7 @@
          x="404.11154"
          y="634.62836">222H</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="399.51532"
        y="564.62476"
@@ -1458,7 +1458,7 @@
          x="399.51532"
          y="564.62476">222I</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="401.28311"
        y="522.90546"
@@ -1468,7 +1468,7 @@
          x="401.28311"
          y="522.90546">222J</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="405.8793"
        y="485.07526"
@@ -1478,7 +1478,7 @@
          x="405.8793"
          y="485.07526">222K</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="414.36456"
        y="439.82043"
@@ -1488,7 +1488,7 @@
          x="414.36456"
          y="439.82043">222L</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="465.98337"
        y="438.75977"
@@ -1498,7 +1498,7 @@
          x="465.98337"
          y="438.75977">222M</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="471.99377"
        y="533.8656"
@@ -1508,7 +1508,7 @@
          x="471.99377"
          y="533.8656">222R</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="552.95752"
        y="551.54327"
@@ -1518,7 +1518,7 @@
          x="552.95752"
          y="551.54327">222Q</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="552.95752"
        y="511.94531"
@@ -1528,7 +1528,7 @@
          x="552.95752"
          y="511.94531">222P</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="500.27805"
        y="437.6991"
@@ -1538,7 +1538,7 @@
          x="500.27805"
          y="437.6991">222N</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="535.98694"
        y="435.57779"
@@ -1548,7 +1548,7 @@
          x="535.98694"
          y="435.57779">222O</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="456.08386"
        y="378.65567"
@@ -1558,7 +1558,7 @@
          x="456.08386"
          y="378.65567">291</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="401.28311"
        y="311.48053"
@@ -1568,7 +1568,7 @@
          x="401.28311"
          y="311.48053">225B</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="445.83084"
        y="327.39044"
@@ -1578,7 +1578,7 @@
          x="445.83084"
          y="327.39044">225A</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="474.11511"
        y="239.35565"
@@ -1588,7 +1588,7 @@
          x="474.11511"
          y="239.35565">225D</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="404.81863"
        y="195.16147"
@@ -1598,7 +1598,7 @@
          x="404.81863"
          y="195.16147">225H</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="488.96432"
        y="157.68481"
@@ -1608,7 +1608,7 @@
          x="488.96432"
          y="157.68481">225G</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="548.00775"
        y="160.86679"
@@ -1618,7 +1618,7 @@
          x="548.00775"
          y="160.86679">225F</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="561.79633"
        y="202.23254"
@@ -1628,7 +1628,7 @@
          x="561.79633"
          y="202.23254">225E</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="557.90723"
        y="272.23611"
@@ -1638,7 +1638,7 @@
          x="557.90723"
          y="272.23611">225C</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="620.13263"
        y="266.9328"
@@ -1648,7 +1648,7 @@
          x="620.13263"
          y="266.9328">226</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';display:inline;fill:#000000;stroke:#000000;stroke-width:0.5"
        x="673.17609"
        y="178.2767"
@@ -1658,7 +1658,7 @@
          x="673.17609"
          y="178.2767">228K</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="672"
        y="241.5"
@@ -1668,7 +1668,7 @@
          x="672"
          y="241.5">228J</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="664.5"
        y="307"
@@ -1678,7 +1678,7 @@
          x="664.5"
          y="307">228B</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="722.5"
        y="325.5"
@@ -1688,7 +1688,7 @@
          x="722.5"
          y="325.5">228A</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="822"
        y="226"
@@ -1698,7 +1698,7 @@
          x="822"
          y="226">228F</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="784.5"
        y="265"
@@ -1708,7 +1708,7 @@
          x="784.5"
          y="265">228C</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="810"
        y="157"
@@ -1718,7 +1718,7 @@
          x="810"
          y="157">201A</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="782"
        y="195.5"
@@ -1728,7 +1728,7 @@
          x="782"
          y="195.5">228G</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="736.5"
        y="160"
@@ -1738,7 +1738,7 @@
          x="736.5"
          y="160">228H</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="471.64023"
        y="632.8606"
@@ -1748,7 +1748,7 @@
          x="471.64023"
          y="632.8606">222S</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="480.12549"
        y="830.85046"
@@ -1758,7 +1758,7 @@
          x="480.12549"
          y="830.85046">222V</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1195.7177"
        y="497.80316"
@@ -1768,7 +1768,7 @@
          x="1195.7177"
          y="497.80316">208E</tspan></text>
     <text
-       xml:space="preserve"
+       xmlSpace="preserve"
        style="font-weight:bold;font-size:10.6667px;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic, Bold';fill:#000000;stroke:#000000;stroke-width:0.5"
        x="1048.6394"
        y="230.51682"
