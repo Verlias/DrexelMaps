@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
-import { ReactComponent as TestSvg } from '../assets/floor_layouts/korman_floor1.svg';
+//import { ReactComponent as TestSvg } from '../assets/floor_layouts/korman_floor1.svg';
 
 function SvgComponent() {
 
@@ -15,7 +15,7 @@ function SvgComponent() {
   return (
     <div>
       {/* TestSvg is now a React component */}
-      <TestSvg />
+          {/*<TestSvg />*/}
     </div>
   );
 }
