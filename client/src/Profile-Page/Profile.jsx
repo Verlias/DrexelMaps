@@ -154,7 +154,6 @@ function UserDash() {
                             </li>
                             <button className={styles.LogoutButton}onClick={handleClick}>Log Out</button>
                         </ul>
-                        
                         {loading ? (
                             <p>Loading profile...</p>
                         ) : profileData ? (
@@ -165,22 +164,7 @@ function UserDash() {
                                     <h2 className={styles.UserInfoHeader}>User Information:</h2>
                                     <p className={styles.UserInfo}>Name: {profileData.name}</p>
                                     <p className={styles.UserInfo}>Email: {profileData.email}</p>
-                                </div>
-                                {/* Display other profile information as needed */}
-                            </div>
-                        ) : (
-                            <p>No profile data available</p>
-                        )}
-                    </div>
-                    <div className={styles.profile_info}>
-                        
-
-                        <h2 className={styles.HeadlineLoading}>Saved Classes</h2>
-                        {loadingClasses ? (
-                            <p className={styles.HeadlineLoading}>Loading Saved Classes</p>
-                        ) : savedClasses && savedClasses.length > 0 ? (
-                            <div className={styles.savedClassList}>
-                                <div className={styles.addClassButtonContainer}>
+                                    <div className={styles.addClassButtonContainer}>
                                     <button className={styles.addClassButton} onClick={() => setIsOpen(true)}>Add Class</button>
                                     <ProfileInputModal open={isOpen} onClose={() => setIsOpen(false)}>
                                         <form onSubmit={handleSubmit}>
@@ -199,12 +183,28 @@ function UserDash() {
                                         </form>
                                     </ProfileInputModal>
                                 </div>
+                                </div>
+                                {/* Display other profile information as needed */}
+                            </div>
+                        ) : (
+                            <p>No profile data available</p>
+                        )}
+                    </div>
+                    <div className={styles.profile_info}>
+                        
+
+                        <h2 className={styles.HeadlineLoading}>Saved Classes</h2>
+                        {loadingClasses ? (
+                            <p className={styles.HeadlineLoading}>Loading Saved Classes</p>
+                        ) : savedClasses && savedClasses.length > 0 ? (
+                            <div className={styles.savedClassList}>
+                                
                                 {savedClasses.map((classItem, index) => (
                                     <div key={index}>
                                         <p><b>Class Name:</b> {classItem.nickname}</p>
                                         <p><b>Room Number:</b> {classItem.roomnumber}</p>
                                         <p><b>Drexel Building:</b> {classItem.building}</p>
-                                        <button className={styles.deleteClassButton} onClick={() => handleDelete(classItem._id)}>Delete</button>
+                                        <i onClick={() => handleDelete(classItem._id)} className='fas fa-trash' style={{fontSize:'28px',color:'Red'}}></i>
                                     </div>
                                 ))}
                             </div>
