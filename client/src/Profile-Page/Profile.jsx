@@ -152,26 +152,32 @@ function UserDash() {
                             <li>
                                 <Link to="/settings">Settings</Link>
                             </li>
-                            <button onClick={handleClick}>Log Out</button>
+                            <button className={styles.LogoutButton}onClick={handleClick}>Log Out</button>
                         </ul>
-                    </div>
-                    <div className={styles.profile_info}>
-                        <h2>Profile Information</h2>
+                        
                         {loading ? (
                             <p>Loading profile...</p>
                         ) : profileData ? (
                             <div>
-                                <p>Name: {profileData.name}</p>
-                                <p>Email: {profileData.email}</p>
+                                
+                                <p className={styles.ProfileName}>Welcome {profileData.name}!</p>
+                                <div className={styles.UserInformationContainer}>
+                                    <h2 className={styles.UserInfoHeader}>User Information:</h2>
+                                    <p className={styles.UserInfo}>Name: {profileData.name}</p>
+                                    <p className={styles.UserInfo}>Email: {profileData.email}</p>
+                                </div>
                                 {/* Display other profile information as needed */}
                             </div>
                         ) : (
                             <p>No profile data available</p>
                         )}
+                    </div>
+                    <div className={styles.profile_info}>
+                        
 
-                        <h2>Saved Classes</h2>
+                        <h2 className={styles.HeadlineLoading}>Saved Classes</h2>
                         {loadingClasses ? (
-                            <p>Loading Saved Classes</p>
+                            <p className={styles.HeadlineLoading}>Loading Saved Classes</p>
                         ) : savedClasses && savedClasses.length > 0 ? (
                             <div className={styles.savedClassList}>
                                 <div className={styles.addClassButtonContainer}>

@@ -3,6 +3,25 @@ NOTE: Code in comments currently aren't being used
 anywhere else in the source code OR incomplete implementation
 */
 
+
+
+.ProfileName {
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    
+}
+
+
+
+.UserInfo{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.LogoutButton{
+    font-weight:bold;
+}
+
 .header {
     display: flex;
     font-family: Arial, sans-serif;
@@ -43,7 +62,6 @@ anywhere else in the source code OR incomplete implementation
 
 .content {
     font-family: Arial, sans-serif;
-    margin-left: 40px;
     margin-right: 40px;
     display: flex;
     flex-direction: row;
@@ -55,18 +73,21 @@ anywhere else in the source code OR incomplete implementation
 /* Side Bar Styling */
 .sidebar {
     display: block;
-    height: 700px;
+    height: 1000px;
     width: fit-content;
     background-color: #ddd;
     color: black;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    font-size:25px;
 }
 
 .sidebar h2 {
-    margin-top: 0;
-    font-size: 24px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: hsl(211, 83%, 16%);
+
 }
 
 .sidebar ul {
@@ -76,7 +97,9 @@ anywhere else in the source code OR incomplete implementation
 }
 
 .sidebar li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size:16px;
+    font-weight:bold;
 }
 
 .sidebar a {
@@ -128,14 +151,25 @@ anywhere else in the source code OR incomplete implementation
 }
 
 /* Saved Classes Styling */
+
+.HeadlineLoading{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding-left:400px;
+    margin-top:100px;
+}
+
 .savedClassList {
     width: 100%;
     height: 575px;
     overflow: auto;
+    padding-left:400px;
 }
 .savedClassList div {
     border-style: solid;
-    padding: 15px;
+    padding: 20px;
+    background-color:#ddd
+    
 }
 
 .savedClassList p {
