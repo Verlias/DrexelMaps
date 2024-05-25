@@ -7,7 +7,7 @@ import Header from "../Components/Header.jsx"
 const Layout = () => {
     const [building, setBuilding] = useState("");
     const [roomnumber, setRoomnumber] = useState("");
-    const [floor, setFloor] = useState("1"); 
+    const [floor, setFloor] = useState(""); 
     const [loadingBuilding, setLoadingBuilding] = useState(true);
     const [loadingRoom, setLoadingRoom] = useState(true);
     const [inputValues, setInputValues] = useState({ building: "", roomnumber: "" });
@@ -19,7 +19,7 @@ const Layout = () => {
             fetchBuilding();
             fetchRoomnumber();
         }
-    }, [building]);
+    }, [building, roomnumber]);
 
     // Gets the end destination building
     const fetchBuilding = async () => {
@@ -37,8 +37,9 @@ const Layout = () => {
     const fetchRoomnumber = async () => {
         try {
             const response = await axios.get('http://localhost:3000/api/roomnum');
-            setRoomnumber(response.data.roomnum);
-            setFloor((roomnumber.toString().charAt(0)));
+            roomnum = response.data.roomnum;
+            setRoomnumber(roomnum);
+            setFloor((roomnum.toString().charAt(0)));
             setLoadingRoom(false);
         } catch (error) {
             console.error("Error fetching roomnumber:", error);
