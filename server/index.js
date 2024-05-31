@@ -163,13 +163,17 @@ app.get('/profile/:drexelid', (req, res) => {
         })
 });
 
+// Save class API endpoint
 app.post('/api/save', async (req, res) => {
+    // Check if user is logged in
     if (currentuser != null) {
         const formData = req.body;
         try {
+            // Create a new class object and save it to the database
             const newClass = new Class(formData);
             await newClass.save();
 
+            // Create a new user-class relationship and save it to the database
             const newUserClass = new UserClass({ userId: currentuser._id, classId: newClass._id });
             await newUserClass.save()
 
@@ -183,7 +187,6 @@ app.post('/api/save', async (req, res) => {
     else {
         console.error('No user logged in')
     }
-    
 });
 
 app.post('/api/deleteclass', async (req, res) => {

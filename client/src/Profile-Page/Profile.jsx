@@ -26,8 +26,7 @@ function UserDash() {
             const maxVisibleButtons = Math.floor(window.innerHeight / buttonHeight / 2);
             const newHeight = Math.min(saveSuggestions.length, maxVisibleButtons) * buttonHeight;
             setContainerHeight(`${newHeight}px`);
-        }
-        else {
+        } else {
             setContainerHeight("0px");
         }
     }, [saveSuggestions]);
@@ -39,21 +38,18 @@ function UserDash() {
         if (!token) {
             navigate('/Login');
         }
-    }, []);
+    }, [navigate]);
 
     const handleClick = async (e) => {
-        // Update formData state with the new value of the changed input field
         e.preventDefault();
         localStorage.removeItem('token');
         navigate('/Login');
     };
 
     useEffect(() => {
-        // Fetching building names from JSON data
         const names = buildingData.map(building => building.name).filter(name => name !== 'road').sort();
         setSaveSuggestions(names);
-        
-        // Fetch user profile data when the component mounts
+
         fetchProfileData();
         fetchClassesData();
     }, []);
@@ -79,7 +75,7 @@ function UserDash() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/api/save/', {
+            await axios.post('http://localhost:3000/api/save/', {
                 nickname: nicknameInput,
                 building: saveInput,
                 roomnumber: classNumberInput
@@ -92,7 +88,7 @@ function UserDash() {
 
     const handleDelete = async (id) => {
         try {
-            const response = await axios.post('http://localhost:3000/api/deleteclass/', {
+            await axios.post('http://localhost:3000/api/deleteclass/', {
                 itemId: id
             });
             window.location.reload();
@@ -101,14 +97,10 @@ function UserDash() {
         }
     };
 
-    // Gets the profile data
     const fetchProfileData = async () => {
         try {
-            // Fetch user profile data from the backend
             const response = await axios.get('http://localhost:3000/api/profile');
-            // Set the fetched profile data in state
             setProfileData(response.data);
-            console.log(profileData.name);
             setLoading(false);
         } catch (error) {
             console.error("Error fetching profile data:", error);
@@ -116,17 +108,14 @@ function UserDash() {
         }
     };
 
-    // Gets the saved classes
     const fetchClassesData = async () => {
         try {
-            // Fetch user saved classes data from the backend
             const response = await axios.get('http://localhost:3000/api/saved');
-            // Set the saved classes data in state
             setSavedClasses(response.data);
             setLoadingClasses(false);
         } catch (error) {
             console.error("Error fetching saved classes:", error);
-            setLoading(false);
+            setLoadingClasses(false);
         }
     };
 
@@ -134,14 +123,9 @@ function UserDash() {
         <>
             <Header />
             <div className={styles.container}>
-                {/* <div className={styles.header}>
-                    <img src="profile-pic.jpg" alt="Profile Picture" />
-                </div> */}
                 <div className={styles.content}>
                     <div className={styles.sidebar}>
-                        <h2 className={styles.sidebar_h2}>
-                            Dashboard
-                        </h2>
+                        <h2 className={styles.sidebar_h2}>Dashboard</h2>
                         <ul>
                             <li>
                                 <Link to="/my-courses">My Courses</Link>
@@ -152,70 +136,66 @@ function UserDash() {
                             <li>
                                 <Link to="/settings">Settings</Link>
                             </li>
-                            <button className={styles.LogoutButton}onClick={handleClick}>Log Out</button>
+                            <button className={styles.LogoutButton} onClick={handleClick}>Log Out</button>
                         </ul>
                         {loading ? (
                             <p>Loading profile...</p>
                         ) : profileData ? (
                             <div>
-                                
                                 <p className={styles.ProfileName}>Welcome {profileData.name}!</p>
                                 <div className={styles.UserInformationContainer}>
                                     <h2 className={styles.UserInfoHeader}>User Information:</h2>
                                     <p className={styles.UserInfo}>Name: {profileData.name}</p>
                                     <p className={styles.UserInfo}>Email: {profileData.email}</p>
                                     <div className={styles.addClassButtonContainer}>
-                                    <button className={styles.addClassButton} onClick={() => setIsOpen(true)}>Add Class</button>
-                                    <ProfileInputModal open={isOpen} onClose={() => setIsOpen(false)}>
-                                        <form onSubmit={handleSubmit}>
-                                            <label htmlFor="saveform">Save Class:</label>
-                                            <input type="text" placeholder="Nickname" value={nicknameInput} onChange={(e) => setNicknameInput(e.target.value)} required />
-                                            <input type="text" placeholder="Class Number" value={classNumberInput} onChange={(e) => setClassNumberInput(e.target.value)} required />
-                                            <input id="saveform" name="saveform" value={saveInput} onChange={(e) => handleInputChange(e, setSaveInput, setSaveSuggestions)} required />
-                                            <div ref={containerRef} className={styles.scrollableContainer} style={{ height: containerHeight }}>
-                                                {saveSuggestions.map((name, index) => (
-                                                    <button key={index} className={styles.autofill} style={{ cursor: "pointer" }} onClick={() => displayNames(name, setSaveInput, setSaveSuggestions)}>
-                                                        <p>{name}</p>
-                                                    </button>
-                                                ))}
-                                            </div>
-                                            <button className={styles.ProfileButton} type="submit">Submit</button>
-                                        </form>
-                                    </ProfileInputModal>
+                                        <button className={styles.addClassButton} onClick={() => setIsOpen(true)}>Add Class</button>
+                                        <div className={styles.RouteMapButton}><Link to="/Map">Map</Link></div>
+                                        <ProfileInputModal open={isOpen} onClose={() => setIsOpen(false)}>
+                                            <form onSubmit={handleSubmit}>
+                                                <label htmlFor="saveform">Save Class:</label>
+                                                <input type="text" placeholder="Nickname" value={nicknameInput} onChange={(e) => setNicknameInput(e.target.value)} required />
+                                                <input type="text" placeholder="Class Number" value={classNumberInput} onChange={(e) => setClassNumberInput(e.target.value)} required />
+                                                <input id="saveform" name="saveform" value={saveInput} onChange={(e) => handleInputChange(e, setSaveInput, setSaveSuggestions)} required />
+                                                <div ref={containerRef} className={styles.scrollableContainer} style={{ height: containerHeight }}>
+                                                    {saveSuggestions.map((name, index) => (
+                                                        <button key={index} className={styles.autofill} style={{ cursor: "pointer" }} onClick={() => displayNames(name, setSaveInput, setSaveSuggestions)}>
+                                                            <p>{name}</p>
+                                                        </button>
+                                                    ))}
+                                                </div>
+                                                <button className={styles.ProfileButton} type="submit">Submit</button>
+                                            </form>
+                                        </ProfileInputModal>
+                                    </div>
                                 </div>
-                                </div>
-                                {/* Display other profile information as needed */}
                             </div>
                         ) : (
                             <p>No profile data available</p>
                         )}
                     </div>
                     <div className={styles.profile_info}>
-                        
-
-                        <h2 className={styles.HeadlineLoading}>Saved Classes</h2>
+                        <h2 className={styles.HeadlineLoading}>Saved Classes:</h2>
                         {loadingClasses ? (
-                            <p className={styles.HeadlineLoading}>Loading Saved Classes</p>
+                            <p className={styles.HeadlineLoading}>Loading Saved Classes...</p>
                         ) : savedClasses && savedClasses.length > 0 ? (
                             <div className={styles.savedClassList}>
-                                
                                 {savedClasses.map((classItem, index) => (
                                     <div key={index}>
                                         <p><b>Class Name:</b> {classItem.nickname}</p>
                                         <p><b>Room Number:</b> {classItem.roomnumber}</p>
                                         <p><b>Drexel Building:</b> {classItem.building}</p>
-                                        <i onClick={() => handleDelete(classItem._id)} className='fas fa-trash' style={{fontSize:'28px',color:'Red'}}></i>
+                                        <i onClick={() => handleDelete(classItem._id)} className='fas fa-trash' style={{ fontSize: '28px', color: 'red', cursor: 'pointer' }}></i>
                                     </div>
                                 ))}
                             </div>
                         ) : (
-                            <p>No saved classes</p>
+                            <p className={styles.NoSavedClasses}>No saved classes</p>
                         )}
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }
 
 export default UserDash;

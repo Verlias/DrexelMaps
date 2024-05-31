@@ -85,7 +85,7 @@ anywhere else in the source code OR incomplete implementation
 
 .sidebar h2 {
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 22px;
     color: hsl(211, 83%, 16%);
 
 }
@@ -155,8 +155,12 @@ anywhere else in the source code OR incomplete implementation
 .HeadlineLoading{
     font-family: Arial, sans-serif;
     font-size: 20px;
-    padding-left:400px;
+    margin-left:400px;
     margin-top:100px;
+}
+
+.NoSavedClasses{
+    margin-left:400px;
 }
 
 .savedClassList {
@@ -269,4 +273,20 @@ anywhere else in the source code OR incomplete implementation
 
 .remove:hover {
     cursor: pointer; 
+}
+
+.UserInfo{
+    color:#003882;
+    font-weight:bold;
+}
+
+
+.addClassButton{
+    font-weight:bold;
+}
+
+.RouteMapButton{
+    margin-top:10px;
+    font-weight:bold;
+
 }
