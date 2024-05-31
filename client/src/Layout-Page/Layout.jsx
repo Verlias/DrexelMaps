@@ -19,7 +19,7 @@ const Layout = () => {
             fetchBuilding();
             fetchRoomnumber();
         }
-    }, [building, roomnumber]);
+    }, [manualInput, floor, building, roomnumber]);
 
     // Gets the end destination building
     const fetchBuilding = async () => {
@@ -29,7 +29,6 @@ const Layout = () => {
             setBuilding(response.data.de.toLowerCase());
             setLoadingBuilding(false);
         } catch (error) {
-            console.error("Error fetching building:", error);
             setLoadingBuilding(false);
         }
     };
@@ -37,12 +36,11 @@ const Layout = () => {
     const fetchRoomnumber = async () => {
         try {
             const response = await axios.get('http://localhost:3000/api/roomnum');
-            roomnum = response.data.roomnum;
-            setRoomnumber(roomnum);
-            setFloor((roomnum.toString().charAt(0)));
+            const newRoomnum = response.data.roomnum.toString();
+            setRoomnumber(newRoomnum);
+            setFloor(newRoomnum.charAt(0));
             setLoadingRoom(false);
         } catch (error) {
-            console.error("Error fetching roomnumber:", error);
             setLoadingRoom(false);
         }
     };
@@ -51,8 +49,9 @@ const Layout = () => {
         event.preventDefault();
         setManualInput(true);
         setBuilding(inputValues.building);
-        setRoomnumber(inputValues.roomnumber);
-        setFloor(roomnumber.toString().charAt(0));
+        const newRoomnum = inputValues.roomnumber.toString()
+        setRoomnumber(newRoomnum);
+        setFloor(newRoomnum.charAt(0));
         setInputValues({ building: "", roomnumber: "" }); // Clear the input fields after submission
     };
 
