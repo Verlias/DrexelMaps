@@ -114,10 +114,12 @@ function SignUp() {
             placeholder="Re-enter your password here"
           />
 
-          <button className={styles.SignUpButtons} type="cancel" onClick={() => {}}>
-            Cancel
-          </button>
-          <button className={styles.SignUpButtons} type="submit">Sign Up</button>
+          <div className={styles.SignUpButtonsContainer}>
+            <button className={styles.SignUpButtons} type="cancel" onClick={() => {}}>
+              Cancel
+            </button>
+            <button className={styles.SignUpButtons} type="submit">Sign Up</button>
+          </div>
         </div>
       </form>
     </>

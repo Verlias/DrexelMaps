@@ -111,8 +111,10 @@ function Login(){
                   required/>
                 <label className={styles.LoginLabel}>{passwordError}</label>
                 
-                <Link className={styles.LoginButtons} to="/SignUp">Go to SignUp</Link>
-                <button className={styles.LoginButtons} type="submit" onClick={onButtonClick}>Log In</button>
+                <div className={styles.LoginContainer}>
+                  <Link className={styles.LoginButtons} to="/SignUp">Sign Up</Link>
+                  <button className={styles.LoginButtons} type="submit" onClick={onButtonClick}>Log In</button>
+                </div>
             </div>
         </form>
         </>

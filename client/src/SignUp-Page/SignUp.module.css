@@ -22,6 +22,10 @@
   border-radius: 4px;
 }
 
+.SignUpButtonsContainer {
+  text-align: center;
+}
+
 .SignUpButtons {
   background-color: #003882;
   margin-top:10px;

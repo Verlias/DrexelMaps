@@ -22,6 +22,10 @@
     border-radius: 4px;
 }
 
+.LoginContainer {
+    text-align: center;
+}
+
 .LoginButtons {
     background-color: #003882;
     padding: 10px 20px;
