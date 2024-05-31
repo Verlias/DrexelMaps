@@ -5,6 +5,7 @@ const bodyparser = require('body-parser')
 const mongoose = require('mongoose');
 var passwordValidator = require('password-validator');
 const jwt = require('jsonwebtoken');
+require("dotenv").config();
 
 
 var app = module.exports = express();
@@ -12,7 +13,7 @@ const signupRoute = require('./signup');
 console.log('Express started on port 3000')
 // un comment applisten if you are commenting out the database
 //app.listen(3000)
-const uri = "mongodb+srv://loganvoravong:606h6mKrlBLaHkFm@drexelmapusers.zzgb1wf.mongodb.net/?retryWrites=true&w=majority&appName=drexelmapusers";
+const uri = process.env.uri;
 
 // Set the Stable API version in the MongoClientOptions object
 const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
