@@ -47,7 +47,7 @@ function Korman2() {
        id="image1" />
                     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect1"
+                        id="201"
        width="326.47443"
        height="285.49435"
        x="2465.6331"
@@ -58,7 +58,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="2565.3513"
        y="1046.3573"
-       id="text1"
+                        id="201L"
        inkscape:label="201L"><tspan
          sodipodi:role="line"
          id="tspan1"
@@ -67,14 +67,14 @@ function Korman2() {
     <path
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 2191.0668,1619.3951 84.0091,0.683 2.049,116.7931 58.7381,-2.732 -2.049,77.1791 -77.8621,77.1791 -84.6921,-2.049 -0.683,-74.4471 h 23.222 z"
-       id="path1"
+                        id="200"
        inkscape:label="200" />
     <text
        xmlSpace="preserve"
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="2222.4849"
        y="1767.6062"
-       id="text4"
+                        id="200L"
        inkscape:label="200L"><tspan
          sodipodi:role="line"
          id="tspan4"
@@ -83,14 +83,14 @@ function Korman2() {
     <path
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 2100.2277,1620.7611 h 82.6431 l 6.147,180.9952 -30.7351,1.366 2.732,90.8391 54.6401,0.683 2.049,34.8331 -59.4211,59.421 -59.421,-2.732 z"
-       id="path4"
+                        id="204"
        inkscape:label="204" />
     <text
        xmlSpace="preserve"
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="2111.1558"
        y="1765.5573"
-       id="text5"
+                        id="204L"
        inkscape:label="204L"><tspan
          sodipodi:role="line"
          id="tspan5"
@@ -98,7 +98,7 @@ function Korman2() {
          y="1765.5573">204</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect5"
+                        id="213"
        width="129.08716"
        height="105.18214"
        x="1975.2385"
@@ -109,7 +109,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="2012.8036"
        y="786.81702"
-       id="text6"
+                        id="213L"
        inkscape:label="213L"><tspan
          sodipodi:role="line"
          id="tspan6"
@@ -117,7 +117,7 @@ function Korman2() {
          y="786.81702">213</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect6"
+                        id="215"
        width="129.08716"
        height="107.23114"
        x="1973.8726"
@@ -128,7 +128,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="2001.8755"
        y="674.12189"
-       id="text7"
+                        id="215L"
        inkscape:label="215L"><tspan
          sodipodi:role="line"
          id="tspan7"
@@ -136,7 +136,7 @@ function Korman2() {
          y="674.12189">215</tspan></text>
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect7"
+                        id="206A"
        width="125.08523"
        height="163.23863"
        x="2203.2385"
@@ -147,7 +147,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="2239.9431"
        y="704.14771"
-       id="text8"
+                        id="206AL"
        inkscape:label="206AL"><tspan
          sodipodi:role="line"
          id="tspan8"
@@ -156,14 +156,14 @@ function Korman2() {
     <path
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 1912.983,278.66477 175.3125,-0.48295 0.9659,31.875 13.0397,-0.48296 71.9603,75.82387 -67.1307,68.09659 -65.6818,-65.19886 -128.4659,0.48295 z"
-       id="path8"
+                        id="218"
        inkscape:label="218" />
     <text
        xmlSpace="preserve"
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1973.8352"
        y="346.76135"
-       id="text9"
+                        id="218L"
        inkscape:label="218L"><tspan
          sodipodi:role="line"
          id="tspan9"
@@ -171,7 +171,7 @@ function Korman2() {
          y="346.76135">218</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect9"
+       id="220"
        width="84.034088"
        height="109.14773"
        x="1823.1534"
@@ -182,7 +182,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1838.125"
        y="337.10226"
-       id="text10"
+                        id="220L"
        inkscape:label="220L"><tspan
          sodipodi:role="line"
          id="tspan10"
@@ -190,7 +190,7 @@ function Korman2() {
          y="337.10226">220</tspan></text>
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect10"
+       id="222"
        width="180.14204"
        height="109.63068"
        x="1636.7329"
@@ -201,7 +201,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1688.4091"
        y="337.58524"
-       id="text13"
+                        id="222L"
        inkscape:label="222L"><tspan
          sodipodi:role="line"
          id="tspan13"
@@ -209,7 +209,7 @@ function Korman2() {
          y="337.58524">222</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect13"
+                        id="224"
        width="87.414772"
        height="110.11364"
        x="1544.9716"
@@ -220,7 +220,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1556.5625"
        y="334.6875"
-       id="text14"
+                        id="224L"
        inkscape:label="224L"><tspan
          sodipodi:role="line"
          id="tspan14"
@@ -228,7 +228,7 @@ function Korman2() {
          y="334.6875">224</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect14"
+                        id="226"
        width="87.414772"
        height="111.07954"
        x="1451.7614"
@@ -239,7 +239,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1470.1136"
        y="327.92615"
-       id="text15"
+                        id="226L"
        inkscape:label="226L"><tspan
          sodipodi:role="line"
          id="tspan15"
@@ -247,7 +247,7 @@ function Korman2() {
          y="327.92615">226</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect15"
+                        id="228"
        width="87.897728"
        height="111.5625"
        x="1359.0341"
@@ -258,7 +258,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1377.8693"
        y="346.27841"
-       id="text16"
+                        id="228L"
        inkscape:label="228L"><tspan
          sodipodi:role="line"
          id="tspan16"
@@ -266,7 +266,7 @@ function Korman2() {
          y="346.27841">228</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect16"
+                        id="230"
        width="87.414772"
        height="112.04546"
        x="1265.3409"
@@ -277,7 +277,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1293.8352"
        y="331.78976"
-       id="text17"
+                        id="230L"
        inkscape:label="230L"><tspan
          sodipodi:role="line"
          id="tspan17"
@@ -285,7 +285,7 @@ function Korman2() {
          y="331.78976">230</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect17"
+                        id="232"
        width="76.789772"
        height="108.66477"
        x="1182.7557"
@@ -296,7 +296,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1202.5568"
        y="333.72159"
-       id="text18"
+                        id="232L"
        inkscape:label="232L"><tspan
          sodipodi:role="line"
          id="tspan18"
@@ -304,7 +304,7 @@ function Korman2() {
          y="333.72159">232</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect18"
+                        id="234"
        width="84.034088"
        height="112.04546"
        x="1092.9261"
@@ -315,7 +315,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1114.1761"
        y="336.13635"
-       id="text19"
+                        id="234L"
        inkscape:label="234L"><tspan
          sodipodi:role="line"
          id="tspan19"
@@ -324,14 +324,14 @@ function Korman2() {
     <path
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 978.94887,324.54546 10.625,-10.625 0.48295,-36.2216 h 96.59088 l -0.9659,115.42614 h -40.0852 z"
-       id="path19"
+                        id="236"
        inkscape:label="236" />
     <text
        xmlSpace="preserve"
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1022.4148"
        y="321.16476"
-       id="text20"
+                        id="236L"
        inkscape:label="236L"><tspan
          sodipodi:role="line"
          id="tspan20"
@@ -340,14 +340,14 @@ function Korman2() {
     <path
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 973.15341,328.89205 70.51139,68.09659 0.4829,26.5625 -45.3977,45.39772 -82.10227,-82.10227 z"
-       id="path20"
+                        id="236A"
        inkscape:label="236A" />
     <text
        xmlSpace="preserve"
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="950.9375"
        y="394.57385"
-       id="text21"
+                        id="236AL"
        inkscape:label="236AL"><tspan
          sodipodi:role="line"
          id="tspan21"
@@ -355,7 +355,7 @@ function Korman2() {
          y="394.57385">236A</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect21"
+                        id="261"
        width="77.862099"
        height="140.01518"
        x="1958.8464"
@@ -366,7 +366,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1969.7745"
        y="1803.8053"
-       id="text22"
+                        id="261L"
        inkscape:label="261L"><tspan
          sodipodi:role="line"
          id="tspan22"
@@ -374,7 +374,7 @@ function Korman2() {
          y="1803.8053">261</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect22"
+                        id="263"
        width="127.03816"
        height="140.01518"
        x="1825.6614"
@@ -385,7 +385,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1846.8344"
        y="1803.8053"
-       id="text23"
+                        id="263L"
        inkscape:label="263L"><tspan
          sodipodi:role="line"
          id="tspan23"
@@ -393,7 +393,7 @@ function Korman2() {
          y="1803.8053">263</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect23"
+                        id="262"
        width="129.77017"
        height="143.43018"
        x="1958.8464"
@@ -404,7 +404,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1986.1665"
        y="2005.2906"
-       id="text24"
+                        id="262L"
        inkscape:label="262L"><tspan
          sodipodi:role="line"
          id="tspan24"
@@ -412,7 +412,7 @@ function Korman2() {
          y="2005.2906">262</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect24"
+                        id="264"
        width="127.72116"
        height="146.16219"
        x="1824.9783"
@@ -423,7 +423,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1852.2983"
        y="2009.3885"
-       id="text25"
+                        id="264L"
        inkscape:label="264L"><tspan
          sodipodi:role="line"
          id="tspan25"
@@ -431,7 +431,7 @@ function Korman2() {
          y="2009.3885">264</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect25"
+                        id="266"
        width="131.84659"
        height="145.36932"
        x="1687.9261"
@@ -442,7 +442,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1730.4261"
        y="2010.5398"
-       id="text26"
+                        id="266L"
        inkscape:label="266L"><tspan
          sodipodi:role="line"
          id="tspan26"
@@ -450,7 +450,7 @@ function Korman2() {
          y="2010.5398">266</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect26"
+                        id="268"
        width="141.98863"
        height="144.88637"
        x="1541.1079"
@@ -461,7 +461,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1579.2614"
        y="2001.8466"
-       id="text27"
+                        id="268L"
        inkscape:label="268L"><tspan
          sodipodi:role="line"
          id="tspan27"
@@ -469,7 +469,7 @@ function Korman2() {
          y="2001.8466">268</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect27"
+                        id="270"
        width="126.05114"
        height="143.4375"
        x="1409.7443"
@@ -480,7 +480,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1451.2784"
        y="2001.8466"
-       id="text28"
+                        id="270L"
        inkscape:label="270L"><tspan
          sodipodi:role="line"
          id="tspan28"
@@ -488,7 +488,7 @@ function Korman2() {
          y="2001.8466">270</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect28"
+                        id="272"
        width="134.55118"
        height="147.52818"
        x="1271.0646"
@@ -499,7 +499,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1299.7507"
        y="2007.3396"
-       id="text29"
+                        id="272L"
        inkscape:label="272L"><tspan
          sodipodi:role="line"
          id="tspan29"
@@ -507,7 +507,7 @@ function Korman2() {
          y="2007.3396">272</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect29"
+                        id="274"
        width="126.35516"
        height="147.52818"
        x="1139.2455"
@@ -518,7 +518,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1169.9805"
        y="2005.2906"
-       id="text30"
+                        id="274L"
        inkscape:label="274L"><tspan
          sodipodi:role="line"
          id="tspan30"
@@ -527,14 +527,14 @@ function Korman2() {
     <path
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 943.9072,1988.2155 62.1531,61.4701 -0.683,24.588 h 127.7211 l 0.683,-146.1621 -128.4041,0.683 z"
-       id="path30"
+                        id="276"
        inkscape:label="276" />
     <text
        xmlSpace="preserve"
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1021.0863"
        y="1998.4604"
-       id="text31"
+                        id="276L"
        inkscape:label="276L"><tspan
          sodipodi:role="line"
          id="tspan31"
@@ -542,7 +542,7 @@ function Korman2() {
          y="1998.4604">276</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect31"
+                        id="265"
        width="135.22728"
        height="140.05682"
        x="1685.5114"
@@ -553,7 +553,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1721.25"
        y="1800.4545"
-       id="text32"
+                        id="265L"
        inkscape:label="265L"><tspan
          sodipodi:role="line"
          id="tspan32"
@@ -561,7 +561,7 @@ function Korman2() {
          y="1800.4545">265</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect32"
+                        id="267"
        width="139.09091"
        height="141.02272"
        x="1541.5909"
@@ -572,7 +572,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1574.4318"
        y="1806.25"
-       id="text33"
+                        id="267L"
        inkscape:label="267L"><tspan
          sodipodi:role="line"
          id="tspan33"
@@ -580,7 +580,7 @@ function Korman2() {
          y="1806.25">267</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect33"
+                        id="269"
        width="127.01704"
        height="141.02272"
        x="1408.7784"
@@ -591,7 +591,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1438.7216"
        y="1804.3182"
-       id="text34"
+                        id="269L"
        inkscape:label="269L"><tspan
          sodipodi:role="line"
          id="tspan34"
@@ -599,7 +599,7 @@ function Korman2() {
          y="1804.3182">269</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect34"
+                        id="271"
        width="133.29546"
        height="139.57387"
        x="1271.1364"
@@ -610,7 +610,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1305.9091"
        y="1802.3864"
-       id="text35"
+                        id="271L"
        inkscape:label="271L"><tspan
          sodipodi:role="line"
          id="tspan35"
@@ -618,7 +618,7 @@ function Korman2() {
          y="1802.3864">271</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect35"
+                        id="273"
        width="128.46591"
        height="140.53978"
        x="1138.3239"
@@ -629,7 +629,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1175.9943"
        y="1797.5568"
-       id="text36"
+                        id="273L"
        inkscape:label="273L"><tspan
          sodipodi:role="line"
          id="tspan36"
@@ -637,7 +637,7 @@ function Korman2() {
          y="1797.5568">273</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect36"
+                        id="275"
        width="145.36932"
        height="140.53978"
        x="988.60797"
@@ -648,7 +648,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1029.6591"
        y="1803.3523"
-       id="text37"
+                        id="275L"
        inkscape:label="275L"><tspan
          sodipodi:role="line"
          id="tspan37"
@@ -656,7 +656,7 @@ function Korman2() {
          y="1803.3523">275</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect37"
+                        id="260"
        width="143.67897"
        height="99.48864"
        x="1893.4233"
@@ -667,7 +667,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1937.1307"
        y="1667.8835"
-       id="text38"
+                        id="260L"
        inkscape:label="260L"><tspan
          sodipodi:role="line"
          id="tspan38"
@@ -675,7 +675,7 @@ function Korman2() {
          y="1667.8835">260</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect38"
+                        id="259"
        width="142.47159"
        height="100.21307"
        x="1744.9148"
@@ -686,7 +686,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1793.4517"
        y="1672.9545"
-       id="text39"
+                        id="259L"
        inkscape:label="259L"><tspan
          sodipodi:role="line"
          id="tspan39"
@@ -694,7 +694,7 @@ function Korman2() {
          y="1672.9545">259</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect39"
+                        id="258"
        width="143.4375"
        height="99.971588"
        x="1594.7159"
@@ -705,7 +705,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1643.0114"
        y="1673.196"
-       id="text40"
+                        id="258L"
        inkscape:label="258L"><tspan
          sodipodi:role="line"
          id="tspan40"
@@ -713,7 +713,7 @@ function Korman2() {
          y="1673.196">258</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect40"
+                        id="254"
        width="124.60227"
        height="129.91478"
        x="1411.6761"
@@ -724,7 +724,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1440.6534"
        y="1603.4091"
-       id="text41"
+                        id="254L"
        inkscape:label="254L"><tspan
          sodipodi:role="line"
          id="tspan41"
@@ -732,7 +732,7 @@ function Korman2() {
          y="1603.4091">254</tspan></text>
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect41"
+                        id="255"
        width="130.39772"
        height="128.94887"
        x="1274.5171"
@@ -743,7 +743,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1311.7045"
        y="1600.9943"
-       id="text42"
+                        id="255L"
        inkscape:label="255L"><tspan
          sodipodi:role="line"
          id="tspan42"
@@ -751,7 +751,7 @@ function Korman2() {
          y="1600.9943">255</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect42"
+                        id="256"
        width="133.77841"
        height="129.43182"
        x="1133.9773"
@@ -762,7 +762,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1175.5114"
        y="1603.892"
-       id="text43"
+                        id="256L"
        inkscape:label="256L"><tspan
          sodipodi:role="line"
          id="tspan43"
@@ -770,7 +770,7 @@ function Korman2() {
          y="1603.892">256</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect43"
+                        id="257"
        width="139.33218"
        height="128.40416"
        x="988.98523"
@@ -781,7 +781,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1032.6973"
        y="1608.467"
-       id="text44"
+                        id="257L"
        inkscape:label="257L"><tspan
          sodipodi:role="line"
          id="tspan44"
@@ -789,7 +789,7 @@ function Korman2() {
          y="1608.467">257</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect44"
+                        id="284"
        width="134.20967"
        height="132.16068"
        x="763.93646"
@@ -800,7 +800,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="800.1355"
        y="1608.8085"
-       id="text45"
+                        id="284L"
        inkscape:label="284L"><tspan
          sodipodi:role="line"
          id="tspan45"
@@ -808,7 +808,7 @@ function Korman2() {
          y="1608.8085">284</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect45"
+                        id="250"
        width="133.29546"
        height="100.45454"
        x="1954.5171"
@@ -819,7 +819,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1989.7727"
        y="1515.0284"
-       id="text46"
+                        id="250L"
        inkscape:label="250L"><tspan
          sodipodi:role="line"
          id="tspan46"
@@ -827,7 +827,7 @@ function Korman2() {
          y="1515.0284">250</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect46"
+                        id="251"
        width="130.45317"
        height="101.76713"
        x="1817.4653"
@@ -838,7 +838,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1859.1284"
        y="1512.8469"
-       id="text47"
+                        id="251L"
        inkscape:label="251L"><tspan
          sodipodi:role="line"
          id="tspan47"
@@ -846,7 +846,7 @@ function Korman2() {
          y="1512.8469">251</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect47"
+                        id="252"
        width="133.18517"
        height="100.40113"
        x="1678.8162"
@@ -857,7 +857,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1717.0642"
        y="1518.3109"
-       id="text48"
+                        id="252L"
        inkscape:label="252L"><tspan
          sodipodi:role="line"
          id="tspan48"
@@ -866,14 +866,14 @@ function Korman2() {
     <path
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 897.32955,1673.9205 -133.77841,-0.966 -0.96591,63.2671 -68.57955,-0.483 -0.48295,11.5909 162.27273,162.7557 42.5,-40.5682 z"
-       id="path48"
+                        id="282"
        inkscape:label="282" />
     <text
        xmlSpace="preserve"
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="784.80115"
        y="1763.267"
-       id="text49"
+                        id="282L"
        inkscape:label="282L"><tspan
          sodipodi:role="line"
          id="tspan49"
@@ -881,7 +881,7 @@ function Korman2() {
          y="1763.267">282</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect49"
+                        id="291"
        width="137.96617"
        height="116.11015"
        x="845.55505"
@@ -892,7 +892,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="883.8031"
        y="1394.6877"
-       id="text50"
+                        id="291L"
        inkscape:label="291L"><tspan
          sodipodi:role="line"
          id="tspan50"
@@ -900,7 +900,7 @@ function Korman2() {
          y="1394.6877">291</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect50"
+                        id="293"
        width="135.91718"
        height="116.79315"
        x="846.2381"
@@ -911,7 +911,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="891.99915"
        y="1277.8947"
-       id="text51"
+                        id="293L"
        inkscape:label="293L"><tspan
          sodipodi:role="line"
          id="tspan51"
@@ -919,7 +919,7 @@ function Korman2() {
          y="1277.8947">293</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect51"
+                        id="290"
        width="135.91718"
        height="131.81917"
        x="652.26581"
@@ -930,7 +930,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="687.09888"
        y="1387.1748"
-       id="text52"
+                        id="290L"
        inkscape:label="290L"><tspan
          sodipodi:role="line"
          id="tspan52"
@@ -938,7 +938,7 @@ function Korman2() {
          y="1387.1748">290</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect52"
+                        id="292"
        width="132.50217"
        height="129.08716"
        x="653.63184"
@@ -949,7 +949,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="691.87988"
        y="1259.4536"
-       id="text53"
+                        id="292L"
        inkscape:label="292L"><tspan
          sodipodi:role="line"
          id="tspan53"
@@ -957,7 +957,7 @@ function Korman2() {
          y="1259.4536">292</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect53"
+                        id="295"
        width="137.28317"
        height="119.52515"
        x="845.55505"
@@ -968,7 +968,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="874.92413"
        y="1162.4675"
-       id="text54"
+                        id="295"
        inkscape:label="295L"><tspan
          sodipodi:role="line"
          id="tspan54"
@@ -976,7 +976,7 @@ function Korman2() {
          y="1162.4675">295</tspan></text>
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect54"
+                        id="294"
        width="135.71022"
        height="130.88068"
        x="651.50568"
@@ -987,7 +987,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="687.72729"
        y="1115.625"
-       id="text55"
+                        id="294L"
        inkscape:label="294L"><tspan
          sodipodi:role="line"
          id="tspan55"
@@ -995,7 +995,7 @@ function Korman2() {
          y="1115.625">294</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect55"
+                        id="297"
        width="141.02272"
        height="113.97727"
        x="843.23865"
@@ -1006,7 +1006,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="892.5"
        y="1035.4545"
-       id="text56"
+                        id="297L"
        inkscape:label="297L"><tspan
          sodipodi:role="line"
          id="tspan56"
@@ -1014,7 +1014,7 @@ function Korman2() {
          y="1035.4545">297</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect56"
+                        id="296"
        width="137.64204"
        height="181.59091"
        x="650.53979"
@@ -1025,7 +1025,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="689.17615"
        y="958.66479"
-       id="text57"
+                        id="296L"
        inkscape:label="296L"><tspan
          sodipodi:role="line"
          id="tspan57"
@@ -1033,7 +1033,7 @@ function Korman2() {
          y="958.66479">296</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect57"
+                        id="298"
        width="190.76704"
        height="106.73296"
        x="792.04547"
@@ -1044,7 +1044,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="848.06818"
        y="912.78412"
-       id="text58"
+                        id="298L"
        inkscape:label="298L"><tspan
          sodipodi:role="line"
          id="tspan58"
@@ -1052,7 +1052,7 @@ function Korman2() {
          y="912.78412">298</tspan></text>
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect58"
+                        id="246"
        width="355.84344"
        height="103.81613"
        x="642.7038"
@@ -1063,7 +1063,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="744.47095"
        y="815.50305"
-       id="text59"
+                        id="246L"
        inkscape:label="246L"><tspan
          sodipodi:role="line"
          id="tspan59"
@@ -1072,14 +1072,14 @@ function Korman2() {
     <path
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 761.54597,555.96271 77.8621,77.1791 h 158.4562 l 0.683,48.49306 -150.26019,-0.683 v 57.37207 l -206.26626,1.366 -0.683,-103.13313 39.61405,1.366 z"
-       id="path59"
+                        id="242"
        inkscape:label="242" />
     <text
        xmlSpace="preserve"
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="718.51691"
        y="685.73285"
-       id="text60"
+                        id="242L"
        inkscape:label="242L"><tspan
          sodipodi:role="line"
          id="tspan60"
@@ -1088,14 +1088,14 @@ function Korman2() {
     <path
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 945.9562,532.74068 18.44103,17.75802 h 32.10104 l 2.049,75.1301 -149.57719,2.049 z"
-       id="path60"
+                        id="240"
        inkscape:label="240" />
     <text
        xmlSpace="preserve"
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="928.88116"
        y="597.62573"
-       id="text61"
+                        id="240L"
        inkscape:label="240L"><tspan
          sodipodi:role="line"
          id="tspan61"
@@ -1103,7 +1103,7 @@ function Korman2() {
          y="597.62573">240</tspan></text>
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect61"
+                        id="208C"
        width="113.37814"
        height="138.64917"
        x="2334.4971"
@@ -1114,7 +1114,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="2358.4021"
        y="1107.8274"
-       id="text62"
+                        id="208CL"
        inkscape:label="208CL"><tspan
          sodipodi:role="line"
          id="tspan62"
@@ -1122,7 +1122,7 @@ function Korman2() {
          y="1107.8274">208C</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect62"
+                        id="208A"
        width="124.30616"
        height="140.69818"
        x="2202.6777"
@@ -1133,7 +1133,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="2245.0239"
        y="1335.9497"
-       id="text63"
+                        id="208AL"
        inkscape:label="208AL"><tspan
          sodipodi:role="line"
          id="tspan63"
@@ -1141,7 +1141,7 @@ function Korman2() {
          y="1335.9497">208A</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect63"
+                        id="208B"
        width="122.94016"
        height="143.43018"
        x="2203.3608"
@@ -1152,7 +1152,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="2230.6809"
        y="1487.5759"
-       id="text64"
+                        id="208BL"
        inkscape:label="208BL"><tspan
          sodipodi:role="line"
          id="tspan64"
@@ -1160,7 +1160,7 @@ function Korman2() {
          y="1487.5759">208B</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect64"
+                        id="207"
        width="435.625"
        height="280.11365"
        x="1667.1591"
@@ -1171,7 +1171,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1807.2159"
        y="1331.9886"
-       id="text65"
+                        id="207L"
        inkscape:label="207L"><tspan
          sodipodi:role="line"
          id="tspan65"
@@ -1179,7 +1179,7 @@ function Korman2() {
          y="1331.9886">207</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect65"
+                        id="247"
        width="544.77271"
        height="281.07956"
        x="1116.5909"
@@ -1190,7 +1190,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1330.0568"
        y="1324.2614"
-       id="text66"
+                        id="247L"
        inkscape:label="247L"><tspan
          sodipodi:role="line"
          id="tspan66"
@@ -1199,14 +1199,14 @@ function Korman2() {
     <path
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 1661.3636,900.22727 2.8978,146.81823 h 438.5227 l 1.9318,122.6704 -558.2954,-2.8977 -0.966,-265.62502 z"
-       id="path66"
+                        id="209"
        inkscape:label="209" />
     <text
        xmlSpace="preserve"
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1763.75"
        y="1115.625"
-       id="text67"
+                        id="209L"
        inkscape:label="209L"><tspan
          sodipodi:role="line"
          id="tspan67"
@@ -1214,7 +1214,7 @@ function Korman2() {
          y="1115.625">209</tspan></text>
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect67"
+                        id="245"
        width="424.82654"
        height="269.78534"
        x="1115.3405"
@@ -1225,7 +1225,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1258.0876"
        y="1041.5763"
-       id="text68"
+                        id="245L"
        inkscape:label="245L"><tspan
          sodipodi:role="line"
          id="tspan68"
@@ -1233,7 +1233,7 @@ function Korman2() {
          y="1041.5763">245</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect68"
+                        id="241"
        width="421.13635"
        height="254.03409"
        x="1112.7273"
@@ -1244,7 +1244,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1246.0227"
        y="765"
-       id="text69"
+                        id="241L"
        inkscape:label="241L"><tspan
          sodipodi:role="line"
          id="tspan69"
@@ -1252,7 +1252,7 @@ function Korman2() {
          y="765">241</tspan></text>
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect69"
+                        id="233"
        width="96.107956"
        height="144.88637"
        x="1114.1761"
@@ -1263,7 +1263,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1130.5966"
        y="560.22729"
-       id="text70"
+                        id="233L"
        inkscape:label="233L"><tspan
          sodipodi:role="line"
          id="tspan70"
@@ -1271,7 +1271,7 @@ function Korman2() {
          y="560.22729">233</tspan></text>
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect70"
+                        id="229"
        width="181.59091"
        height="142.95454"
        x="1218.0114"
@@ -1282,7 +1282,7 @@ function Korman2() {
                         style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill: '#ffffff', fillOpacity: 1, stroke: '#000000', strokeWidth: 0.5 }}
        x="1275"
        y="559.26135"
-       id="text71"
+                        id="229L"
        inkscape:label="229L"><tspan
          sodipodi:role="line"
          id="tspan71"
@@ -1290,7 +1290,7 @@ function Korman2() {
          y="0">229</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect71"
+                        id="227"
        width="128.40416"
        height="141.38118"
        x="1406.2988"
@@ -1301,7 +1301,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1439.7657"
        y="566.2077"
-       id="text72"
+                        id="227L"
        inkscape:label="227L"><tspan
          sodipodi:role="line"
          id="tspan72"
@@ -1309,7 +1309,7 @@ function Korman2() {
          y="566.2077">227</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect72"
+                        id="223"
        width="200.90909"
        height="404.71591"
        x="1542.5568"
@@ -1320,7 +1320,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1613.0682"
        y="703.18182"
-       id="text73"
+                        id="223L"
        inkscape:label="223L"><tspan
          sodipodi:role="line"
          id="tspan73"
@@ -1329,14 +1329,14 @@ function Korman2() {
     <path
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 2090.6657,616.06678 0.683,-38.93105 -90.1562,-90.83911 -76.4961,-0.683 v 128.40416 z"
-       id="path73"
+                        id="217"
        inkscape:label="217" />
     <text
        xmlSpace="preserve"
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1949.2845"
        y="567.57373"
-       id="text74"
+                        id="217L"
        inkscape:label="217L"><tspan
          sodipodi:role="line"
          id="tspan74"
@@ -1344,7 +1344,7 @@ function Korman2() {
          y="567.57373">217</tspan></text>
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect74"
+                        id="221"
        width="165.96921"
        height="131.13617"
        x="1749.1653"
@@ -1355,7 +1355,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1815.4163"
        y="555.96271"
-       id="text75"
+                        id="221L"
        inkscape:label="221L"><tspan
          sodipodi:role="line"
          id="tspan75"
@@ -1363,7 +1363,7 @@ function Korman2() {
          y="555.96271">221</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect75"
+                        id="211"
        width="218.56027"
        height="270.46835"
        x="1749.1653"
@@ -1374,7 +1374,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1821.5634"
        y="775.20599"
-       id="text76"
+                        id="211L"
        inkscape:label="211L"><tspan
          sodipodi:role="line"
          id="tspan76"
@@ -1382,7 +1382,7 @@ function Korman2() {
          y="775.20599">211</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect76"
+                        id="211C"
        width="173.48222"
        height="139.33218"
        x="1669.2542"
@@ -1393,7 +1393,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1722.5282"
        y="976.69122"
-       id="text77"
+                        id="211CL"
        inkscape:label="211CL"><tspan
          sodipodi:role="line"
          id="tspan77"
@@ -1401,7 +1401,7 @@ function Korman2() {
          y="976.69122">211C</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect77"
+                        id="211B"
        width="108.59714"
        height="140.69818"
        x="1848.2003"
@@ -1412,7 +1412,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="1872.1053"
        y="976.69122"
-       id="text78"
+                        id="2111BL"
        inkscape:label="2111BL"><tspan
          sodipodi:role="line"
          id="tspan78"
@@ -1420,7 +1420,7 @@ function Korman2() {
          y="976.69122">211B</tspan></text>
     <rect
        style={{ display: 'inline', opacity: 1, fill: '#000080', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect78"
+                        id="211A"
        width="66.251083"
        height="139.33218"
        x="2036.7086"
@@ -1431,7 +1431,7 @@ function Korman2() {
        style={{ fontWeight: 'bold', fontSize: '26.6667px', fontFamily: 'Yu Gothic', fill:'#ffffff',fillOpacity:1,stroke:'#000000',strokeWidth:0.5}}
        x="2038.7576"
        y="967.12921"
-       id="text79"
+                        id="211AL"
        inkscape:label="211AL"><tspan
          sodipodi:role="line"
          id="tspan79"
@@ -1439,7 +1439,7 @@ function Korman2() {
          y="967.12921">211A</tspan></text>
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#d40000', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect79"
+                        id="STAIR1"
        width="237.6843"
        height="107.91414"
        x="2208.8247"
@@ -1447,7 +1447,7 @@ function Korman2() {
        inkscape:label="STAIR1" />
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#d40000', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect80"
+                        id="STAIR2"
        width="208.99826"
        height="102.45013"
        x="2288.053"
@@ -1455,7 +1455,7 @@ function Korman2() {
        inkscape:label="STAIR2" />
     <rect
                         style={{ display: 'inline', opacity: 1, fill: '#d40000', stroke: '#000000', strokeWidth: 0.5 }}
-       id="rect81"
+                        id="STAIR3"
        width="105.18214"
        height="200.80226"
        x="644.75281"
@@ -1464,7 +1464,7 @@ function Korman2() {
     <path
                         style={{ display: 'inline', opacity: 1, fill: '#d40000', stroke: '#000000', strokeWidth: 0.5 }}
        d="m 908.39116,400.23851 77.86209,79.2281 -144.79618,139.33218 -75.1301,-73.7641 z"
-       id="path81"
+                        id="STAIR4"
        inkscape:label="STAIR4" />
   </g>
 </svg>
