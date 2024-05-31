@@ -24,4 +24,4 @@ To set up the project locally, follow these steps:
 
 ```bash
 git clone https://github.com/yourusername/drexel-maps.git
-cd drexel-maps
+cd DrexelMaps
