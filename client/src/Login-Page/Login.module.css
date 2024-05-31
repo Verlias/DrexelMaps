@@ -7,6 +7,11 @@
     margin: 0 auto;
 }
 
+h1 {
+    padding-left : 0px;
+    margin-left: 0px;
+}
+
 .LoginLabel {
     display: block;
     margin-bottom: 8px;
@@ -22,10 +27,6 @@
     border-radius: 4px;
 }
 
-.LoginContainer {
-    text-align: center;
-}
-
 .LoginButtons {
     background-color: #003882;
     padding: 10px 20px;
@@ -38,6 +39,18 @@
     margin:auto;
     justify-content: center;
     align-items: center;
+}
+
+.LoginButtonsList {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.LoginButtonsList li{
+    padding: 10px;
+    padding-left: 0px;
+    margin-left: 0px
 }
 
 .SignUpLink{

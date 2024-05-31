@@ -8,6 +8,7 @@
 }
 
 .SignUpLabel {
+  margin-top: 8px;
   display: block;
   margin-bottom: 8px;
   color: #333;
@@ -22,8 +23,17 @@
   border-radius: 4px;
 }
 
-.SignUpButtonsContainer {
+
+.SignupButtonsList {
+  padding: 0;
+  list-style-type: none;
   text-align: center;
+}
+
+.SignupButtonsList li{
+  padding: 5px;
+  padding-left: 0px;
+  margin-left: 0px
 }
 
 .SignUpButtons {

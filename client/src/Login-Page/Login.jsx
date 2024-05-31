@@ -102,7 +102,7 @@ function Login(){
 
                 <label className={styles.LoginLabel}>Password:</label>
                   <input
-                  type="text"
+                  type="password"
                   id="password"
                   name="password"
                   placeholder="Enter your password here"
@@ -110,11 +110,13 @@ function Login(){
                   onChange={handleChange}
                   required/>
                 <label className={styles.LoginLabel}>{passwordError}</label>
-                
-                <div className={styles.LoginContainer}>
-                  <Link className={styles.LoginButtons} to="/SignUp">Sign Up</Link>
-                  <button className={styles.LoginButtons} type="submit" onClick={onButtonClick}>Log In</button>
-                </div>
+
+                <ul className={styles.LoginButtonsList}>
+                  <li><button className={styles.LoginButtons} type="submit" onClick={onButtonClick}>Log In</button></li>
+                  <hr/>
+                  <label className={styles.LoginLabel}>Don't have an account?</label>
+                  <li><Link className={styles.LoginButtons} to="/SignUp">Sign Up</Link></li>
+                </ul>
             </div>
         </form>
         </>
